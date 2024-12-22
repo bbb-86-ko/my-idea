@@ -5,7 +5,7 @@ st.set_page_config(
     page_icon="🚚",
 )
 
-st.write("# Welcome to Bobusang! 🚚")
+st.write("# Welcome to 🚚 Bobusang!")
 
 # Add a selectbox to the sidebar:
 # st.sidebar.success("Select a demo above.")
