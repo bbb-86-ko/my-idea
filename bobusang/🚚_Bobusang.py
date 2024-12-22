@@ -8,7 +8,7 @@ st.set_page_config(
 st.write("# Welcome to 🚚 Bobusang!")
 
 # Add a selectbox to the sidebar:
-# st.sidebar.success("Select a demo above.")
+# st.sidebar.success("Select a memu above.")
 
 st.markdown(
     """
