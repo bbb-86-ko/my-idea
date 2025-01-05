@@ -1,3 +1,9 @@
 streamlit
 google-generativeai
 openai
+# torch           # PyTorch (GPU 사용 시 CUDA 지원 버전 설치)
+# transformers    # Hugging Face Transformers
+# accelerate      # 모델 최적화 및 GPU 활용 (선택 사항)
+# sentencepiece   # 일부 모델에서 필요한 경우 (LLaMA 포함)
+# notion-client   # Notion API 클라이언트
+fpdf2             # PDF 라이브러리
