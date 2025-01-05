@@ -2,6 +2,7 @@ import streamlit as st
 from PIL import Image
 import io
 import google.generativeai as genai
+from datetime import datetime
 import os
 # from notion_client import Client
 import requests
@@ -87,7 +88,7 @@ if uploaded_file:
             st.download_button(
                 label="PDF 다운로드",
                 data=pdf_buffer,
-                file_name="bobusang-analysis.pdf",
+                file_name=f"bobusang-analysis-{datetime.now().strftime('%Y%m%d%H%M%S')}.pdf",
                 mime="application/pdf")
     else:
         st.warning("분석 결과가 비어 있습니다.")
