@@ -50,20 +50,21 @@ if uploaded_file:
             """
                 답변은 markdown 형식과 한국어로 부탁합니다.
                 음식 사진을 분석하여 대략적인 칼로리 정보를 아래 형식으로 알려드립니다.
-                * 요약 
-                * 예상 칼로리(전체) 
-                * 예상 칼로리(상세) 
-                * 잘한것 
-                * 부족한것 
-                * 조언
+                🧐 요약:
+                👩🏻‍💻 전체 칼로리:
+                👩🏻‍💻 상세 칼로리:
+                👍 잘한것 :
+                🤔 부족한것: 
+                🤖 조언:
                 음식 사진이 아니면 "음식 사진이 아닙니다." 라고 답변해주세요.
             """,
             image  # 실제론 이미지 자체를 전달하는 게 아닌, 이미지를 분석한 결과 등을 넣어야 할 수도 있음
         ])
+        print(gemini_response)
         gemini_analysis = gemini_response.text
 
     # 결과 출력
-    st.subheader("🧐 분석 결과")
+    st.subheader("🤖 분석 결과")
     if gemini_analysis:
         st.markdown(gemini_analysis)
     else:
