@@ -6,8 +6,8 @@ import os
 # from notion_client import Client
 import requests
 import json
-# PDF 라이브러리
-from fpdf import FPDF
+# TODO: PDF 라이브러리
+# from fpdf import FPDF
 
 # get API key from environment variable
 GEMINI_API_KEY = st.secrets["GEMINI_API_KEY"]
@@ -60,10 +60,6 @@ if uploaded_file:
         st.markdown(gemini_analysis)
     else:
         st.markdown("분석 결과 없음.")
-
-    st.write(os.path.abspath(__file__))
-    st.write(os.path.getcwd())
-    st.write(os.path.abspath("../fonts/NanumGothic/NanumGothic-Regular.ttf"))
 
     # TODO: PDF 만들기 버튼
     # # PDF 만들기 버튼
