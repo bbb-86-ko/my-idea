@@ -19,10 +19,10 @@ genai.configure(api_key=GEMINI_API_KEY)
 genaiModel = genai.GenerativeModel("gemini-1.5-flash")
 
 # Streamlit 앱 설정
-st.set_page_config(page_title="I know your kcal", page_icon="🏃🏻")
+st.set_page_config(page_title="Are you eating healthy food?", page_icon="🏃🏻")
 
 # 앱 헤더
-st.title("🏃🏻 I know your kcal")
+st.title("🏃🏻 Are you eating healthy food?")
 
 # 현재 디렉토리 출력 : /mount/src/my-idea
 # st.write(os.getcwd())
@@ -87,7 +87,7 @@ if uploaded_file:
             st.download_button(
                 label="PDF 다운로드",
                 data=pdf_buffer,
-                file_name="analysis.pdf",
+                file_name="bobusang-analysis.pdf",
                 mime="application/pdf")
     else:
         st.warning("분석 결과가 비어 있습니다.")
