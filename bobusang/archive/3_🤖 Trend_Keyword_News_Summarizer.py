@@ -9,6 +9,7 @@ import pandas as pd
 import google.generativeai as genai
 from pytrends.request import TrendReq
 from urllib.parse import quote
+import random
 
 # get API key from environment variable
 GEMINI_API_KEY = st.secrets["GEMINI_API_KEY"]
@@ -32,7 +33,7 @@ def fetch_news(stock_list):
         # yahoo_feed = feedparser.parse(yahoo_news_url)
         
         # 최신 3개 기사 가져오기
-        google_articles = google_feed.entries[:1]
+        google_articles = google_feed.entries[:5]
         # yahoo_articles = yahoo_feed.entries[:3]
         
         # 뉴스 데이터 저장
@@ -60,6 +61,32 @@ def summarize_news(article_title, article_link):
         st.error(f"Error summarizing news: {e}")
         summary = "Unable to generate summary at this time."
     return summary
+
+
+# 키워드
+def get_keywords():
+    return [
+         "삼성전자",
+        "SK하이닉스",
+        "LG에너지솔루션",
+        "삼성바이오로직스",
+        "현대차",
+        "POSCO홀딩스",
+        "기아",
+        "네이버",
+        "LG화학",
+        "삼성SDI",
+        "애플",
+        "엔비디아",
+        "마이크로소프트",
+        "알파벳",
+        "아마존",
+        "메타",
+        "테슬라",
+        "브로드컴",
+        "TSMC",
+        "버크셔 해서웨이"
+    ]
 
 # 실시간 트렌딩 검색어 가져오기
 # Pytrends 객체 생성
@@ -98,42 +125,60 @@ def get_top_charts():
         return None
 
 # Streamlit UI
-st.title("Stock News Summarizer")
+st.title("🤖 Trend Keyword News Summarizer")
 
-# 실행
-trending_keywords = get_top_charts()
-stock_list = trending_keywords['title'].tolist()
-if trending_keywords is not None:
-    st.write("📈 **Trending Keywords**")
-    st.write(", ".join(stock_list))
 
-# 주식 목록 입력
-# stock_input = st.text_area("Enter stock symbols (comma-separated):", "AAPL")
-# stock_list = [s.strip() for s in stock_input.split(",") if s.strip()]
-stock_list = trending_keywords['title'].tolist()
 
-if st.button("Fetch News"):
-    with st.spinner("Fetching news..."):
-        news_list = fetch_news(stock_list)
-        st.session_state.news_list = news_list
-        st.success("News fetched successfully!")
+# 주식 목록
+# trending_keywords = get_top_charts()
+# stock_list = trending_keywords['title'].tolist()
+# 주식 목록
+# my_list = get_keywords()
+# stock_list = random.sample(my_list, len(my_list))
+stock_list = get_keywords()
+with st.container():
+    if stock_list is not None:
+        selection = st.pills("🔑  **Trend Keywords**", stock_list)
+        if selection:
+            with st.spinner(f"Fetching news for {selection}..."):
+                news_list = fetch_news([selection])
+                st.session_state.news_list = news_list
+                st.success(f"News fetched successfully for {selection}!")
 
-# 뉴스 표시
-if "news_list" in st.session_state:
-    for idx, news in enumerate(st.session_state.news_list):
-        expander_key = f"expander_{idx}"
+# # 뉴스 표시
+with st.container():
+    if "news_list" in st.session_state:
+        news_list = st.session_state.news_list
+        print(news_list)
+        news_titles = list(map(lambda news: news['title'], news_list))
+        selected_option = st.radio(
+            "📰 What's your favorite news",
+            news_titles,
+            captions=[],
+            index=0,
+        )
+        selected_index = news_titles.index(selected_option)
         
-        with st.expander(f"📈 {news['stock']}: {news['title']}"):
-            # FIXME: expander가 열릴 때 요약을 생성하도록 수정
-            # Expander가 처음 열릴 때 요약 실행
-                # GPT 및 Gemini API 호출
-                # with st.spinner("분석을 진행 중입니다..."):
-                #     summary = summarize_news(news["title"], news["link"])
-                #     news["summary"] = summary
-                #     if summary:
-                #         st.write("🤖 Summary")
-                #         st.write(summary)
-                #     else:
-                #         st.write("🤖 It cannot be summarized.")
-                st.markdown(f"[Read Full Article]({news['link']})", unsafe_allow_html=True)
+        if selected_option:
+            with st.container():
+                with st.spinner("🤖 Summarizing..."):
+                    news = news_list[selected_index]
+                    summary = summarize_news(news["title"], news["link"])
+                    news["summary"] = summary
+                    if summary:
+                        st.markdown(
+                            f"""
+                                ----------------------
+                                ###### 🤖 **Summary**
 
+                                {summary}
+                                
+                                [Read Full Article]({news['link']})
+                                
+                                ----------------------
+                            """
+                            , unsafe_allow_html=True
+                        )
+                    else:
+                        st.text_area("🤖 It cannot be summarized.")
+                    
