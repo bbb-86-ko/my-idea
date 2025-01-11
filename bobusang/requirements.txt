@@ -9,3 +9,7 @@ openai
 fpdf2             # PDF 라이브러리
 feedparser        # RSS 피드 파싱 라이브러리
 pytrends          # Google Trends API 라이브러리
+pandas            # 데이터 처리 라이브러리
+numpy             # 수학 및 배열 연산 라이브러리
+matplotlib        # 시각화 라이브러리
+yfinance          # Yahoo Finance API 라이브러리
