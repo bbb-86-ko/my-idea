@@ -125,9 +125,7 @@ def get_top_charts():
         return None
 
 # Streamlit UI
-st.title("🤖 Trend Keyword News Summarizer")
-
-
+st.title("🤖 Trend keyword news")
 
 # 주식 목록
 # trending_keywords = get_top_charts()
