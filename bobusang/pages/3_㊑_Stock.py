@@ -66,7 +66,7 @@ def get_news_data(ticker_object):
     return ticker_object.news
 
 # 메인 앱 로직
-if st.sidebar.button("get data"):
+if st.sidebar.button("Fetch Data"):
     # yf.Ticker 객체 가져오기
     ticker_object = get_ticker_object(selected_ticker)
 
