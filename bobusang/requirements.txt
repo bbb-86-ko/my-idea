@@ -15,3 +15,4 @@ matplotlib        # 시각화 라이브러리
 yfinance          # Yahoo Finance API 라이브러리
 tweepy            # Twitter API 라이브러리
 praw              # Reddit API 라이브러리
+plotly.express    # Plotly 시각화 라이브러리
