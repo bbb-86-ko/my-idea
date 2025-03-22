@@ -6,8 +6,12 @@ import json
 # get API key from environment variable
 GOOGLE_MAPS_API_KEY = st.secrets["GEMINI_API_KEY"]
 
+
+CURRENT_DIR = os.path.dirname(__file__)
+DATA_PATH = os.path.join(CURRENT_DIR, "data/pickpocket_300.csv")
+
 # 1. CSV 파일 읽기
-df = pd.read_csv("./pages/data/pickpocket_300.csv", on_bad_lines='skip')
+df = pd.read_csv(DATA_PATH, on_bad_lines='skip')
 
 # 2. JSON으로 변환
 data = df.to_dict(orient="records")  # 리스트[딕셔너리] 형태
