@@ -1,0 +1,335 @@
+data_category_type,data_referance_link,started_at,ended_at,pickpocket_type,country,city,place,address,lat,lon,w3w
+Direct Experience,-,2017-10-01,2017-10-01,가방을 소매치기 당함,Spain,Barcelona,Gaudí Park Güell,"Gaudí Park Güell Carrer d'Olot, 7 08024 Barcelona, España.",41.41458,2.152652,
+GPT,-,-,-,-,France,Paris,Eiffel Tower,"Champ de Mars, 5 Av. Anatole France, 75007 Paris, France",48.5243,2.1772,limit.worlds.open
+SNS,-,-,-,-,Hungary,Budapest,Budapest Parliament,"Kossuth Lajos tér 1-3, 1055 Budapest, Hungary",47.5602,19.0814,marvel.brush.dome
+Direct Experience,-,2016-04-27,2016-04-28,포켓 속 소매치기,Greece,Athens,Subway Station,"375 Broadway, Athens, Greece",65.588486,161.520691,cool.night.point
+Direct Experience,-,2022-08-31,2022-08-31,핸드백 소매치기,Finland,Helsinki,Local Festival,"505 First Ave, Helsinki, Finland",67.891354,78.034981,bright.valley.closed
+Direct Experience,-,2018-06-10,2018-06-12,주머니 속 현금 소매치기,Switzerland,Zurich,Historic Landmark,"457 First Ave, Zurich, Switzerland",-68.465371,2.690734,brave.night.open
+Direct Experience,-,2019-08-12,2019-08-15,배낭 소매치기,Morocco,Marrakesh,Bus Terminal,"624 Main St, Marrakesh, Morocco",-3.574035,63.22661,neat.moon.middle
+Direct Experience,-,2017-06-13,2017-06-15,핸드백 소매치기,France,Paris,University Campus,"837 Park Ave, Paris, France",51.194463,26.831059,cool.lake.world
+Direct Experience,-,2022-10-19,2022-10-20,포켓 속 소매치기,USA,San Francisco,Central Station,"29 First Ave, San Francisco, USA",37.291206,38.346335,brave.moon.open
+Direct Experience,-,2017-03-20,2017-03-21,포켓 속 소매치기,Spain,Madrid,Train Station,"336 Market St, Madrid, Spain",-23.944127,-105.117386,quiet.night.open
+Direct Experience,-,2021-12-12,2021-12-14,휴대폰 소매치기,Australia,Sydney,Hotel Lobby,"468 Broadway, Sydney, Australia",-76.940211,-51.846935,shy.lake.end
+Direct Experience,-,2022-03-31,2022-04-01,핸드백 소매치기,Czech Republic,Prague,Subway Station,"252 High St, Prague, Czech Republic",-22.078228,122.134262,cool.forest.closed
+Direct Experience,-,2021-01-26,2021-01-26,포켓 속 소매치기,Germany,Berlin,Shopping District,"151 Park Ave, Berlin, Germany",21.847402,-95.503291,bright.forest.world
+Direct Experience,-,2021-12-10,2021-12-10,포켓 속 소매치기,Portugal,Porto,Train Station,"39 First Ave, Porto, Portugal",-87.114405,-161.454852,shy.storm.end
+Direct Experience,-,2019-01-12,2019-01-13,핸드백 소매치기,Turkey,Istanbul,City Park,"43 High St, Istanbul, Turkey",16.911093,53.808222,neat.night.middle
+Direct Experience,-,2020-06-12,2020-06-13,배낭 소매치기,Portugal,Porto,Riverwalk,"731 Main St, Porto, Portugal",12.377609,-118.852056,quiet.forest.end
+Direct Experience,-,2018-02-05,2018-02-05,가방 소매치기,Austria,Vienna,Tourist Attraction,"129 Broadway, Vienna, Austria",-20.443161,173.507998,quiet.river.closed
+Direct Experience,-,2018-08-22,2018-08-25,휴대폰 소매치기,Poland,Warsaw,Popular Restaurant,"414 Kings Rd, Warsaw, Poland",-6.618754,-172.555643,dark.river.point
+Direct Experience,-,2015-08-14,2015-08-14,포켓 속 소매치기,Switzerland,Zurich,Tourist Attraction,"628 Market St, Zurich, Switzerland",71.586258,-33.30976,shy.lake.end
+Direct Experience,-,2019-06-26,2019-06-27,주머니 속 현금 소매치기,Austria,Vienna,Bus Terminal,"642 High St, Vienna, Austria",56.047609,144.85738,bright.river.middle
+Direct Experience,-,2019-09-05,2019-09-06,배낭 소매치기,Austria,Vienna,Old Town,"358 Market St, Vienna, Austria",46.03051,178.688111,dark.sun.middle
+Direct Experience,-,2017-05-12,2017-05-13,핸드백 소매치기,Italy,Rome,Cathedral,"131 Market St, Rome, Italy",36.103509,173.13341,calm.sun.closed
+Direct Experience,-,2018-07-28,2018-07-29,핸드백 소매치기,Russia,Moscow,Popular Restaurant,"915 Broadway, Moscow, Russia",-2.627609,4.004751,cool.storm.brush
+Direct Experience,-,2018-06-10,2018-06-11,핸드백 소매치기,Mexico,Mexico City,Museum Entrance,"535 First Ave, Mexico City, Mexico",2.502045,-147.608353,quiet.valley.closed
+Direct Experience,-,2020-06-24,2020-06-24,휴대폰 소매치기,Italy,Milan,University Campus,"279 Main St, Milan, Italy",-31.040127,57.04125,fair.valley.point
+Direct Experience,-,2021-11-05,2021-11-06,포켓 속 소매치기,Switzerland,Zurich,Cathedral,"11 Broadway, Zurich, Switzerland",-46.127634,-155.449032,shy.world.end
+Direct Experience,-,2020-10-20,2020-10-21,배낭 소매치기,Greece,Athens,Tourist Attraction,"154 Park Ave, Athens, Greece",-0.11157,-22.157439,fair.night.dream
+Direct Experience,-,2016-06-26,2016-06-29,핸드백 소매치기,Austria,Vienna,Riverwalk,"72 Broadway, Vienna, Austria",-22.82336,-133.113206,calm.sun.closed
+Direct Experience,-,2018-01-05,2018-01-06,지갑 소매치기,Russia,Moscow,Concert Hall,"476 Market St, Moscow, Russia",-37.674178,-108.227126,shy.storm.point
+Direct Experience,-,2021-10-24,2021-10-27,포켓 속 소매치기,Portugal,Lisbon,Tourist Attraction,"22 Market St, Lisbon, Portugal",-61.351646,-114.394198,dark.sun.closed
+Direct Experience,-,2015-05-12,2015-05-13,휴대폰 소매치기,Argentina,Buenos Aires,Beachfront,"243 High St, Buenos Aires, Argentina",64.776592,-46.544488,quiet.sun.open
+Direct Experience,-,2015-09-06,2015-09-06,가방 소매치기,Austria,Vienna,Concert Hall,"184 Main St, Vienna, Austria",-72.197769,-85.251505,fair.forest.brush
+Direct Experience,-,2017-02-09,2017-02-11,휴대폰 소매치기,Egypt,Cairo,Subway Station,"511 Market St, Cairo, Egypt",-54.541935,146.554144,quiet.sun.brush
+Direct Experience,-,2016-08-16,2016-08-17,포켓 속 소매치기,Belgium,Brussels,University Campus,"178 Main St, Brussels, Belgium",-22.586219,153.573391,brave.river.world
+Direct Experience,-,2017-06-03,2017-06-05,주머니 속 현금 소매치기,Germany,Munich,Museum Entrance,"142 Broadway, Munich, Germany",-31.231967,-178.930837,dark.river.closed
+Direct Experience,-,2018-02-20,2018-02-21,핸드백 소매치기,Hungary,Budapest,Nightclub Street,"497 Park Ave, Budapest, Hungary",-78.260823,59.586567,shy.valley.closed
+Direct Experience,-,2016-08-04,2016-08-07,배낭 소매치기,Argentina,Buenos Aires,University Campus,"81 First Ave, Buenos Aires, Argentina",-43.761205,12.081598,quiet.sun.closed
+Direct Experience,-,2016-05-17,2016-05-19,포켓 속 소매치기,China,Beijing,Famous Market,"6 Park Ave, Beijing, China",-69.918923,64.761346,quiet.river.end
+Direct Experience,-,2016-07-22,2016-07-23,가방 소매치기,Italy,Rome,Cathedral,"364 Market St, Rome, Italy",-33.480796,-69.675225,fair.sun.closed
+Direct Experience,-,2019-05-03,2019-05-03,포켓 속 소매치기,Finland,Helsinki,Local Festival,"193 High St, Helsinki, Finland",35.64395,59.150897,cool.river.open
+Direct Experience,-,2021-07-13,2021-07-16,휴대폰 소매치기,Turkey,Istanbul,Main Square,"719 Market St, Istanbul, Turkey",54.292349,138.640204,brave.star.end
+Direct Experience,-,2022-06-19,2022-06-22,배낭 소매치기,Austria,Vienna,City Park,"803 Park Ave, Vienna, Austria",73.144501,138.836585,fair.lake.closed
+Direct Experience,-,2017-04-26,2017-04-27,휴대폰 소매치기,Egypt,Cairo,Hotel Lobby,"258 Kings Rd, Cairo, Egypt",-62.127692,113.746207,quiet.sun.home
+Direct Experience,-,2018-11-18,2018-11-19,주머니 속 현금 소매치기,Japan,Tokyo,Bus Terminal,"309 Broadway, Tokyo, Japan",-82.713402,145.03819,calm.storm.brush
+Direct Experience,-,2016-07-09,2016-07-10,주머니 속 현금 소매치기,Austria,Vienna,Concert Hall,"402 Broadway, Vienna, Austria",-87.484038,94.982295,bright.star.start
+Direct Experience,-,2016-01-22,2016-01-23,배낭 소매치기,Greece,Athens,City Park,"178 High St, Athens, Greece",28.055598,-65.095646,bright.night.start
+Direct Experience,-,2017-04-24,2017-04-25,주머니 속 현금 소매치기,Poland,Warsaw,Central Station,"207 Market St, Warsaw, Poland",-36.471807,-125.313594,calm.night.dream
+Direct Experience,-,2019-08-28,2019-08-30,가방 소매치기,Australia,Sydney,Popular Restaurant,"897 First Ave, Sydney, Australia",84.995098,-7.368478,quiet.world.middle
+Direct Experience,-,2022-08-06,2022-08-07,지갑 소매치기,Greece,Athens,University Campus,"600 Kings Rd, Athens, Greece",-9.386528,-154.865243,cool.river.home
+Direct Experience,-,2015-11-15,2015-11-16,배낭 소매치기,Portugal,Porto,Palace,"724 Market St, Porto, Portugal",45.64868,-73.001362,quiet.storm.closed
+Direct Experience,-,2021-07-12,2021-07-15,배낭 소매치기,Portugal,Lisbon,Cathedral,"458 Park Ave, Lisbon, Portugal",-66.676405,175.859727,neat.sun.closed
+Direct Experience,-,2016-06-22,2016-06-24,배낭 소매치기,Belgium,Brussels,Cathedral,"775 High St, Brussels, Belgium",-47.942056,78.10973,neat.storm.home
+Direct Experience,-,2017-12-23,2017-12-23,배낭 소매치기,Poland,Warsaw,Bus Terminal,"117 Broadway, Warsaw, Poland",-75.719695,67.90939,bright.river.closed
+Direct Experience,-,2017-01-14,2017-01-16,포켓 속 소매치기,Austria,Vienna,Museum Entrance,"316 First Ave, Vienna, Austria",-69.264489,107.24187,quiet.lake.end
+Direct Experience,-,2016-03-21,2016-03-22,배낭 소매치기,Italy,Milan,Concert Hall,"375 High St, Milan, Italy",-12.121211,-30.341877,quiet.lake.world
+Direct Experience,-,2022-03-28,2022-03-28,휴대폰 소매치기,Germany,Berlin,Old Town,"106 Broadway, Berlin, Germany",-54.384614,144.231112,dark.valley.closed
+Direct Experience,-,2020-09-30,2020-10-02,휴대폰 소매치기,Greece,Athens,Tourist Attraction,"451 Market St, Athens, Greece",-48.880937,-161.20408,quiet.lake.brush
+Direct Experience,-,2019-01-14,2019-01-17,배낭 소매치기,Germany,Munich,Riverwalk,"199 Park Ave, Munich, Germany",-24.621237,-67.528523,quiet.moon.end
+Direct Experience,-,2019-02-14,2019-02-17,핸드백 소매치기,Hungary,Budapest,Train Station,"576 Park Ave, Budapest, Hungary",-13.724311,66.584925,neat.storm.closed
+Direct Experience,-,2017-11-02,2017-11-02,핸드백 소매치기,Belgium,Brussels,Nightclub Street,"48 First Ave, Brussels, Belgium",29.48362,50.05558,quiet.valley.closed
+Direct Experience,-,2021-06-03,2021-06-05,주머니 속 현금 소매치기,Hungary,Budapest,Popular Restaurant,"746 Market St, Budapest, Hungary",32.706394,164.548365,cool.forest.middle
+Direct Experience,-,2022-03-06,2022-03-08,주머니 속 현금 소매치기,Portugal,Lisbon,Local Festival,"488 High St, Lisbon, Portugal",50.085959,103.859148,quiet.sun.brush
+Direct Experience,-,2022-11-26,2022-11-28,포켓 속 소매치기,Russia,Moscow,Historic Landmark,"744 First Ave, Moscow, Russia",-1.410329,131.955889,cool.storm.world
+Direct Experience,-,2022-02-09,2022-02-09,주머니 속 현금 소매치기,Austria,Vienna,Cathedral,"200 Market St, Vienna, Austria",16.185204,89.958951,quiet.forest.brush
+Direct Experience,-,2018-10-11,2018-10-12,핸드백 소매치기,Egypt,Cairo,Riverwalk,"20 Market St, Cairo, Egypt",36.339991,147.721375,bright.sun.middle
+Direct Experience,-,2020-10-25,2020-10-26,포켓 속 소매치기,Malaysia,Kuala Lumpur,Popular Restaurant,"480 Main St, Kuala Lumpur, Malaysia",-10.200183,135.937248,quiet.forest.dream
+Direct Experience,-,2022-06-18,2022-06-20,지갑 소매치기,Switzerland,Zurich,Old Town,"31 First Ave, Zurich, Switzerland",-45.339609,65.930821,dark.world.brush
+Direct Experience,-,2020-01-06,2020-01-06,휴대폰 소매치기,Italy,Rome,University Campus,"425 Main St, Rome, Italy",-75.494263,90.457566,wild.storm.end
+Direct Experience,-,2018-10-23,2018-10-26,휴대폰 소매치기,Turkey,Istanbul,Old Town,"78 Market St, Istanbul, Turkey",-4.067885,152.726022,dark.night.home
+Direct Experience,-,2015-11-07,2015-11-09,휴대폰 소매치기,Argentina,Buenos Aires,Subway Station,"699 High St, Buenos Aires, Argentina",-53.018135,-83.119845,shy.mountain.brush
+Direct Experience,-,2015-05-19,2015-05-19,포켓 속 소매치기,Mexico,Mexico City,Old Town,"799 Park Ave, Mexico City, Mexico",-48.988731,57.901511,cool.forest.brush
+Direct Experience,-,2017-07-29,2017-07-31,배낭 소매치기,Argentina,Buenos Aires,Main Square,"699 Market St, Buenos Aires, Argentina",16.862284,131.879337,shy.night.closed
+Direct Experience,-,2015-04-16,2015-04-17,핸드백 소매치기,Spain,Barcelona,Museum Entrance,"770 Broadway, Barcelona, Spain",-73.785743,51.856081,brave.forest.world
+Direct Experience,-,2022-03-22,2022-03-22,주머니 속 현금 소매치기,USA,New York,Hotel Lobby,"204 High St, New York, USA",-43.179145,-42.980168,bright.sun.brush
+Direct Experience,-,2017-10-27,2017-10-28,지갑 소매치기,United Kingdom,London,Historic Landmark,"971 High St, London, United Kingdom",-65.870517,47.684705,neat.world.end
+Direct Experience,-,2020-10-16,2020-10-18,주머니 속 현금 소매치기,Czech Republic,Prague,Concert Hall,"268 Main St, Prague, Czech Republic",-36.456689,-103.522051,neat.forest.dream
+Direct Experience,-,2021-02-17,2021-02-17,휴대폰 소매치기,Italy,Rome,Nightclub Street,"773 Market St, Rome, Italy",-13.940907,66.880153,shy.storm.closed
+Direct Experience,-,2019-12-07,2019-12-09,포켓 속 소매치기,Turkey,Istanbul,Concert Hall,"405 Broadway, Istanbul, Turkey",-57.785752,-87.290204,dark.valley.brush
+Direct Experience,-,2018-06-17,2018-06-20,지갑 소매치기,Philippines,Manila,Riverwalk,"89 Market St, Manila, Philippines",-62.447805,161.70447,quiet.valley.brush
+Direct Experience,-,2022-09-26,2022-09-26,휴대폰 소매치기,Spain,Barcelona,Nightclub Street,"793 Broadway, Barcelona, Spain",-21.342367,164.366161,fair.moon.closed
+Direct Experience,-,2015-09-14,2015-09-16,핸드백 소매치기,Italy,Milan,Historic Landmark,"341 High St, Milan, Italy",-88.696873,64.350881,quiet.world.dream
+Direct Experience,-,2016-02-16,2016-02-16,주머니 속 현금 소매치기,Norway,Oslo,City Park,"148 High St, Oslo, Norway",-68.633441,-7.455667,shy.storm.home
+Direct Experience,-,2019-07-16,2019-07-19,배낭 소매치기,Indonesia,Bali,Beachfront,"506 Broadway, Bali, Indonesia",-45.671027,105.773703,calm.sun.start
+Direct Experience,-,2019-03-18,2019-03-21,휴대폰 소매치기,Poland,Warsaw,Cathedral,"852 Main St, Warsaw, Poland",-13.549331,-56.590256,dark.river.brush
+Direct Experience,-,2015-02-05,2015-02-06,가방 소매치기,Canada,Vancouver,Old Town,"626 Market St, Vancouver, Canada",-57.481711,-26.161324,shy.forest.brush
+Direct Experience,-,2019-09-07,2019-09-09,가방 소매치기,New Zealand,Auckland,Cathedral,"535 Market St, Auckland, New Zealand",21.701332,11.72676,dark.star.end
+Direct Experience,-,2020-03-20,2020-03-22,지갑 소매치기,Italy,Milan,Main Square,"615 First Ave, Milan, Italy",-25.330805,4.689969,quiet.moon.start
+Direct Experience,-,2018-05-09,2018-05-10,포켓 속 소매치기,Turkey,Istanbul,Concert Hall,"19 Main St, Istanbul, Turkey",-18.558446,15.415686,calm.forest.world
+Direct Experience,-,2018-08-13,2018-08-14,휴대폰 소매치기,Argentina,Buenos Aires,Nightclub Street,"742 Market St, Buenos Aires, Argentina",-35.283816,128.220773,bright.lake.closed
+Direct Experience,-,2019-06-26,2019-06-26,배낭 소매치기,Italy,Venice,Palace,"251 Market St, Venice, Italy",-8.118707,-156.661133,dark.sun.end
+Direct Experience,-,2021-01-14,2021-01-17,휴대폰 소매치기,Switzerland,Zurich,Shopping District,"169 Broadway, Zurich, Switzerland",-14.969754,76.714398,quiet.valley.middle
+Direct Experience,-,2022-10-04,2022-10-05,지갑 소매치기,New Zealand,Auckland,Local Festival,"226 Market St, Auckland, New Zealand",-49.696133,93.554432,calm.moon.end
+Direct Experience,-,2015-07-01,2015-07-02,주머니 속 현금 소매치기,Malaysia,Kuala Lumpur,Local Festival,"598 High St, Kuala Lumpur, Malaysia",81.336206,-73.986644,shy.forest.brush
+Direct Experience,-,2017-10-04,2017-10-05,핸드백 소매치기,USA,Chicago,Historic Bridge,"586 Market St, Chicago, USA",-59.743061,42.460202,neat.moon.end
+Direct Experience,-,2015-03-20,2015-03-20,휴대폰 소매치기,USA,Chicago,Famous Market,"417 Broadway, Chicago, USA",0.122875,161.772352,calm.moon.open
+Direct Experience,-,2016-04-14,2016-04-16,가방 소매치기,Morocco,Marrakesh,Subway Station,"33 Broadway, Marrakesh, Morocco",-68.752612,60.305801,dark.storm.home
+Direct Experience,-,2018-10-09,2018-10-11,배낭 소매치기,Argentina,Buenos Aires,Riverwalk,"259 Market St, Buenos Aires, Argentina",-37.485196,-135.508647,neat.valley.world
+Direct Experience,-,2019-07-16,2019-07-19,주머니 속 현금 소매치기,France,Nice,Old Town,"697 Broadway, Nice, France",58.669403,91.914394,cool.lake.dream
+Direct Experience,-,2018-12-14,2018-12-15,가방 소매치기,Sweden,Stockholm,University Campus,"387 Market St, Stockholm, Sweden",-55.520673,-91.027689,dark.forest.point
+Direct Experience,-,2020-12-08,2020-12-09,휴대폰 소매치기,Canada,Vancouver,Hotel Lobby,"240 High St, Vancouver, Canada",9.403449,110.290942,calm.river.open
+Direct Experience,-,2016-10-19,2016-10-20,배낭 소매치기,Brazil,Rio de Janeiro,Shopping District,"586 Broadway, Rio de Janeiro, Brazil",-85.526127,109.071899,dark.sun.closed
+Direct Experience,-,2019-07-15,2019-07-16,포켓 속 소매치기,Egypt,Cairo,Main Square,"347 First Ave, Cairo, Egypt",-6.097626,28.468021,shy.sun.home
+Direct Experience,-,2019-08-31,2019-09-03,핸드백 소매치기,Italy,Venice,Nightclub Street,"247 First Ave, Venice, Italy",85.536101,67.075394,fair.mountain.start
+Direct Experience,-,2021-08-12,2021-08-14,가방 소매치기,USA,Chicago,Tourist Attraction,"549 Broadway, Chicago, USA",14.264355,-163.733513,dark.night.home
+Direct Experience,-,2020-07-09,2020-07-11,지갑 소매치기,Hungary,Budapest,Concert Hall,"227 Park Ave, Budapest, Hungary",19.472974,29.955452,quiet.river.home
+Direct Experience,-,2019-06-08,2019-06-10,배낭 소매치기,Switzerland,Zurich,Main Square,"188 Park Ave, Zurich, Switzerland",-31.916585,142.979268,quiet.lake.start
+Direct Experience,-,2019-05-30,2019-06-02,포켓 속 소매치기,Japan,Tokyo,Nightclub Street,"48 Park Ave, Tokyo, Japan",38.87551,-161.33633,fair.storm.brush
+Direct Experience,-,2016-08-24,2016-08-26,핸드백 소매치기,Thailand,Bangkok,Famous Market,"53 High St, Bangkok, Thailand",62.447536,77.35154,calm.storm.closed
+Direct Experience,-,2017-04-07,2017-04-09,가방 소매치기,USA,New York,Museum Entrance,"318 Main St, New York, USA",30.242158,-155.34774,dark.forest.brush
+Direct Experience,-,2016-09-15,2016-09-16,가방 소매치기,France,Paris,Historic Landmark,"224 Market St, Paris, France",40.223168,157.141118,dark.sun.closed
+Direct Experience,-,2022-02-13,2022-02-13,지갑 소매치기,Spain,Barcelona,City Park,"570 Park Ave, Barcelona, Spain",-60.645726,12.302225,quiet.moon.end
+Direct Experience,-,2019-06-07,2019-06-08,지갑 소매치기,Spain,Barcelona,Tourist Attraction,"625 Main St, Barcelona, Spain",6.379212,-63.681724,quiet.moon.point
+SNS,-,2017-06-25,2017-06-25,주머니 속 현금 소매치기,USA,New York,Palace,"704 Kings Rd, New York, USA",46.081517,101.067853,shy.night.closed
+SNS,-,2022-10-30,2022-10-30,포켓 속 소매치기,Finland,Helsinki,Historic Bridge,"639 Market St, Helsinki, Finland",-75.947961,129.477711,fair.moon.start
+SNS,-,2016-12-14,2016-12-16,지갑 소매치기,Belgium,Brussels,Riverwalk,"98 Broadway, Brussels, Belgium",-79.928212,94.656329,fair.valley.start
+SNS,-,2022-08-16,2022-08-17,주머니 속 현금 소매치기,Switzerland,Zurich,City Park,"718 High St, Zurich, Switzerland",30.916228,-127.390351,bright.river.brush
+SNS,-,2021-01-04,2021-01-07,배낭 소매치기,Portugal,Lisbon,Cathedral,"683 Main St, Lisbon, Portugal",42.935134,48.939855,dark.lake.brush
+SNS,-,2021-07-08,2021-07-08,주머니 속 현금 소매치기,Italy,Milan,Local Festival,"852 Market St, Milan, Italy",37.614386,-41.947276,quiet.world.start
+SNS,-,2017-07-09,2017-07-09,가방 소매치기,Russia,Moscow,Nightclub Street,"479 Market St, Moscow, Russia",-56.116208,-58.301026,cool.forest.home
+SNS,-,2022-04-13,2022-04-14,배낭 소매치기,Belgium,Brussels,Main Square,"186 Market St, Brussels, Belgium",-29.24344,-118.241296,calm.valley.start
+SNS,-,2021-07-19,2021-07-20,포켓 속 소매치기,Belgium,Brussels,Palace,"363 Park Ave, Brussels, Belgium",-45.503276,80.436314,quiet.river.closed
+SNS,-,2022-06-08,2022-06-09,가방 소매치기,South Korea,Seoul,Museum Entrance,"283 Market St, Seoul, South Korea",17.648345,53.144959,quiet.storm.brush
+SNS,-,2015-02-11,2015-02-12,주머니 속 현금 소매치기,Japan,Tokyo,University Campus,"928 Main St, Tokyo, Japan",-80.407962,95.499356,wild.sun.brush
+SNS,-,2016-12-27,2016-12-30,핸드백 소매치기,Canada,Toronto,Nightclub Street,"682 High St, Toronto, Canada",48.924085,-141.848624,dark.forest.end
+SNS,-,2018-02-16,2018-02-18,포켓 속 소매치기,Spain,Barcelona,Nightclub Street,"931 Broadway, Barcelona, Spain",-84.030664,-158.443706,fair.river.open
+SNS,-,2019-07-14,2019-07-16,배낭 소매치기,United Kingdom,London,Main Square,"82 Broadway, London, United Kingdom",-78.058721,-110.596001,quiet.sun.closed
+SNS,-,2015-06-28,2015-06-30,휴대폰 소매치기,Greece,Athens,Concert Hall,"494 Main St, Athens, Greece",-32.111286,-166.519464,bright.river.closed
+SNS,-,2016-06-09,2016-06-11,배낭 소매치기,Australia,Sydney,Central Station,"793 Market St, Sydney, Australia",-49.843511,21.644992,wild.storm.dream
+SNS,-,2021-09-30,2021-10-03,지갑 소매치기,France,Nice,Local Festival,"937 Main St, Nice, France",-68.41357,108.521669,quiet.sun.end
+SNS,-,2021-03-09,2021-03-09,휴대폰 소매치기,Hungary,Budapest,Historic Landmark,"686 Market St, Budapest, Hungary",-53.618569,-94.774811,dark.lake.home
+SNS,-,2022-05-27,2022-05-28,가방 소매치기,Switzerland,Zurich,Famous Market,"321 High St, Zurich, Switzerland",-18.399165,71.62396,bright.lake.brush
+SNS,-,2018-09-14,2018-09-16,포켓 속 소매치기,Spain,Barcelona,Famous Market,"284 Broadway, Barcelona, Spain",-1.320198,-34.78395,neat.night.point
+SNS,-,2017-05-11,2017-05-14,휴대폰 소매치기,Norway,Oslo,Bus Terminal,"268 Kings Rd, Oslo, Norway",48.069842,-59.697162,neat.river.start
+SNS,-,2019-03-18,2019-03-21,핸드백 소매치기,Indonesia,Bali,Local Festival,"562 First Ave, Bali, Indonesia",-59.965939,-132.138665,dark.world.point
+SNS,-,2021-05-11,2021-05-13,휴대폰 소매치기,Hong Kong,Hong Kong,Popular Restaurant,"28 High St, Hong Kong, Hong Kong",26.136558,-65.24441,quiet.lake.home
+SNS,-,2020-07-08,2020-07-10,핸드백 소매치기,Malaysia,Kuala Lumpur,Historic Landmark,"791 High St, Kuala Lumpur, Malaysia",-44.457544,-116.793064,brave.sun.closed
+SNS,-,2018-02-16,2018-02-17,가방 소매치기,Canada,Toronto,Subway Station,"185 High St, Toronto, Canada",64.521078,125.298934,quiet.night.closed
+SNS,-,2016-07-04,2016-07-06,핸드백 소매치기,Egypt,Cairo,Historic Landmark,"372 High St, Cairo, Egypt",32.09533,96.385164,fair.lake.middle
+SNS,-,2020-06-23,2020-06-25,휴대폰 소매치기,Argentina,Buenos Aires,Local Festival,"582 Main St, Buenos Aires, Argentina",-72.565611,-95.778707,quiet.forest.closed
+SNS,-,2020-11-25,2020-11-25,배낭 소매치기,China,Beijing,Nightclub Street,"347 Park Ave, Beijing, China",-14.468359,103.688731,quiet.star.end
+SNS,-,2018-07-11,2018-07-11,가방 소매치기,Hungary,Budapest,Shopping District,"381 Broadway, Budapest, Hungary",27.895511,55.341221,wild.storm.start
+SNS,-,2017-07-08,2017-07-09,가방 소매치기,Hong Kong,Hong Kong,Tourist Attraction,"358 High St, Hong Kong, Hong Kong",-12.767805,36.852902,dark.night.end
+SNS,-,2021-02-18,2021-02-18,포켓 속 소매치기,Belgium,Brussels,Historic Landmark,"123 First Ave, Brussels, Belgium",-15.248023,-162.928991,quiet.forest.dream
+SNS,-,2022-01-22,2022-01-23,포켓 속 소매치기,Spain,Madrid,Historic Bridge,"60 Main St, Madrid, Spain",-35.896661,70.111109,neat.world.closed
+SNS,-,2022-09-20,2022-09-22,포켓 속 소매치기,Poland,Warsaw,Concert Hall,"210 High St, Warsaw, Poland",-47.551547,78.743587,dark.sun.world
+SNS,-,2017-05-16,2017-05-16,가방 소매치기,Greece,Athens,Historic Bridge,"952 Kings Rd, Athens, Greece",-75.063186,134.146795,bright.moon.world
+SNS,-,2015-11-25,2015-11-27,가방 소매치기,Turkey,Istanbul,Concert Hall,"96 Broadway, Istanbul, Turkey",-45.799523,-62.76286,calm.lake.home
+SNS,-,2018-08-04,2018-08-06,포켓 속 소매치기,Malaysia,Kuala Lumpur,Local Festival,"124 Main St, Kuala Lumpur, Malaysia",-48.622239,138.384227,neat.star.end
+SNS,-,2018-05-05,2018-05-07,주머니 속 현금 소매치기,Spain,Madrid,City Park,"53 Market St, Madrid, Spain",-68.309197,-2.96328,quiet.world.start
+SNS,-,2016-06-18,2016-06-21,주머니 속 현금 소매치기,Italy,Milan,Train Station,"160 Main St, Milan, Italy",69.170189,178.325035,calm.world.closed
+SNS,-,2018-02-24,2018-02-26,배낭 소매치기,Italy,Venice,Train Station,"251 Kings Rd, Venice, Italy",-51.774782,54.207216,quiet.lake.start
+SNS,-,2019-06-24,2019-06-25,주머니 속 현금 소매치기,South Korea,Seoul,Subway Station,"181 Main St, Seoul, South Korea",-16.714664,-34.361821,shy.moon.home
+SNS,-,2021-01-28,2021-01-28,휴대폰 소매치기,Switzerland,Zurich,Nightclub Street,"347 First Ave, Zurich, Switzerland",-60.712079,-113.481674,shy.world.start
+SNS,-,2016-08-20,2016-08-21,핸드백 소매치기,Greece,Athens,Old Town,"385 Market St, Athens, Greece",-68.86673,29.736052,quiet.sun.dream
+SNS,-,2017-03-06,2017-03-08,포켓 속 소매치기,Denmark,Copenhagen,Central Station,"414 Park Ave, Copenhagen, Denmark",-16.670948,175.944832,shy.sun.closed
+SNS,-,2016-10-14,2016-10-16,지갑 소매치기,Brazil,Rio de Janeiro,Concert Hall,"845 Market St, Rio de Janeiro, Brazil",-6.273854,100.054661,quiet.river.closed
+SNS,-,2022-08-21,2022-08-23,가방 소매치기,China,Beijing,Riverwalk,"756 Park Ave, Beijing, China",-60.502236,60.870955,dark.sun.start
+SNS,-,2018-02-06,2018-02-06,휴대폰 소매치기,United Kingdom,London,Beachfront,"299 Park Ave, London, United Kingdom",-44.75407,82.504224,bright.night.brush
+SNS,-,2015-04-22,2015-04-24,지갑 소매치기,Russia,Moscow,City Park,"418 Market St, Moscow, Russia",-10.424815,146.418962,quiet.sun.dream
+SNS,-,2019-03-25,2019-03-26,휴대폰 소매치기,USA,New York,Train Station,"405 Park Ave, New York, USA",76.066009,-89.189012,dark.forest.middle
+SNS,-,2018-06-22,2018-06-22,지갑 소매치기,USA,San Francisco,Beachfront,"504 High St, San Francisco, USA",-45.106878,127.814655,shy.valley.start
+SNS,-,2018-02-21,2018-02-23,지갑 소매치기,Philippines,Manila,Local Festival,"694 Kings Rd, Manila, Philippines",4.754744,127.659176,dark.forest.open
+SNS,-,2015-09-15,2015-09-18,가방 소매치기,Switzerland,Zurich,Cathedral,"58 Market St, Zurich, Switzerland",38.031047,14.130459,cool.night.closed
+SNS,-,2015-06-19,2015-06-21,휴대폰 소매치기,Netherlands,Amsterdam,Concert Hall,"460 High St, Amsterdam, Netherlands",31.766991,42.316563,neat.moon.end
+SNS,-,2019-07-13,2019-07-16,휴대폰 소매치기,Switzerland,Zurich,University Campus,"833 Park Ave, Zurich, Switzerland",-38.138596,-54.602772,quiet.storm.home
+SNS,-,2017-06-02,2017-06-04,주머니 속 현금 소매치기,USA,Chicago,Local Festival,"835 High St, Chicago, USA",-31.509419,-6.993247,calm.forest.closed
+SNS,-,2016-03-10,2016-03-11,배낭 소매치기,Turkey,Istanbul,University Campus,"336 Main St, Istanbul, Turkey",85.704056,-137.580055,quiet.sun.open
+SNS,-,2022-04-29,2022-05-02,배낭 소매치기,Brazil,Rio de Janeiro,Local Festival,"382 Main St, Rio de Janeiro, Brazil",69.936895,129.192456,neat.storm.brush
+SNS,-,2018-10-13,2018-10-14,배낭 소매치기,Austria,Vienna,Riverwalk,"885 Main St, Vienna, Austria",45.965423,54.292222,quiet.river.start
+SNS,-,2021-07-19,2021-07-20,가방 소매치기,Turkey,Istanbul,Famous Market,"966 Broadway, Istanbul, Turkey",-29.229578,163.456052,fair.mountain.brush
+SNS,-,2019-03-16,2019-03-17,휴대폰 소매치기,Italy,Rome,Riverwalk,"38 High St, Rome, Italy",61.323186,-23.457922,dark.valley.brush
+SNS,-,2022-03-03,2022-03-04,포켓 속 소매치기,USA,New York,Subway Station,"785 Broadway, New York, USA",-26.856139,167.432457,dark.night.point
+SNS,-,2018-11-17,2018-11-18,가방 소매치기,Italy,Milan,Shopping District,"948 Kings Rd, Milan, Italy",68.974985,143.509737,fair.sun.dream
+SNS,-,2021-08-29,2021-08-31,휴대폰 소매치기,Portugal,Porto,Nightclub Street,"256 Main St, Porto, Portugal",40.994169,50.309251,dark.mountain.closed
+SNS,-,2022-05-16,2022-05-17,지갑 소매치기,Thailand,Bangkok,Concert Hall,"909 Broadway, Bangkok, Thailand",-15.363195,-130.140716,bright.sun.closed
+SNS,-,2015-04-23,2015-04-25,배낭 소매치기,Germany,Munich,Local Festival,"237 Broadway, Munich, Germany",41.585967,-77.645864,calm.sun.closed
+SNS,-,2015-11-20,2015-11-21,주머니 속 현금 소매치기,Thailand,Bangkok,Historic Bridge,"219 High St, Bangkok, Thailand",27.443664,131.195166,cool.world.brush
+SNS,-,2016-11-28,2016-11-29,휴대폰 소매치기,France,Paris,Historic Bridge,"99 Market St, Paris, France",-45.508195,-92.605135,dark.mountain.end
+SNS,-,2018-06-09,2018-06-11,배낭 소매치기,Canada,Vancouver,Central Station,"113 Park Ave, Vancouver, Canada",46.831819,-158.047737,quiet.forest.world
+SNS,-,2022-09-24,2022-09-24,휴대폰 소매치기,China,Beijing,Bus Terminal,"513 Park Ave, Beijing, China",71.57823,144.942602,brave.river.open
+SNS,-,2021-04-02,2021-04-04,핸드백 소매치기,United Kingdom,London,Cathedral,"612 Main St, London, United Kingdom",-58.532326,154.326367,fair.sun.home
+SNS,-,2016-12-16,2016-12-16,포켓 속 소매치기,Germany,Munich,Nightclub Street,"609 Kings Rd, Munich, Germany",47.146612,125.705249,calm.night.closed
+SNS,-,2018-10-13,2018-10-13,휴대폰 소매치기,Portugal,Porto,University Campus,"175 Park Ave, Porto, Portugal",-2.334348,-157.233385,bright.sun.open
+SNS,-,2017-06-01,2017-06-02,핸드백 소매치기,Indonesia,Bali,Cathedral,"550 Park Ave, Bali, Indonesia",17.706854,64.458954,cool.night.end
+SNS,-,2022-01-08,2022-01-08,휴대폰 소매치기,Hong Kong,Hong Kong,Historic Landmark,"107 Park Ave, Hong Kong, Hong Kong",9.260387,-56.915751,quiet.river.middle
+SNS,-,2017-07-28,2017-07-29,핸드백 소매치기,USA,New York,Popular Restaurant,"449 Broadway, New York, USA",21.384699,63.049032,quiet.valley.home
+SNS,-,2015-01-16,2015-01-18,배낭 소매치기,Belgium,Brussels,Famous Market,"120 Park Ave, Brussels, Belgium",-2.640089,-172.335168,bright.world.brush
+SNS,-,2016-10-08,2016-10-10,주머니 속 현금 소매치기,Italy,Rome,Museum Entrance,"719 First Ave, Rome, Italy",-76.810906,-125.599613,quiet.night.point
+SNS,-,2016-12-11,2016-12-14,휴대폰 소매치기,Hungary,Budapest,Bus Terminal,"200 Market St, Budapest, Hungary",-43.14851,145.389968,dark.world.home
+SNS,-,2018-02-09,2018-02-11,포켓 속 소매치기,Sweden,Stockholm,Beachfront,"285 Kings Rd, Stockholm, Sweden",80.762774,-148.098894,cool.lake.closed
+SNS,-,2017-01-19,2017-01-19,주머니 속 현금 소매치기,Brazil,Rio de Janeiro,Concert Hall,"54 Kings Rd, Rio de Janeiro, Brazil",-84.396621,76.597957,fair.sun.middle
+SNS,-,2021-04-02,2021-04-03,핸드백 소매치기,Czech Republic,Prague,Popular Restaurant,"509 Main St, Prague, Czech Republic",67.702628,45.637832,dark.night.middle
+SNS,-,2022-06-22,2022-06-25,휴대폰 소매치기,Austria,Vienna,Historic Landmark,"83 Broadway, Vienna, Austria",-25.535563,56.181253,neat.sun.closed
+SNS,-,2018-04-02,2018-04-04,주머니 속 현금 소매치기,Philippines,Manila,Cathedral,"971 First Ave, Manila, Philippines",-21.589161,160.953211,wild.sun.point
+SNS,-,2021-02-24,2021-02-25,배낭 소매치기,Mexico,Mexico City,Cathedral,"911 High St, Mexico City, Mexico",13.384471,-62.777638,quiet.night.home
+SNS,-,2021-05-06,2021-05-07,가방 소매치기,Belgium,Brussels,Popular Restaurant,"842 Broadway, Brussels, Belgium",-51.39967,8.448115,bright.moon.world
+SNS,-,2022-07-12,2022-07-13,지갑 소매치기,France,Nice,Beachfront,"666 Main St, Nice, France",-76.862249,40.015133,fair.forest.closed
+SNS,-,2020-07-25,2020-07-28,지갑 소매치기,China,Beijing,Old Town,"922 High St, Beijing, China",-18.593261,-82.176848,fair.river.brush
+SNS,-,2022-04-20,2022-04-23,휴대폰 소매치기,Germany,Berlin,Nightclub Street,"257 Market St, Berlin, Germany",-66.571516,98.257044,brave.lake.brush
+SNS,-,2020-12-17,2020-12-17,주머니 속 현금 소매치기,Italy,Venice,Cathedral,"874 Market St, Venice, Italy",43.483203,151.478383,quiet.valley.home
+SNS,-,2015-04-24,2015-04-26,휴대폰 소매치기,Switzerland,Zurich,Subway Station,"448 High St, Zurich, Switzerland",-43.105937,36.632938,fair.sun.open
+SNS,-,2020-06-20,2020-06-20,배낭 소매치기,USA,New York,Old Town,"59 Market St, New York, USA",15.044592,-96.327753,neat.river.closed
+SNS,-,2017-02-07,2017-02-09,포켓 속 소매치기,UAE,Dubai,Popular Restaurant,"949 Main St, Dubai, UAE",-3.946305,21.064419,dark.forest.closed
+SNS,-,2018-02-02,2018-02-03,포켓 속 소매치기,Italy,Rome,Local Festival,"153 Park Ave, Rome, Italy",-17.730018,-173.082775,dark.lake.brush
+SNS,-,2021-05-25,2021-05-27,주머니 속 현금 소매치기,Mexico,Mexico City,Cathedral,"248 Park Ave, Mexico City, Mexico",45.589483,-57.92599,quiet.forest.start
+SNS,-,2018-12-25,2018-12-27,가방 소매치기,USA,Chicago,City Park,"66 Broadway, Chicago, USA",-41.694804,176.951504,bright.river.middle
+SNS,-,2016-04-16,2016-04-18,주머니 속 현금 소매치기,Mexico,Mexico City,Tourist Attraction,"811 Broadway, Mexico City, Mexico",-70.921948,-168.677916,brave.world.brush
+SNS,-,2020-07-10,2020-07-13,주머니 속 현금 소매치기,USA,Chicago,University Campus,"554 High St, Chicago, USA",-35.53557,-63.829079,calm.world.end
+SNS,-,2018-09-05,2018-09-07,휴대폰 소매치기,Indonesia,Bali,Beachfront,"309 Broadway, Bali, Indonesia",-53.163221,145.830504,dark.star.closed
+SNS,-,2017-12-15,2017-12-16,포켓 속 소매치기,India,Delhi,Museum Entrance,"68 Market St, Delhi, India",9.594944,-143.930514,quiet.sun.brush
+SNS,-,2021-09-23,2021-09-24,지갑 소매치기,Germany,Munich,Famous Market,"741 Main St, Munich, Germany",-33.002325,164.949926,quiet.storm.closed
+SNS,-,2022-10-06,2022-10-07,주머니 속 현금 소매치기,USA,Chicago,Cathedral,"650 Park Ave, Chicago, USA",-15.990981,-165.93987,fair.mountain.dream
+SNS,-,2020-07-04,2020-07-07,배낭 소매치기,Argentina,Buenos Aires,Hotel Lobby,"213 Park Ave, Buenos Aires, Argentina",74.124488,60.90225,shy.sun.open
+SNS,-,2017-12-08,2017-12-08,핸드백 소매치기,United Kingdom,London,Shopping District,"74 High St, London, United Kingdom",-78.945537,-12.018379,quiet.star.start
+SNS,-,2022-03-10,2022-03-13,휴대폰 소매치기,Poland,Warsaw,Museum Entrance,"708 Market St, Warsaw, Poland",53.147696,119.639358,wild.sun.open
+SNS,-,2017-08-02,2017-08-02,배낭 소매치기,Spain,Madrid,Cathedral,"595 Broadway, Madrid, Spain",28.232011,-108.276503,dark.mountain.home
+SNS,-,2018-04-25,2018-04-28,가방 소매치기,Hong Kong,Hong Kong,Old Town,"481 Main St, Hong Kong, Hong Kong",-3.062429,-41.222146,calm.storm.world
+SNS,-,2020-11-03,2020-11-06,가방 소매치기,USA,San Francisco,Popular Restaurant,"358 Market St, San Francisco, USA",76.788877,-0.590562,bright.night.open
+SNS,-,2021-10-28,2021-10-29,포켓 속 소매치기,Japan,Tokyo,Popular Restaurant,"670 Market St, Tokyo, Japan",-38.627305,-135.96962,quiet.moon.world
+SNS,-,2015-06-15,2015-06-18,가방 소매치기,Canada,Toronto,Tourist Attraction,"850 First Ave, Toronto, Canada",29.707642,87.927982,fair.star.point
+SNS,-,2022-07-19,2022-07-21,포켓 속 소매치기,Hungary,Budapest,Riverwalk,"400 Park Ave, Budapest, Hungary",29.749084,94.376136,dark.mountain.start
+SNS,-,2022-07-26,2022-07-29,지갑 소매치기,France,Paris,Shopping District,"43 Market St, Paris, France",-49.71669,17.106754,brave.night.start
+SNS,-,2020-07-22,2020-07-24,휴대폰 소매치기,New Zealand,Auckland,Concert Hall,"203 Market St, Auckland, New Zealand",-29.466364,139.341228,cool.valley.home
+SNS,-,2020-08-25,2020-08-25,휴대폰 소매치기,New Zealand,Auckland,City Park,"130 First Ave, Auckland, New Zealand",-47.297469,-177.160381,calm.storm.home
+SNS,-,2020-07-31,2020-07-31,핸드백 소매치기,USA,San Francisco,Historic Bridge,"693 High St, San Francisco, USA",-88.115115,-77.335927,brave.star.closed
+SNS,-,2017-04-25,2017-04-26,주머니 속 현금 소매치기,Singapore,Singapore,Hotel Lobby,"192 High St, Singapore, Singapore",79.731203,-101.629767,cool.night.end
+SNS,-,2016-04-27,2016-04-28,가방 소매치기,Italy,Venice,University Campus,"712 First Ave, Venice, Italy",70.294909,36.187999,shy.river.open
+SNS,-,2017-01-01,2017-01-01,포켓 속 소매치기,Morocco,Marrakesh,Beachfront,"143 Park Ave, Marrakesh, Morocco",30.31692,-154.78843,fair.moon.closed
+SNS,-,2019-08-18,2019-08-19,배낭 소매치기,Portugal,Porto,University Campus,"957 Main St, Porto, Portugal",87.911662,-163.616214,wild.valley.end
+SNS,-,2018-04-21,2018-04-21,주머니 속 현금 소매치기,Netherlands,Amsterdam,University Campus,"583 First Ave, Amsterdam, Netherlands",-85.04586,-25.588515,brave.forest.middle
+SNS,-,2015-06-10,2015-06-13,지갑 소매치기,United Kingdom,London,Historic Landmark,"625 Park Ave, London, United Kingdom",-54.788597,-170.441774,fair.valley.end
+SNS,-,2020-02-08,2020-02-09,휴대폰 소매치기,South Korea,Seoul,Bus Terminal,"495 Kings Rd, Seoul, South Korea",-76.898199,152.650492,dark.sun.closed
+SNS,-,2021-03-27,2021-03-30,휴대폰 소매치기,USA,Chicago,Beachfront,"900 Park Ave, Chicago, USA",-79.708506,51.007456,shy.sun.brush
+SNS,-,2020-08-15,2020-08-16,가방 소매치기,Egypt,Cairo,Tourist Attraction,"508 First Ave, Cairo, Egypt",83.998722,42.175952,shy.storm.start
+GPT,-,2021-12-13,2021-12-13,주머니 속 현금 소매치기,Thailand,Bangkok,Tourist Attraction,"958 First Ave, Bangkok, Thailand",-78.495648,-148.074659,cool.star.world
+GPT,-,2016-02-11,2016-02-11,주머니 속 현금 소매치기,Denmark,Copenhagen,Tourist Attraction,"653 Kings Rd, Copenhagen, Denmark",17.432975,88.428583,shy.lake.end
+GPT,-,2015-09-19,2015-09-20,휴대폰 소매치기,Switzerland,Zurich,Tourist Attraction,"274 Market St, Zurich, Switzerland",-67.358352,-52.258169,dark.valley.brush
+GPT,-,2015-07-02,2015-07-05,포켓 속 소매치기,New Zealand,Auckland,Popular Restaurant,"209 Park Ave, Auckland, New Zealand",-70.058667,121.137345,brave.sun.point
+GPT,-,2019-10-02,2019-10-04,주머니 속 현금 소매치기,Australia,Sydney,Palace,"484 High St, Sydney, Australia",-47.890728,1.138703,brave.star.start
+GPT,-,2018-11-13,2018-11-14,핸드백 소매치기,India,Delhi,Central Station,"35 Kings Rd, Delhi, India",-89.422972,-67.029539,neat.valley.closed
+GPT,-,2021-09-05,2021-09-08,포켓 속 소매치기,Japan,Tokyo,City Park,"675 Park Ave, Tokyo, Japan",-50.116265,-81.939851,fair.valley.home
+GPT,-,2021-05-23,2021-05-25,포켓 속 소매치기,UAE,Dubai,Hotel Lobby,"448 Park Ave, Dubai, UAE",65.651191,105.913339,neat.forest.home
+GPT,-,2018-05-25,2018-05-27,핸드백 소매치기,Egypt,Cairo,Main Square,"528 Main St, Cairo, Egypt",7.692064,91.805524,cool.star.closed
+GPT,-,2022-07-13,2022-07-15,배낭 소매치기,South Korea,Seoul,Museum Entrance,"792 Market St, Seoul, South Korea",18.772642,-69.999097,dark.night.point
+GPT,-,2017-04-27,2017-04-29,가방 소매치기,United Kingdom,London,Tourist Attraction,"585 Kings Rd, London, United Kingdom",-59.866578,169.220235,shy.lake.start
+GPT,-,2019-04-09,2019-04-10,주머니 속 현금 소매치기,France,Paris,Shopping District,"227 Main St, Paris, France",-39.726898,132.679547,dark.mountain.brush
+GPT,-,2020-06-05,2020-06-07,주머니 속 현금 소매치기,Sweden,Stockholm,Central Station,"539 Market St, Stockholm, Sweden",-40.941887,108.175334,fair.mountain.end
+GPT,-,2015-08-03,2015-08-06,주머니 속 현금 소매치기,France,Nice,Train Station,"503 Park Ave, Nice, France",-42.321482,78.104843,bright.lake.point
+GPT,-,2015-02-01,2015-02-01,지갑 소매치기,United Kingdom,London,Riverwalk,"519 First Ave, London, United Kingdom",-26.590858,-131.642674,shy.valley.brush
+GPT,-,2020-07-01,2020-07-02,가방 소매치기,Portugal,Porto,Shopping District,"133 Main St, Porto, Portugal",14.422579,33.975764,shy.valley.point
+GPT,-,2021-08-16,2021-08-16,핸드백 소매치기,Australia,Sydney,Historic Landmark,"224 High St, Sydney, Australia",26.101905,179.093413,fair.night.point
+GPT,-,2015-12-22,2015-12-23,포켓 속 소매치기,Spain,Madrid,Subway Station,"632 Broadway, Madrid, Spain",-88.632313,80.592073,calm.mountain.closed
+GPT,-,2020-08-03,2020-08-03,주머니 속 현금 소매치기,Spain,Madrid,Bus Terminal,"807 Kings Rd, Madrid, Spain",-44.544044,111.320554,calm.lake.end
+GPT,-,2016-04-30,2016-04-30,주머니 속 현금 소매치기,Hungary,Budapest,Hotel Lobby,"561 Market St, Budapest, Hungary",61.005565,-0.118266,cool.storm.point
+GPT,-,2017-04-07,2017-04-08,휴대폰 소매치기,China,Beijing,Central Station,"454 First Ave, Beijing, China",-61.629203,-51.567183,brave.lake.point
+GPT,-,2016-05-29,2016-05-30,배낭 소매치기,China,Beijing,Cathedral,"692 First Ave, Beijing, China",40.692129,-18.905586,shy.storm.closed
+GPT,-,2019-03-15,2019-03-16,주머니 속 현금 소매치기,China,Beijing,Famous Market,"781 Broadway, Beijing, China",46.869151,-0.367724,fair.river.home
+GPT,-,2019-07-26,2019-07-28,휴대폰 소매치기,USA,Chicago,City Park,"909 High St, Chicago, USA",18.992296,-169.356309,calm.valley.dream
+GPT,-,2017-04-25,2017-04-25,가방 소매치기,Indonesia,Bali,Bus Terminal,"846 Market St, Bali, Indonesia",86.43713,-25.667796,dark.lake.end
+GPT,-,2015-08-04,2015-08-05,가방 소매치기,India,Delhi,Subway Station,"954 Main St, Delhi, India",52.580567,-107.982725,shy.moon.start
+GPT,-,2021-03-24,2021-03-26,가방 소매치기,France,Nice,Famous Market,"410 First Ave, Nice, France",6.122557,-160.698867,neat.valley.closed
+GPT,-,2015-10-27,2015-10-29,지갑 소매치기,Japan,Tokyo,Hotel Lobby,"76 Park Ave, Tokyo, Japan",68.315808,72.319166,neat.valley.brush
+GPT,-,2019-07-29,2019-07-29,지갑 소매치기,USA,Chicago,Shopping District,"717 Kings Rd, Chicago, USA",46.514826,170.565488,fair.sun.home
+GPT,-,2021-02-16,2021-02-17,가방 소매치기,China,Beijing,Famous Market,"62 First Ave, Beijing, China",33.714459,100.316888,brave.lake.end
+GPT,-,2016-06-14,2016-06-15,주머니 속 현금 소매치기,Germany,Munich,Central Station,"299 Broadway, Munich, Germany",-55.743595,60.260303,neat.valley.start
+GPT,-,2019-07-04,2019-07-05,휴대폰 소매치기,Poland,Warsaw,Concert Hall,"569 Kings Rd, Warsaw, Poland",6.621236,-45.194265,bright.valley.dream
+GPT,-,2017-02-13,2017-02-15,휴대폰 소매치기,China,Beijing,Palace,"537 Broadway, Beijing, China",-63.975867,-75.016883,dark.forest.open
+GPT,-,2015-11-16,2015-11-18,주머니 속 현금 소매치기,Switzerland,Zurich,Hotel Lobby,"720 Kings Rd, Zurich, Switzerland",-40.745737,-101.899939,bright.sun.end
+GPT,-,2020-04-07,2020-04-08,포켓 속 소매치기,France,Paris,Historic Landmark,"63 Kings Rd, Paris, France",52.437694,-109.992944,brave.lake.dream
+GPT,-,2020-04-30,2020-04-30,주머니 속 현금 소매치기,USA,San Francisco,Cathedral,"320 Main St, San Francisco, USA",-82.355887,-91.990764,dark.night.middle
+GPT,-,2018-05-25,2018-05-28,배낭 소매치기,Poland,Warsaw,Beachfront,"360 Park Ave, Warsaw, Poland",-35.67443,0.353633,cool.night.start
+GPT,-,2016-08-31,2016-09-01,가방 소매치기,Australia,Sydney,Popular Restaurant,"8 Park Ave, Sydney, Australia",69.762066,-32.197618,bright.moon.middle
+GPT,-,2015-05-07,2015-05-08,포켓 속 소매치기,Argentina,Buenos Aires,Palace,"873 First Ave, Buenos Aires, Argentina",49.628917,100.721139,cool.river.middle
+GPT,-,2021-07-13,2021-07-13,포켓 속 소매치기,USA,New York,Local Festival,"720 Park Ave, New York, USA",61.242458,83.766964,calm.lake.open
+GPT,-,2020-11-19,2020-11-19,배낭 소매치기,Morocco,Marrakesh,Shopping District,"675 High St, Marrakesh, Morocco",9.989313,-104.441481,quiet.moon.middle
+GPT,-,2021-04-14,2021-04-15,핸드백 소매치기,China,Beijing,Local Festival,"269 Kings Rd, Beijing, China",48.390748,49.093027,neat.storm.point
+GPT,-,2015-01-03,2015-01-05,주머니 속 현금 소매치기,Switzerland,Zurich,Famous Market,"481 Broadway, Zurich, Switzerland",-12.753453,-83.86411,bright.mountain.middle
+GPT,-,2016-05-26,2016-05-27,휴대폰 소매치기,Russia,Moscow,Riverwalk,"925 First Ave, Moscow, Russia",51.878008,-65.782266,brave.mountain.start
+GPT,-,2015-03-01,2015-03-01,가방 소매치기,Canada,Toronto,Shopping District,"348 Main St, Toronto, Canada",51.638209,-10.680096,bright.night.home
+GPT,-,2022-08-31,2022-09-01,배낭 소매치기,Argentina,Buenos Aires,Local Festival,"535 Broadway, Buenos Aires, Argentina",-14.03345,-13.666019,brave.star.world
+GPT,-,2016-05-19,2016-05-21,가방 소매치기,Poland,Warsaw,Main Square,"606 High St, Warsaw, Poland",31.318639,60.161799,quiet.forest.end
+GPT,-,2021-07-11,2021-07-11,가방 소매치기,Italy,Rome,Train Station,"41 Park Ave, Rome, Italy",0.294473,-176.04015,neat.storm.point
+GPT,-,2016-07-26,2016-07-29,핸드백 소매치기,Argentina,Buenos Aires,Palace,"940 Market St, Buenos Aires, Argentina",-85.635099,-178.789201,brave.storm.home
+GPT,-,2015-01-14,2015-01-16,지갑 소매치기,USA,San Francisco,Popular Restaurant,"608 Market St, San Francisco, USA",-5.71166,113.377149,wild.valley.brush
+GPT,-,2018-04-25,2018-04-28,가방 소매치기,Mexico,Mexico City,Popular Restaurant,"736 Broadway, Mexico City, Mexico",-15.911659,-27.700673,calm.valley.brush
+GPT,-,2019-12-09,2019-12-09,주머니 속 현금 소매치기,South Korea,Seoul,Historic Landmark,"553 First Ave, Seoul, South Korea",55.263968,163.495138,cool.valley.dream
+GPT,-,2017-08-17,2017-08-18,휴대폰 소매치기,Morocco,Marrakesh,Shopping District,"906 High St, Marrakesh, Morocco",43.874648,89.280212,neat.storm.closed
+GPT,-,2017-04-09,2017-04-11,주머니 속 현금 소매치기,Norway,Oslo,Hotel Lobby,"247 Kings Rd, Oslo, Norway",3.327396,10.556558,wild.mountain.brush
+GPT,-,2020-02-05,2020-02-07,휴대폰 소매치기,Portugal,Lisbon,Popular Restaurant,"859 Kings Rd, Lisbon, Portugal",-38.566436,79.924714,fair.forest.point
+GPT,-,2022-03-01,2022-03-01,주머니 속 현금 소매치기,New Zealand,Auckland,Popular Restaurant,"170 High St, Auckland, New Zealand",-66.495009,-22.736731,wild.river.middle
+GPT,-,2022-08-02,2022-08-04,가방 소매치기,South Korea,Seoul,Bus Terminal,"626 Main St, Seoul, South Korea",53.193013,-10.059877,dark.lake.home
+GPT,-,2022-07-15,2022-07-15,휴대폰 소매치기,Morocco,Marrakesh,Historic Bridge,"203 Market St, Marrakesh, Morocco",-3.085326,-1.230805,calm.valley.closed
+GPT,-,2018-03-14,2018-03-15,지갑 소매치기,Italy,Rome,Subway Station,"889 Market St, Rome, Italy",37.074422,94.411066,neat.river.end
+GPT,-,2016-12-16,2016-12-18,지갑 소매치기,Finland,Helsinki,Nightclub Street,"828 Park Ave, Helsinki, Finland",-4.542086,74.451412,brave.valley.start
+GPT,-,2016-04-27,2016-04-30,핸드백 소매치기,Mexico,Mexico City,Nightclub Street,"184 Kings Rd, Mexico City, Mexico",-31.84565,-45.871891,bright.moon.end
+GPT,-,2018-01-23,2018-01-24,포켓 속 소매치기,Singapore,Singapore,Hotel Lobby,"750 Market St, Singapore, Singapore",-55.399247,-159.561077,shy.mountain.brush
+GPT,-,2020-08-11,2020-08-12,가방 소매치기,Italy,Venice,Train Station,"10 High St, Venice, Italy",45.324289,37.282294,cool.night.dream
+GPT,-,2015-08-30,2015-08-30,배낭 소매치기,France,Nice,Hotel Lobby,"595 Market St, Nice, France",-22.866522,-68.833791,quiet.forest.middle
+GPT,-,2018-01-22,2018-01-25,가방 소매치기,Russia,Moscow,Bus Terminal,"366 High St, Moscow, Russia",9.536537,29.530507,brave.lake.point
+GPT,-,2018-06-08,2018-06-10,휴대폰 소매치기,Thailand,Bangkok,Old Town,"417 Park Ave, Bangkok, Thailand",-11.571481,-103.234681,cool.river.world
+GPT,-,2015-08-13,2015-08-15,지갑 소매치기,Greece,Athens,Concert Hall,"578 High St, Athens, Greece",68.73,66.802375,bright.river.closed
+GPT,-,2015-11-28,2015-11-28,핸드백 소매치기,France,Paris,University Campus,"897 First Ave, Paris, France",-83.103809,-19.234459,shy.mountain.end
+GPT,-,2021-05-31,2021-06-01,배낭 소매치기,Belgium,Brussels,Concert Hall,"100 Park Ave, Brussels, Belgium",4.846561,-100.822094,dark.storm.world
+GPT,-,2016-02-05,2016-02-08,휴대폰 소매치기,USA,San Francisco,Famous Market,"506 Main St, San Francisco, USA",-21.968656,156.063584,calm.moon.home
+GPT,-,2019-10-14,2019-10-14,주머니 속 현금 소매치기,Japan,Tokyo,Beachfront,"674 Main St, Tokyo, Japan",39.987481,72.998561,calm.lake.open
+GPT,-,2020-06-02,2020-06-02,휴대폰 소매치기,Japan,Tokyo,Palace,"629 High St, Tokyo, Japan",8.204384,-84.538116,cool.lake.closed
+GPT,-,2015-03-15,2015-03-15,주머니 속 현금 소매치기,Germany,Berlin,Riverwalk,"320 First Ave, Berlin, Germany",67.430198,142.280983,wild.forest.start
+GPT,-,2019-09-29,2019-10-01,지갑 소매치기,Mexico,Mexico City,Concert Hall,"866 Kings Rd, Mexico City, Mexico",-28.521111,16.255693,shy.moon.end
+GPT,-,2015-05-07,2015-05-09,지갑 소매치기,New Zealand,Auckland,Popular Restaurant,"972 Kings Rd, Auckland, New Zealand",38.155875,82.730747,brave.sun.dream
+GPT,-,2017-07-09,2017-07-11,휴대폰 소매치기,France,Paris,Concert Hall,"234 First Ave, Paris, France",66.195315,131.719089,neat.star.world
+GPT,-,2018-03-12,2018-03-15,핸드백 소매치기,Denmark,Copenhagen,Beachfront,"983 Park Ave, Copenhagen, Denmark",53.578942,-169.534868,neat.valley.start
+GPT,-,2015-02-20,2015-02-23,핸드백 소매치기,United Kingdom,London,Bus Terminal,"813 High St, London, United Kingdom",17.858204,6.075477,brave.storm.home
+GPT,-,2021-01-04,2021-01-04,휴대폰 소매치기,Netherlands,Amsterdam,Bus Terminal,"152 Kings Rd, Amsterdam, Netherlands",10.701748,3.168954,cool.lake.world
+GPT,-,2021-01-13,2021-01-14,배낭 소매치기,Philippines,Manila,Hotel Lobby,"12 Market St, Manila, Philippines",-59.633579,160.620907,neat.valley.closed
+GPT,-,2015-10-22,2015-10-24,포켓 속 소매치기,China,Beijing,Popular Restaurant,"64 Broadway, Beijing, China",-48.725671,17.599352,dark.sun.end
+GPT,-,2019-08-26,2019-08-28,포켓 속 소매치기,Germany,Berlin,Cathedral,"787 Broadway, Berlin, Germany",-0.368467,-9.738113,calm.sun.home
+GPT,-,2019-07-16,2019-07-16,지갑 소매치기,Netherlands,Amsterdam,Nightclub Street,"159 Kings Rd, Amsterdam, Netherlands",-9.830176,-151.430028,neat.valley.point
+GPT,-,2018-08-02,2018-08-04,주머니 속 현금 소매치기,Spain,Madrid,Subway Station,"277 Park Ave, Madrid, Spain",44.230096,19.099322,calm.lake.dream
+GPT,-,2020-01-04,2020-01-07,가방 소매치기,Malaysia,Kuala Lumpur,Local Festival,"997 Kings Rd, Kuala Lumpur, Malaysia",-86.598215,102.535128,neat.valley.point
+GPT,-,2017-11-30,2017-12-02,포켓 속 소매치기,Netherlands,Amsterdam,Bus Terminal,"505 First Ave, Amsterdam, Netherlands",84.718384,-6.629026,cool.night.closed
+GPT,-,2020-01-16,2020-01-18,핸드백 소매치기,Thailand,Bangkok,Museum Entrance,"159 First Ave, Bangkok, Thailand",1.873687,138.740431,fair.storm.open
+GPT,-,2017-08-07,2017-08-09,포켓 속 소매치기,USA,San Francisco,Museum Entrance,"875 Broadway, San Francisco, USA",-11.243948,117.14528,quiet.lake.middle
+GPT,-,2017-05-16,2017-05-17,휴대폰 소매치기,Hungary,Budapest,Old Town,"296 Market St, Budapest, Hungary",69.495952,169.866317,dark.valley.point
+GPT,-,2022-05-04,2022-05-06,가방 소매치기,Hungary,Budapest,Historic Landmark,"172 Market St, Budapest, Hungary",-73.055323,-87.913882,cool.moon.middle
+GPT,-,2015-05-15,2015-05-18,포켓 속 소매치기,Malaysia,Kuala Lumpur,University Campus,"527 Kings Rd, Kuala Lumpur, Malaysia",56.189772,-174.073576,calm.star.home
+GPT,-,2020-05-14,2020-05-14,핸드백 소매치기,Belgium,Brussels,Subway Station,"362 Main St, Brussels, Belgium",-78.705099,-139.274066,bright.sun.end
+GPT,-,2022-06-02,2022-06-03,가방 소매치기,Egypt,Cairo,Nightclub Street,"658 High St, Cairo, Egypt",5.278068,144.378259,dark.sun.brush
+GPT,-,2021-04-07,2021-04-08,주머니 속 현금 소매치기,Greece,Athens,Historic Landmark,"216 First Ave, Athens, Greece",9.026832,142.022318,brave.forest.open
+GPT,-,2020-03-21,2020-03-23,가방 소매치기,Egypt,Cairo,Famous Market,"215 Park Ave, Cairo, Egypt",37.961143,9.593265,quiet.lake.brush
+GPT,-,2019-01-07,2019-01-10,포켓 속 소매치기,USA,New York,Beachfront,"625 Broadway, New York, USA",-81.978506,-70.683842,shy.moon.start
+GPT,-,2017-08-14,2017-08-17,주머니 속 현금 소매치기,Hong Kong,Hong Kong,City Park,"880 Kings Rd, Hong Kong, Hong Kong",-69.329842,160.286044,bright.river.point
+GPT,-,2021-08-27,2021-08-30,주머니 속 현금 소매치기,India,Delhi,Hotel Lobby,"198 Kings Rd, Delhi, India",77.825579,-110.749768,fair.mountain.point
+GPT,-,2018-12-30,2019-01-01,배낭 소매치기,Italy,Rome,Famous Market,"231 First Ave, Rome, Italy",62.67432,-105.372147,shy.star.brush
+GPT,-,2017-05-12,2017-05-14,휴대폰 소매치기,Brazil,Rio de Janeiro,Tourist Attraction,"386 First Ave, Rio de Janeiro, Brazil",-65.679013,-86.576066,quiet.sun.dream
