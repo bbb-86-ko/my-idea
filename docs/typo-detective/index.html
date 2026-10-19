@@ -1,0 +1,660 @@
+<!doctype html>
+<html lang="ko"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#f2eee5">
+<meta name="description" content="오타 탐정 — 하루 3분, 13개 언어 맞춤법 게임. 오타를 찾아 학습하고 복습하세요.">
+<meta name="robots" content="index, follow">
+<title>오타 탐정 · Typo Detective — BBB</title>
+<style>:root{color-scheme:light;--paper:#fbf8f0;--canvas:#f2eee5;--ink:#1d2333;--muted:#6d716e;--red:#c2301e;--green:#1e7548;--highlight:#ffe45c;--rule:#dfd8c9;--white:#fffdf8;--accent:#294b42;--shadow:0 22px 65px rgba(24,30,28,.10)}
+:root[data-theme="dark"]{color-scheme:dark;--paper:#1d2026;--canvas:#12141a;--ink:#f4f0e6;--muted:#aaa79d;--red:#ff796b;--green:#8bc7a3;--highlight:#f3d158;--rule:#3c4149;--white:#272b31;--accent:#8bc7a3;--shadow:0 22px 65px rgba(0,0,0,.25)}
+@media(prefers-color-scheme:dark){:root[data-theme="auto"]{color-scheme:dark;--paper:#1d2026;--canvas:#12141a;--ink:#f4f0e6;--muted:#aaa79d;--red:#ff796b;--green:#8bc7a3;--highlight:#f3d158;--rule:#3c4149;--white:#272b31;--accent:#8bc7a3;--shadow:0 22px 65px rgba(0,0,0,.25)}}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--canvas);color:var(--ink);font-family:ui-sans-serif,system-ui,-apple-system,"Apple SD Gothic Neo","Noto Sans",Arial,sans-serif;font-size:15px}button,input,textarea{font:inherit}button{cursor:pointer}button:disabled{opacity:.37;cursor:not-allowed}button:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid var(--green);outline-offset:3px}button{touch-action:manipulation}#app{min-height:100dvh}.shell{width:min(1270px,100%);margin:0 auto;padding:0 42px}.site-head{height:94px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--rule)}.brand{border:0;background:transparent;display:flex;gap:11px;align-items:center;padding:0;color:var(--ink)}.brand-icon{font-size:33px;border:2px solid var(--ink);display:grid;place-items:center;width:43px;height:43px;line-height:1;font-family:Georgia,serif;transform:rotate(-5deg)}.brand-wordmark{font-weight:900;font-size:17px;letter-spacing:-.7px;text-align:start;line-height:.9}.brand-wordmark span{display:block;font-weight:400;letter-spacing:3.9px;font-size:9px;margin-top:7px}.head-actions{display:flex;gap:12px;align-items:center}.head-chip{border:1px solid var(--rule);background:var(--paper);color:var(--ink);padding:10px 14px;font-weight:650;border-radius:4px;display:flex;gap:14px;align-items:center}.head-chip span{color:var(--muted)}.icon-button{background:transparent;border:1px solid var(--rule);color:var(--ink);width:42px;height:42px;border-radius:4px;font-size:21px}.case-tag{font-family:monospace;font-size:12px;letter-spacing:2px;color:var(--muted)}.home-layout{display:grid;grid-template-columns:minmax(0,.94fr) minmax(0,1fr);gap:clamp(28px,6vw,92px);padding:54px 0 38px}.intro-column{position:relative;padding:6px 0 24px}.top-caption{font-size:11px;font-family:ui-monospace,monospace;letter-spacing:1px;color:var(--muted);font-weight:750;display:flex;gap:10px;align-items:center}.dot{width:9px;height:9px;border-radius:50%;background:var(--red);box-shadow:0 0 0 3px color-mix(in srgb,var(--red) 12%,transparent)}.caption-line{height:1px;flex:1;background:var(--rule)}.hero-mark{position:absolute;top:65px;right:33px;color:var(--red);font-size:60px;transform:rotate(16deg);font-weight:200}.hero-title{font-size:clamp(62px,6.7vw,99px);line-height:1.14;font-weight:800;letter-spacing:-.085em;margin:64px 0 24px;max-width:540px;word-break:keep-all}.hero-title em{font-family:Georgia,"Times New Roman",serif;font-weight:550;font-style:italic;color:var(--red);letter-spacing:-.08em}.hero-copy{max-width:350px;font-size:17px;line-height:1.8;color:var(--muted);margin:0 0 48px}.casebook{background:var(--paper);border:1px solid var(--ink);max-width:480px;transform:rotate(-1deg);box-shadow:7px 8px 0 color-mix(in srgb,var(--ink) 8%,transparent)}.casebook-head,.casebook-foot{display:flex;justify-content:space-between;gap:8px;padding:16px 25px;font-size:10px;letter-spacing:1.1px;font-family:ui-monospace,monospace;font-weight:700}.casebook-head{border-bottom:1px dashed var(--rule)}.casebook-body{padding:29px 25px 26px}.casebook-main{font-family:Georgia,"Noto Serif KR",serif;font-weight:700;font-size:31px;letter-spacing:-.04em}.casebook-body p{font-size:13px;color:var(--muted);line-height:1.7;margin:12px 0 24px}.primary-cta{background:var(--ink);border:1px solid var(--ink);color:var(--paper);font-weight:750;padding:16px 20px;min-height:54px;display:flex;justify-content:space-between;align-items:center;gap:25px;border-radius:3px;transition:transform .2s,background .2s}.primary-cta:hover:enabled{transform:translateY(-2px)}.primary-cta span{font-size:23px;font-weight:350}.casebook .primary-cta{width:100%}.casebook-foot{border-top:1px dashed var(--rule);color:var(--muted)}.local-note{font-size:11px;color:var(--muted);margin-top:25px}.menu-column{min-width:0}.section-head{display:flex;justify-content:space-between;align-items:end;gap:12px;margin:5px 0 21px}.eyebrow{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:11px;letter-spacing:2px;font-weight:750;color:var(--muted);margin:0 0 10px}.section-head h2{font-size:28px;margin:0;letter-spacing:-.05em}.number-badge{border:1px solid var(--rule);padding:7px 10px;font:10px ui-monospace,monospace;color:var(--muted);white-space:nowrap}.difficulty{display:flex;align-items:center;justify-content:space-between;padding:13px 0 18px;border-bottom:1px solid var(--rule);color:var(--muted);font-size:13px}.difficulty-tabs{display:flex;gap:5px;border:1px solid var(--rule);padding:3px;border-radius:4px}.difficulty-tabs button{background:transparent;border:0;border-radius:2px;padding:7px 15px;color:var(--muted);font-size:12px;font-weight:700}.difficulty-tabs button.selected{background:var(--ink);color:var(--paper)}.stats-row{display:grid;grid-template-columns:repeat(3,1fr);padding:25px 0 26px}.stat-cell{padding-inline:20px;border-inline-start:1px solid var(--rule)}.stat-cell:first-child{border-inline-start:0;padding-inline-start:0}.stat-number{font-family:Georgia,serif;font-size:35px;font-weight:700;line-height:1.15;font-variant-numeric:tabular-nums}.stat-number small{font-family:ui-monospace,monospace;color:var(--muted);font-size:12px}.stat-label{font-size:11px;color:var(--muted);margin-top:9px}.modes-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.mode-tile{min-height:102px;position:relative;border:1px solid var(--rule);background:var(--paper);color:var(--ink);border-radius:4px;display:flex;align-items:center;gap:13px;text-align:start;padding:20px 16px;transition:box-shadow .2s,transform .2s,border-color .2s}.mode-tile:hover:enabled{border-color:var(--ink);box-shadow:3px 4px 0 color-mix(in srgb,var(--ink) 8%,transparent);transform:translateY(-1px)}.mode-featured{background:var(--ink);color:var(--paper);border-color:var(--ink)}.mode-icon{width:43px;height:43px;display:grid;place-items:center;font:25px Georgia,serif;flex:none;border:1px solid currentColor;opacity:.9;border-radius:3px}.mode-name{font-size:15px;font-weight:750;letter-spacing:-.02em}.mode-arrow{margin-inline-start:auto;align-self:flex-start;font-size:19px;opacity:.65}.mode-tile small{position:absolute;bottom:11px;right:15px;font-family:monospace;font-size:9px;color:var(--red);letter-spacing:1px}.tile-count{position:absolute;top:5px;left:45px;border-radius:30px;background:var(--red);color:#fff;font-size:10px;min-width:19px;height:19px;display:grid;place-items:center}.secondary-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:19px}.link-action{background:transparent;color:var(--ink);border:1px solid var(--rule);font-weight:750;font-size:12px;padding:14px;flex:1;display:flex;justify-content:space-between;align-items:center;white-space:nowrap}.link-action span{font-size:15px}.mini-foot{margin-top:37px;padding-top:18px;border-top:1px solid var(--rule);display:flex;justify-content:space-between;gap:15px;font:10px ui-monospace,monospace;color:var(--muted);letter-spacing:1px}
+/* Play screen */
+.playing{min-height:100dvh}.game-layout{width:min(740px,100%);margin:auto;padding:26px 0 65px}.play-top{display:flex;justify-content:space-between;align-items:center;gap:15px;font:11px ui-monospace,monospace;color:var(--muted);letter-spacing:1px}.play-top strong{font-size:19px;color:var(--ink);margin-inline-start:8px}.back-link{background:none;border:0;color:var(--ink);font-weight:700;padding:8px 0;font-size:12px}.game-meta{display:flex;justify-content:space-between;align-items:end;gap:15px;padding-top:42px}.game-meta h1{margin:0;font-size:clamp(22px,4vw,32px);letter-spacing:-.04em}.hearts{display:flex;gap:5px;font-size:28px;min-width:93px;justify-content:end}.heart.full{color:var(--red)}.heart.empty{color:var(--rule)}.time-count{font:700 27px ui-monospace,monospace;color:var(--red)}.progress-track{background:var(--rule);height:5px;margin-top:24px;overflow:hidden}.progress-fill{height:100%;background:var(--red);transition:width .35s}.paper-wrap{position:relative;padding-top:38px}.paper-pin{position:absolute;z-index:1;left:50%;top:26px;color:var(--ink);font-size:18px;transform:translateX(-50%)}.paper-card{background:var(--paper);border:1px solid var(--rule);box-shadow:var(--shadow);padding:0 35px;min-height:432px;position:relative;overflow:hidden}.paper-card:before{content:"";position:absolute;left:54px;top:0;bottom:0;border-left:2px solid color-mix(in srgb,var(--red) 45%,transparent);opacity:.75}.paper-label,.paper-foot{position:relative;z-index:1;display:flex;justify-content:space-between;color:var(--muted);font:11px ui-monospace,monospace;letter-spacing:1.3px}.paper-label{border-bottom:1px solid var(--rule);padding:24px 0}.paper-label span{color:var(--red);font-size:19px}.paper-foot{border-top:1px dashed var(--rule);padding:18px 0;font-size:10px}.case-word{min-height:196px;display:grid;place-items:center;position:relative;z-index:1;padding:32px 22px}.word-content{font-family:Georgia,"Noto Serif KR","Batang",serif;font-size:clamp(35px,7vw,63px);font-weight:650;text-align:center;word-break:break-word;line-height:1.35;letter-spacing:-.04em}.word-gap{font-size:clamp(28px,6vw,49px)}.word-content.rtl{direction:rtl}.choice-list{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:4px auto 30px;max-width:560px;position:relative;z-index:1}.answer-choice{border:1px solid var(--rule);background:var(--white);color:var(--ink);border-radius:4px;min-height:84px;padding:16px;display:flex;gap:12px;align-items:center;text-align:start;font-family:Georgia,"Noto Serif KR",serif;font-size:clamp(15px,2.4vw,22px);font-weight:600;overflow-wrap:anywhere}.answer-choice:hover:enabled{border-color:var(--ink);background:color-mix(in srgb,var(--highlight) 17%,var(--white))}.choice-index{width:22px;height:22px;display:grid;place-items:center;border:1px solid var(--rule);color:var(--muted);font:12px ui-monospace,monospace;flex:none;border-radius:3px}.choice-arrow{margin-inline-start:auto;align-self:flex-start;font:17px sans-serif;color:var(--muted)}.binary .answer-choice{font-family:ui-sans-serif,system-ui,sans-serif;font-size:17px}.binary .red-choice{border-color:color-mix(in srgb,var(--red) 40%,var(--rule));color:var(--red)}.sentence-paper{position:relative;z-index:1;padding:38px 16px 25px;min-height:225px}.scene-paper{border:1px solid var(--rule);background:var(--white);margin:25px 0 20px;padding:0 20px 20px;min-height:160px}.scene-top{display:flex;justify-content:space-between;background:var(--canvas);padding:14px 12px;font:10px ui-monospace,monospace;color:var(--muted);margin:0 -20px 15px;border-bottom:1px solid var(--rule)}.sentence-content{font-family:Georgia,"Noto Serif KR",serif;font-size:clamp(23px,4vw,31px);line-height:2.25;word-break:break-word;white-space:pre-wrap}.sentence-content.rtl{direction:rtl}.token{display:inline;background:transparent;border:0;border-bottom:2px dotted var(--rule);padding:0 2px;color:var(--ink);font:inherit;line-height:inherit;border-radius:0}.token:hover{background:color-mix(in srgb,var(--highlight) 40%,transparent)}.none-choice{position:relative;z-index:1;border:1px solid var(--ink);background:var(--white);color:var(--ink);min-height:52px;width:100%;margin-bottom:28px;font-weight:750;display:flex;justify-content:center;align-items:center;gap:12px}.audio-play{border:2px solid var(--ink);background:var(--white);width:140px;height:140px;border-radius:50%;display:flex;justify-content:center;align-items:center;flex-direction:column;color:var(--ink);gap:5px}.audio-play span{font-size:62px;line-height:1}.audio-play small{font-size:12px;font-family:system-ui}.mine-countdown{margin:17px 0 0;background:var(--rule);height:7px;border-radius:10px;overflow:hidden}.mine-bar{height:100%;width:100%;background:var(--red)}.game-hint{text-align:center;font:11px ui-monospace,monospace;color:var(--muted);margin:24px 0}.feedback-scrim{position:fixed;inset:0;background:rgba(9,13,18,.65);display:grid;place-items:center;padding:20px;z-index:25;overflow:auto}.feedback-card{background:var(--paper);width:min(460px,100%);padding:29px 33px 28px;box-shadow:0 30px 100px rgba(0,0,0,.24);border:1px solid var(--rule);text-align:center;position:relative;animation:pop .25s ease-out}.stamp{width:128px;height:128px;border:5px double var(--green);border-radius:50%;display:flex;justify-content:center;align-items:center;flex-direction:column;margin:0 auto 23px;color:var(--green);font-size:51px;transform:rotate(-7deg);font-weight:950;line-height:1}.stamp span{font-size:13px;letter-spacing:1px;margin-top:2px}.feedback-bad .stamp{color:var(--red);border-color:var(--red)}.feedback-card .eyebrow{margin-bottom:20px}.verdict-word{font-family:Georgia,"Noto Serif KR",serif;font-size:clamp(27px,5vw,37px);font-weight:700;margin:0 0 24px;overflow-wrap:anywhere}.verdict-word mark{background:linear-gradient(transparent 54%,var(--highlight) 54%);color:var(--ink);padding:0 3px}.wrong-spelling{display:block;color:var(--red);font-size:19px;margin-top:10px;text-decoration:line-through}.rule-box{background:var(--white);border:1px solid var(--rule);padding:16px 18px;text-align:start}.rule-box span{font:11px ui-monospace,monospace;color:var(--green);font-weight:750}.rule-box p{margin:9px 0 0;font-size:15px;line-height:1.7}.feedback-actions{margin-top:20px;display:flex;align-items:center;flex-direction:column;gap:8px}.feedback-actions .primary-cta{width:100%}.quiet-link{font-size:12px;color:var(--muted);border:0;background:none;padding:8px}.auto-message{font:19px monospace;color:var(--green);height:34px}@keyframes pop{from{opacity:.3;transform:translateY(20px) scale(.95)}to{opacity:1;transform:translateY(0) scale(1)}}
+/* Results */
+.result-layout{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(260px,.8fr);gap:28px;padding:65px 0 70px}.result-file{background:var(--paper);border:1px solid var(--rule);position:relative;padding:37px 42px}.result-label{font:11px ui-monospace,monospace;letter-spacing:1.7px;color:var(--muted);border-bottom:1px dashed var(--rule);padding-bottom:20px}.result-seal{position:absolute;right:45px;top:80px;width:88px;height:88px;border:5px double var(--green);color:var(--green);border-radius:50%;display:grid;place-items:center;font-size:53px;transform:rotate(-13deg)}.result-file>.eyebrow{margin-top:51px}.result-file h1{font-size:clamp(39px,5.5vw,63px);letter-spacing:-.08em;margin:10px 0 15px}.result-file h1 span{color:var(--red)}.big-score{font-family:Georgia,serif;font-size:clamp(60px,10vw,103px);line-height:1.2;font-weight:700;letter-spacing:-.05em}.big-score small{font:12px ui-monospace,monospace;color:var(--muted);letter-spacing:1px}.result-triplet{display:grid;grid-template-columns:repeat(3,1fr);margin-top:20px;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);padding:22px 0}.result-triplet div{display:flex;flex-direction:column;gap:6px;padding-inline:12px;border-inline-start:1px solid var(--rule)}.result-triplet div:first-child{padding-inline-start:0;border-inline-start:0}.result-triplet strong{font:700 33px Georgia,serif}.result-triplet span{font-size:12px;color:var(--muted)}.result-grid{display:flex;flex-wrap:wrap;gap:5px;margin-top:26px}.result-grid span{display:grid;place-items:center;width:27px;height:27px;font-size:29px}.green-square{color:var(--green)}.red-square{color:var(--red)}.result-hint{font-size:12px;color:var(--muted);margin:10px 0 23px}.result-actions{display:grid;grid-template-columns:1fr 1fr;gap:10px}.result-actions .primary-cta{grid-column:span 2}.outline-cta,.plain-cta{padding:14px 13px;min-height:48px;background:transparent;border:1px solid var(--ink);color:var(--ink);font-weight:750;font-size:13px}.plain-cta{grid-column:span 2;border:0;color:var(--muted)}.result-review{padding:30px 30px;border:1px solid var(--rule);height:max-content}.review-head{border-bottom:1px solid var(--rule);padding-bottom:20px;position:relative}.review-head h2{margin:0;font-size:25px}.review-head>span{position:absolute;bottom:23px;right:0;font:11px ui-monospace,monospace;color:var(--muted)}.review-subtitle{font-size:13px;line-height:1.6;color:var(--muted);margin:20px 0}.review-line{padding:18px 0;border-bottom:1px dashed var(--rule)}.review-correct{font:700 21px Georgia,"Noto Serif KR",serif}.review-correct small{font-size:13px;color:var(--red);text-decoration:line-through;margin-inline-start:12px}.review-line p{font-size:13px;color:var(--muted);line-height:1.6;margin:10px 0 0}.review-empty{text-align:center;padding:50px 0;color:var(--green);font-size:44px}.review-empty p{font-size:14px}.mini-record{display:flex;justify-content:space-between;font-size:12px;color:var(--muted);margin-top:22px}.mini-record strong{color:var(--ink)}
+/* Modals and notifications */
+.modal-screen{position:fixed;inset:0;z-index:50;background:rgba(6,10,13,.68);display:grid;place-items:center;padding:20px}.modal-panel{position:relative;background:var(--paper);border:1px solid var(--rule);box-shadow:0 40px 110px rgba(0,0,0,.3);width:min(560px,100%);max-height:min(90vh,850px);overflow-y:auto;padding:37px}.modal-panel h2{font-size:31px;letter-spacing:-.05em;margin:0 0 18px}.modal-close{position:absolute;right:20px;top:17px;background:transparent;border:1px solid var(--rule);color:var(--ink);width:33px;height:33px}.lang-list{display:grid;grid-template-columns:1fr 1fr;gap:8px}.lang-item{background:var(--white);border:1px solid var(--rule);color:var(--ink);padding:12px 10px;display:flex;align-items:center;gap:10px;text-align:start;font-size:13px;min-height:45px}.lang-item span:last-child{margin-inline-start:auto;color:var(--green)}.lang-item.active{border-color:var(--green);background:color-mix(in srgb,var(--green) 9%,var(--white))}.modal-bottom{border-top:1px solid var(--rule);padding-top:20px;margin-top:25px}.modal-panel label{display:block;font-weight:750;font-size:13px;margin-bottom:10px}.row-input{display:flex;gap:8px}.row-input input,.code-input,.modal-panel textarea{width:100%;padding:15px 13px;color:var(--ink);background:var(--white);border:1px solid var(--rule);border-radius:2px;outline-offset:2px}.primary-mini{white-space:nowrap;background:var(--ink);color:var(--paper);border:1px solid var(--ink);font-size:12px;font-weight:700;padding:10px}.modal-description{font-size:14px;color:var(--muted);line-height:1.65;margin:12px 0 25px}.code-input{font:700 25px ui-monospace,monospace;letter-spacing:2px;text-transform:uppercase;text-align:center}.modal-wide{width:100%;margin-top:15px}.inline-error{min-height:16px;font-size:12px;color:var(--red);margin:7px 0}.generated-code{padding:22px 10px;border:2px dashed var(--ink);font:700 clamp(28px,5vw,40px) ui-monospace,monospace;text-align:center;letter-spacing:2px}.copy-link{word-break:break-all;color:var(--muted);font:11px ui-monospace,monospace}.import-controls{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:15px}.import-controls .outline-cta{font-size:12px}.import-controls span,.micro-note{color:var(--muted);font-size:11px}.modal-panel textarea{display:block;min-height:172px;font:12px/1.6 ui-monospace,monospace;resize:vertical}.micro-note{line-height:1.65;margin-top:15px}.toast{position:fixed;bottom:30px;left:50%;transform:translateX(-50%);z-index:99;background:var(--ink);color:var(--paper);padding:13px 25px;font-size:13px;box-shadow:var(--shadow);border-radius:5px;max-width:85vw;text-align:center}.toast[hidden]{display:none}
+html[dir=rtl] .paper-card:before{left:auto;right:54px}html[dir=rtl] .hero-mark{right:auto;left:33px}html[dir=rtl] .result-seal{right:auto;left:45px}html[dir=rtl] .review-head>span{right:auto;left:0}html[dir=rtl] .modal-close{right:auto;left:20px}html[dir=rtl] .tile-count{left:auto;right:45px}html[dir=rtl] .mode-tile small{right:auto;left:15px}html[dir=rtl] .brand-wordmark{text-align:right}
+@media(max-width:970px){.shell{padding:0 25px}.home-layout{gap:34px}.hero-title{font-size:64px}.hero-mark{font-size:43px}.mode-tile{padding:14px 11px;min-height:92px}.mode-icon{width:35px;height:35px;font-size:22px}.mode-name{font-size:13px}.stats-row{padding:18px 0}.stat-number{font-size:30px}.casebook-body{padding:24px 19px}.casebook-head,.casebook-foot{padding-inline:18px}.casebook-main{font-size:27px}}
+@media(max-width:700px){.shell{padding:0 19px}.site-head{height:72px}.brand-icon{height:36px;width:36px;font-size:27px}.brand-wordmark{font-size:14px}.brand-wordmark span{font-size:8px;letter-spacing:3px}.head-chip{font-size:11px;padding:9px 10px;max-width:175px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}.icon-button{width:36px;height:36px}.home-layout{display:flex;flex-direction:column;padding:28px 0 36px;gap:32px}.intro-column{display:contents}.top-caption{order:0}.hero-mark{display:none}.hero-title{order:1;font-size:clamp(54px,14vw,76px);margin:17px 0 -8px}.hero-copy{order:2;font-size:14px;margin:0 0 -8px}.casebook{order:3;max-width:none;margin:0 4px}.casebook-body{padding:18px}.casebook-main{font-size:24px}.casebook-body p{margin:8px 0 17px}.casebook-head,.casebook-foot{padding:12px 17px}.local-note{order:5;text-align:center;margin:3px 0 -4px}.menu-column{order:4}.section-head{margin:0 0 14px}.section-head h2{font-size:22px}.difficulty{padding:10px 0 14px}.difficulty-tabs button{padding:8px 11px}.stats-row{padding:19px 0}.stat-cell{padding-inline:13px}.stat-number{font-size:27px}.stat-label{font-size:10px}.mode-tile{min-height:81px;padding:12px 10px}.mode-icon{width:32px;height:32px;font-size:21px}.mode-arrow{font-size:16px}.mini-foot{margin-top:23px}.game-layout{padding:15px 0 40px}.play-top{font-size:9px}.play-top>span:nth-child(2){display:none}.game-meta{padding-top:31px}.game-meta h1{font-size:23px;line-height:1.35}.hearts{font-size:22px;min-width:70px}.progress-track{margin-top:17px}.paper-wrap{padding-top:23px}.paper-pin{top:12px}.paper-card{padding:0 20px;min-height:355px}.paper-card:before{left:32px}.paper-label{padding:16px 0;font-size:9px}.case-word{min-height:165px;padding:27px 15px}.word-content{font-size:clamp(28px,8.4vw,52px)}.choice-list{gap:8px;margin-bottom:22px}.answer-choice{min-height:75px;padding:12px 8px;gap:6px;font-size:clamp(14px,4vw,19px)}.choice-index{width:18px;height:18px;font-size:10px}.choice-arrow{display:none}.sentence-paper{padding:22px 8px 19px;min-height:150px}.sentence-content{font-size:22px;line-height:2.2}.scene-paper{padding:0 9px 15px;margin:14px 0}.scene-top{margin:0 -9px 8px}.paper-foot{padding:12px 0;font-size:9px}.result-layout{grid-template-columns:1fr;padding:25px 0 45px;gap:20px}.result-file{padding:27px 22px}.result-seal{width:70px;height:70px;right:22px;top:74px;font-size:40px}.result-file>.eyebrow{margin-top:42px}.result-file h1{font-size:48px}.big-score{font-size:75px}.result-review{padding:23px}.modal-panel{padding:30px 22px}.lang-list{gap:6px}.lang-item{font-size:11px;padding:10px 7px;gap:5px}.import-controls{flex-wrap:wrap}html[dir=rtl] .paper-card:before{right:32px}html[dir=rtl] .result-seal{left:22px}}
+@media(max-width:385px){.shell{padding:0 13px}.hero-title{font-size:50px}.brand-wordmark{font-size:12px}.head-actions{gap:6px}.head-chip{max-width:132px}.mode-icon{display:none}.stat-number{font-size:23px}.casebook-main{font-size:21px}.paper-card{padding:0 15px}.answer-choice{font-size:14px}.feedback-card{padding:22px 19px}.lang-item{font-size:10px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.001ms!important;transition-duration:.001ms!important;scroll-behavior:auto!important}}
+</style>
+</head><body>
+<div id="app"></div><div id="modal-root"></div><div id="toast" class="toast" role="status" hidden></div>
+<script>/* Original starter question bank. All pairs should undergo subject-matter native review before commercial distribution. */
+const LANGUAGE_META = [
+ ['ko','한국어','KO','ko-KR','🇰🇷'],['en','English','EN','en-US','🇺🇸'],['es','Español','ES','es-ES','🇪🇸'],
+ ['fr','Français','FR','fr-FR','🇫🇷'],['de','Deutsch','DE','de-DE','🇩🇪'],['pt','Português','PT','pt-BR','🇧🇷'],
+ ['it','Italiano','IT','it-IT','🇮🇹'],['ja','日本語','JA','ja-JP','🇯🇵'],['zh','简体中文','ZH','zh-CN','🇨🇳'],
+ ['id','Bahasa Indonesia','ID','id-ID','🇮🇩'],['tr','Türkçe','TR','tr-TR','🇹🇷'],['ru','Русский','RU','ru-RU','🇷🇺'],['ar','العربية','AR','ar-SA','🇸🇦']
+].map(([id,name,code,locale,flag])=>({id,name,code,locale,flag,rtl:id==='ar'}));
+
+// c|w|rule|sample sentence|difficulty; x is optional and generated from s by the game.
+const RAW_BANKS = {
+ko:`돼요|되요|'되어요'가 줄어든 형태는 '돼요'예요.|지금 출발해도 돼요.|1
+됐어요|됬어요|'되었어요'를 줄이면 '됐어요'예요.|준비가 모두 됐어요.|1
+안 돼|안되|'안 돼'는 '안 되어'의 준말로 띄어 써요.|여기 들어가면 안 돼.|1
+할게요|할께요|약속을 나타내는 '-ㄹ게'는 된소리로 적지 않아요.|제가 먼저 할게요.|1
+갈게요|갈께요|의지·약속의 어미 '-ㄹ게'를 써요.|먼저 집에 갈게요.|1
+볼게요|볼께요|'-ㄹ게'는 발음과 달리 '께'가 아니에요.|제가 직접 볼게요.|1
+먹을게요|먹을께요|약속을 나타내는 말은 '-ㄹ게요'로 적어요.|나중에 먹을게요.|1
+쓸게요|쓸께요|약속의 어미는 '-ㄹ게요'예요.|다음에 다시 쓸게요.|1
+며칠|몇일|날짜를 뜻하는 표준어는 '며칠'이에요.|며칠 뒤에 만나요.|1
+금세|금새|'금시에'가 줄어든 말은 '금세'예요.|날씨가 금세 추워졌어요.|1
+웬일|왠일|무슨 일인지 묻는 말은 '웬일'이에요.|여기엔 웬일로 왔어?|1
+웬만하면|왠만하면|'웬만하다'에서 나온 말이에요.|웬만하면 오늘 끝내자.|2
+웬만한|왠만한|'웬만하다'가 기본형이에요.|웬만한 일에는 놀라지 않아요.|2
+어떻게|어떡게|'어떻게'는 '어떠하다'의 활용형이에요.|이걸 어떻게 풀지?|1
+어떡해|어떻해|'어떻게 해'를 줄이면 '어떡해'예요.|시간이 없는데 어떡해?|1
+어떡하지|어떻하지|'어떡하다'를 활용하면 '어떡하지'예요.|열쇠를 잃어버렸어, 어떡하지?|2
+오랜만|오랫만|'오래간만'의 준말은 '오랜만'이에요.|정말 오랜만에 만났어요.|1
+오랫동안|오랜동안|지속된 시간을 말할 때 '오랫동안'을 써요.|오랫동안 기다렸어요.|1
+설렘|설레임|'설레다'의 명사형은 '설렘'이에요.|새 학기의 설렘을 느껴요.|1
+설레는|설래는|기본형 '설레다'에서 '설레는'이 돼요.|내일이 벌써 설레는 밤이에요.|1
+무릎|무릅|몸의 관절은 '무릎'으로 적어요.|넘어져서 무릎을 다쳤어요.|1
+깨끗이|깨끗히|'깨끗하다'의 부사는 '깨끗이'예요.|손을 깨끗이 씻어요.|1
+틈틈이|틈틈히|시간이 나는 대로는 '틈틈이'예요.|틈틈이 책을 읽어요.|2
+곰곰이|곰곰히|깊이 생각할 때 '곰곰이'라고 해요.|문제를 곰곰이 생각했어요.|2
+일일이|일일히|하나하나 빠짐없이 할 때 '일일이'예요.|명단을 일일이 확인했어요.|2
+가까이|가까히|거리상 멀지 않다는 부사는 '가까이'예요.|조금 더 가까이 오세요.|1
+어이없다|어의없다|황당할 때 '어이없다'가 맞아요.|그 변명이 정말 어이없다.|1
+어이없는|어의없는|기본형은 '어이없다'예요.|어이없는 실수였어요.|1
+희한하다|희안하다|드물고 신기하다는 뜻은 '희한하다'예요.|정말 희한하다.|2
+희한한|희안한|'희한하다'를 활용한 말이에요.|희한한 이야기를 들었어요.|2
+초콜릿|초콜렛|외래어 표준 표기는 '초콜릿'이에요.|친구에게 초콜릿을 선물했어요.|1
+액세서리|악세사리|표준 외래어 표기는 '액세서리'예요.|예쁜 액세서리를 골랐어요.|2
+메시지|메세지|영어 message의 표준 외래어 표기는 '메시지'예요.|축하 메시지를 보냈어요.|1
+메시지를|메세지를|'메시지'가 표준 표기예요.|친구에게 메시지를 남겼어요.|1
+콘텐츠|컨텐츠|외래어 표기법에 따른 표기는 '콘텐츠'예요.|새 콘텐츠가 공개됐어요.|2
+카페|까페|표준 외래어 표기는 '카페'예요.|주말에 카페에 갔어요.|1
+리더십|리더쉽|영어 leadership의 표준 표기는 '리더십'이에요.|그의 리더십을 믿어요.|2
+비즈니스|비지니스|외래어 표기는 '비즈니스'예요.|비즈니스 미팅이 있어요.|2
+워크숍|워크샵|표준 외래어 표기는 '워크숍'이에요.|내일 워크숍에 참여해요.|2
+포맷|포멧|format의 표준 외래어 표기는 '포맷'이에요.|파일 포맷을 바꿨어요.|2
+인터넷|인테넷|표준 외래어 표기는 '인터넷'이에요.|인터넷 연결을 확인하세요.|1
+애플리케이션|어플리케이션|application의 표준 외래어 표기는 '애플리케이션'이에요.|애플리케이션을 설치했어요.|3
+텔레비전|텔레비젼|television의 표준 외래어 표기는 '텔레비전'이에요.|텔레비전을 켰어요.|2
+하마터면|하마트면|겨우 나쁜 일을 피했을 때 '하마터면'이에요.|하마터면 지각할 뻔했어요.|2
+대가|댓가|일의 보수·값은 사이시옷 없이 '대가'예요.|노력의 대가를 받았어요.|2
+숟가락|숫가락|밥 먹는 도구는 '숟가락'이에요.|숟가락을 식탁에 놨어요.|1
+젓가락|젖가락|음식을 집는 도구는 '젓가락'이에요.|젓가락을 사용할 줄 알아요.|1
+뒷받침|뒤받침|뒤에서 받쳐 줌은 '뒷받침'이에요.|자료가 주장을 뒷받침해요.|2
+뒤통수|뒷통수|머리의 뒤쪽은 '뒤통수'예요.|뒤통수가 아팠어요.|2
+콧노래|코노래|사이시옷이 들어간 '콧노래'가 맞아요.|기분 좋아 콧노래를 불렀어요.|2
+빗방울|비방울|비의 낱방울은 '빗방울'이에요.|창문에 빗방울이 맺혔어요.|2
+햇볕|햇볓|해가 내리쬐는 볕은 '햇볕'이에요.|따뜻한 햇볕을 쬐었어요.|2
+궁금증|궁굼증|알고 싶은 마음은 '궁금증'이에요.|갑자기 궁금증이 생겼어요.|1
+헷갈리다|햇갈리다|혼동된다는 뜻은 '헷갈리다'예요.|두 이름이 헷갈리다.|1
+헷갈려|햇갈려|'헷갈리다'를 활용하면 '헷갈려'예요.|이 길은 늘 헷갈려.|1
+낯설다|낮설다|익숙하지 않다는 말은 '낯설다'예요.|이곳은 아직 낯설다.|2
+낯익다|낮익다|전에 본 듯하다는 뜻은 '낯익다'예요.|저 얼굴은 어쩐지 낯익다.|2
+낯가리다|낮가리다|사람을 가리는 말은 '낯가리다'예요.|낯가리다 보면 새 친구를 사귀기 어려워요.|3
+어렴풋이|어렴풋히|희미하게는 '어렴풋이'라고 적어요.|그날 기억이 어렴풋이 떠올라요.|3
+널찍하다|널직하다|꽤 넓다는 뜻은 '널찍하다'예요.|거실이 꽤 널찍하다.|3
+찌개|찌게|음식 이름은 '찌개'예요.|저녁엔 찌개를 끓여요.|1
+김치찌개|김치찌게|음식 이름의 끝은 '-찌개'예요.|점심으로 김치찌개를 먹었어요.|1
+된장찌개|된장찌게|음식 이름은 '된장찌개'예요.|된장찌개가 보글보글 끓어요.|1
+육개장|육계장|쇠고기와 채소로 끓인 국은 '육개장'이에요.|오늘은 육개장이 당겨요.|2
+떡볶이|떡복이|음식 이름은 '떡볶이'예요.|매운 떡볶이를 먹었어요.|1
+부침개|부침게|밀가루 반죽을 부친 음식은 '부침개'예요.|비 오는 날 부침개를 만들었어요.|1
+닭볶음탕|닭복음탕|음식 이름은 '닭볶음탕'이에요.|닭볶음탕을 주문했어요.|2
+강낭콩|강남콩|콩의 종류는 '강낭콩'이에요.|텃밭에 강낭콩을 심었어요.|2
+일부러|일부로|고의로 했을 때 부사는 '일부러'예요.|일부러 늦게 온 건 아니에요.|1
+함부로|함부루|조심하지 않고 행동할 때 '함부로'예요.|남의 물건을 함부로 만지지 마.|1
+도대체|도데체|의문을 강조하는 부사는 '도대체'예요.|도대체 무슨 일이야?|1
+대체로|대채로|전반적으로라는 뜻은 '대체로'예요.|오늘 날씨는 대체로 맑아요.|1
+어쨌든|어쨋든|관계없이 결론을 말할 때 '어쨌든'이에요.|어쨌든 끝까지 해 볼게요.|1
+어쨌거나|어쨋거나|'어쨌든'과 비슷한 뜻의 '어쨌거나'예요.|어쨌거나 시작하자.|2
+어차피|어짜피|피할 수 없다는 뜻의 부사는 '어차피'예요.|어차피 가야 할 길이에요.|1
+요컨대|요컨데|요약하면을 뜻하는 말은 '요컨대'예요.|요컨대 계획을 바꿔야 해요.|2
+거꾸로|꺼꾸로|반대 방향으로는 '거꾸로'예요.|책을 거꾸로 들고 있었어요.|1
+애초에|애초애|일의 맨 처음을 뜻할 때 '애초에'예요.|애초에 불가능한 계획이었어요.|1
+아무튼|아뭏든|화제를 정리할 때 '아무튼'이에요.|아무튼 내일 다시 이야기하자.|1
+그러니까|그르니까|앞말의 이유·결론을 잇는 말은 '그러니까'예요.|그러니까 제 말을 들어 봐요.|1
+그다음|그담|뒤이은 순서를 말할 때 '그다음'을 써요.|그다음 순서를 확인해요.|1
+바깥|바갓|밖의 공간을 뜻하는 말은 '바깥'이에요.|바깥 공기를 마셨어요.|1
+바깥쪽|바갓쪽|'바깥'에서 나온 말은 '바깥쪽'이에요.|바깥쪽 창문을 닫아 줘요.|1
+새빨간|세빨간|아주 빨간 빛은 '새빨간'이에요.|새빨간 사과가 놓여 있어요.|1
+새하얀|세하얀|아주 하얀 빛은 '새하얀'이에요.|새하얀 눈이 내렸어요.|1
+시원찮다|시원찬다|'시원하지 않다'는 '시원찮다'로 줄여요.|결과가 시원찮다.|3
+마찬가지|맛찬가지|서로 다르지 않다는 말은 '마찬가지'예요.|내 생각도 마찬가지야.|1
+아등바등|아둥바둥|애써 힘쓰는 모양은 '아등바등'이에요.|아등바등 살아왔어요.|3
+고즈넉하다|고즈녁하다|조용하고 아늑한 분위기는 '고즈넉하다'예요.|마을이 고즈넉하다.|3
+한껏|한것|가능한 데까지 힘껏이라는 뜻은 '한껏'이에요.|목소리를 한껏 높였어요.|2
+한창|한참창|어떤 일이 가장 활발한 때는 '한창'이에요.|공사가 한창 진행 중이에요.|1
+차곡차곡|차곡차곧|가지런히 쌓는 모양은 '차곡차곡'이에요.|책을 차곡차곡 정리했어요.|1
+솔직히|솔직이|'솔직하다'에서 나온 부사는 '솔직히'예요.|솔직히 말해 줘요.|1
+조용히|조용이|'조용하다'에서 나온 부사는 '조용히'예요.|도서관에서는 조용히 해요.|1
+분명히|분명이|'분명하다'에서 나온 부사는 '분명히'예요.|분명히 약속했어요.|1
+정확히|정확이|'정확하다'에서 나온 부사는 '정확히'예요.|주소를 정확히 입력하세요.|1
+상당히|상당이|'상당하다'에서 나온 부사는 '상당히'예요.|상당히 어려운 문제예요.|1
+꾸준히|꾸준이|'꾸준하다'에서 나온 부사는 '꾸준히'예요.|꾸준히 연습하고 있어요.|1
+기꺼이|기꺼히|흔쾌히는 '기꺼이'로 적어요.|기꺼이 도와드릴게요.|2
+가벼이|가벼히|'가볍다'에서 나온 '가벼이'가 맞아요.|그 약속을 가벼이 여기지 마.|3
+느긋이|느긋히|여유 있게는 '느긋이'예요.|오늘은 느긋이 쉬자.|2
+번듯이|번듯히|반듯하고 훌륭하게는 '번듯이'예요.|새 건물을 번듯이 지었어요.|3
+가만히|가만이|움직이지 않는 모양은 '가만히'예요.|잠깐 가만히 있어요.|1
+아니에요|아니예요|'아니다'의 활용은 '아니에요'예요.|그건 제 물건이 아니에요.|1
+거예요|거에요|'것이에요'가 줄어든 말은 '거예요'예요.|내일 출발할 거예요.|1
+할 거예요|할 꺼예요|'것이에요'를 줄인 말은 '거예요'예요.|내일은 꼭 할 거예요.|1
+있을 거예요|있을 꺼예요|의존 명사 '거'와 '예요'를 바르게 써요.|정답이 있을 거예요.|1
+그럴게요|그럴께요|약속을 나타내는 어미는 '-ㄹ게요'예요.|다음부터는 그럴게요.|1
+그랬어요|그랬어여|공손하게 과거를 말할 때 '그랬어요'예요.|어제는 제가 그랬어요.|1
+그렇습니다|그렇슴니다|'습니다'가 표준 어미예요.|말씀하신 내용이 그렇습니다.|1
+감사합니다|감사함니다|'합니다'를 소리 나는 대로 쓰지 않아요.|항상 감사합니다.|1
+안녕하세요|안녕하새요|인사말은 '안녕하세요'예요.|반갑습니다, 안녕하세요.|1
+죄송합니다|죄송함니다|'-합니다'가 바른 표현이에요.|늦어서 죄송합니다.|1
+괜찮아요|괜찬아요|기본형은 '괜찮다'예요.|저는 괜찮아요.|1
+괜찮습니다|괜찬습니다|'괜찮다'의 활용이에요.|잠시 기다려도 괜찮습니다.|1
+축하합니다|추카합니다|'축하'로 적고 [추카]로 읽어요.|합격을 축하합니다.|1
+축하해요|추카해요|'축하'의 표기는 발음과 달라요.|생일 축하해요.|1
+준비됐나요|준비됬나요|'되었다'의 준말은 '됐다'예요.|이제 준비됐나요?|1
+안됐어요|안됬어요|'되었어요'의 준말은 '됐어요'예요.|그 일이 잘 안됐어요.|2
+찾아뵐게요|찾아뵐께요|약속의 어미는 '-ㄹ게요'예요.|다음 주에 찾아뵐게요.|2
+일찍이|일찍히|오래전부터를 뜻하는 말은 '일찍이'예요.|그는 일찍이 꿈을 정했어요.|2
+한글날|한굴날|기념일 이름은 '한글날'이에요.|한글날에 행사가 열려요.|1`,
+en:`receive|recieve|Remember “i before e” is not reliable; receive uses -eive.|Did you receive the email?|1
+separate|seperate|The middle vowel in separate is a.|Please keep the files separate.|1
+definitely|definately|Definitely is spelled with -ite-, not -ate-.|I will definitely join.|1
+necessary|neccessary|Necessary has one c and two s's.|This document is necessary.|2
+accommodate|accomodate|Accommodate has double c and double m.|We can accommodate everyone.|3
+embarrass|embarass|Embarrass has double r and double s.|I did not mean to embarrass you.|2
+occurrence|occurence|Occurrence contains double c and double r.|The occurrence was recorded.|3
+beginning|begining|Beginning doubles the n.|A new beginning feels exciting.|1
+calendar|calender|The last vowel in calendar is a.|Check the calendar for details.|1
+restaurant|restaraunt|Restaurant is spelled -au-rant.|The restaurant opens at noon.|2
+privilege|privelege|Privilege is spelled -ilege.|It is a privilege to help.|3
+conscience|concience|Conscience includes -sci-.|My conscience tells me to apologize.|3
+rhythm|rythm|Rhythm includes h after r and before m.|Follow the rhythm of the music.|2
+business|buisness|Business has -usi-, not -uis-.|Our business is growing.|1
+address|adress|Address has double d and double s.|Please update your address.|1
+government|goverment|Government includes an n before m.|The government announced a change.|2
+successful|succesful|Successful has double c and double s.|It was a successful launch.|2
+recommend|reccomend|Recommend has one c and double m.|Can you recommend a good book?|2
+independent|independant|Independent ends in -ent, not -ant.|She is an independent thinker.|2
+maintenance|maintainance|Maintenance differs from the verb maintain.|The system needs maintenance.|3
+knowledge|knowlege|Knowledge keeps the d after w.|Her knowledge is impressive.|2
+experience|experiance|Experience uses -ence at the end.|That was a great experience.|1
+pronunciation|pronounciation|Pronunciation drops the o found in pronounce.|Practice your pronunciation.|3
+foreign|foriegn|Foreign has -eign.|She studies a foreign language.|2`,
+es:`también|tambien|También lleva tilde en la e.|Yo también quiero ir.|1
+fácil|facil|Fácil lleva tilde por ser llana terminada en consonante distinta de n o s.|Este ejercicio es fácil.|1
+difícil|dificil|Difícil lleva tilde.|Parece difícil, pero lo lograrás.|1
+rápido|rapido|Las palabras esdrújulas llevan tilde.|El tren es rápido.|1
+música|musica|Música es esdrújula y lleva tilde.|Me gusta la música.|1
+miércoles|miercoles|Miércoles lleva tilde.|Nos vemos el miércoles.|1
+sábado|sabado|Sábado es esdrújula y lleva tilde.|El sábado descansamos.|1
+teléfono|telefono|Teléfono es esdrújula y lleva tilde.|Suena el teléfono.|1
+árbol|arbol|Árbol es llana terminada en l y lleva tilde.|El árbol es muy grande.|1
+lápiz|lapiz|Lápiz lleva tilde en la a.|Compré un lápiz nuevo.|1
+canción|cancion|Canción es aguda terminada en n.|Esta canción me encanta.|1
+corazón|corazon|Corazón lleva tilde por ser aguda terminada en n.|Escucha a tu corazón.|1
+información|informacion|Información lleva tilde en la o.|La información es correcta.|1
+acción|accion|Acción lleva tilde.|Necesitamos una acción rápida.|1
+dirección|direccion|Dirección lleva tilde.|¿Cuál es la dirección?|1
+educación|educacion|Educación lleva tilde.|La educación es importante.|1
+ortografía|ortografia|Ortografía lleva tilde para marcar el hiato.|Estudio ortografía cada día.|2
+sonríe|sonrie|Sonríe lleva tilde para separar el hiato.|Ella siempre sonríe.|2
+océano|oceano|Océano lleva tilde.|El océano es inmenso.|2
+periódico|periodico|Periódico lleva tilde.|Leo el periódico.|2`,
+fr:`aujourd'hui|aujourdhui|L'apostrophe fait partie d'aujourd'hui.|Je pars aujourd'hui.|1
+beaucoup|beacoup|Beaucoup contient « beau ».|Merci beaucoup.|1
+nécessaire|nécesaire|Nécessaire prend deux s.|C'est nécessaire pour réussir.|2
+intéressant|interessant|Intéressant prend un accent aigu sur é.|Ce livre est intéressant.|2
+école|ecole|École prend un accent aigu sur le e initial.|Je vais à l'école.|1
+élève|eleve|Élève utilise deux accents différents.|Cet élève travaille bien.|1
+français|francais|Français s'écrit avec une cédille.|Je parle français.|1
+ça|ca|Ça prend une cédille.|Comme ça, c'est parfait.|1
+déjà|deja|Déjà prend deux accents.|Il est déjà parti.|1
+très|tres|Très prend un accent grave.|C'est très utile.|1
+être|etre|Être s'écrit avec un accent circonflexe.|Je veux être prêt.|1
+forêt|foret|Forêt porte un accent circonflexe.|Nous marchons dans la forêt.|2
+hôtel|hotel|Hôtel porte un accent circonflexe.|L'hôtel est au centre.|1
+hôpital|hopital|Hôpital porte un accent circonflexe.|Il travaille à l'hôpital.|2
+écrire|ecrire|Écrire prend un accent aigu.|Je veux écrire une lettre.|1
+réponse|reponse|Réponse prend un accent aigu.|Merci pour votre réponse.|1
+téléphone|telephone|Téléphone contient deux accents aigus.|Mon téléphone sonne.|1
+même|meme|Même porte un accent circonflexe.|Nous avons le même objectif.|1
+problème|probleme|Problème prend un accent grave.|Il y a un problème.|1
+à bientôt|a bientot|À prend un accent grave, bientôt un circonflexe.|À bientôt, mon ami !|2
+médecin|medecin|Médecin prend un accent aigu.|Le médecin arrive.|2
+février|fevrier|Février prend un accent aigu.|Nous partons en février.|1
+décembre|decembre|Décembre prend un accent aigu.|Je reviens en décembre.|1`,
+de:`vielleicht|vieleicht|Vielleicht enthält zwei l.|Vielleicht komme ich morgen.|2
+nämlich|nehmlich|Nämlich schreibt man mit ä.|Das ist nämlich wichtig.|2
+Adresse|Addresse|Adresse hat ein d und zwei s.|Wie lautet deine Adresse?|1
+interessant|interresant|Interessant hat ein r und zwei s.|Der Film ist interessant.|1
+Rhythmus|Rythmus|Rhythmus enthält ein h nach R.|Der Rhythmus ist schnell.|2
+Fahrrad|Fahrad|Fahrrad enthält zwei r an der Wortgrenze.|Mein Fahrrad ist neu.|1
+Mädchen|Madchen|Mädchen schreibt man mit ä.|Das Mädchen lacht.|1
+früh|fruh|Früh benötigt ein ü.|Ich stehe früh auf.|1
+Straße|Strase|Straße enthält ß in der Standardschreibung.|Die Straße ist lang.|1
+größer|großer|Der Komparativ größer verwendet ö.|Dieser Raum ist größer.|2
+weiß|weis|Weiß schreibt man mit ß.|Ich weiß die Antwort.|1
+heißen|heisen|Heißen schreibt man mit ß.|Wie soll das Projekt heißen?|2
+grüßen|grusen|Grüßen benötigt ü und ß.|Wir wollen alle grüßen.|2
+Überraschung|Uberaschung|Überraschung braucht Ü und zwei r.|Die Überraschung war toll.|3
+Entschuldigung|Entschuldiung|Entschuldigung enthält die Silbe -dig-.|Entschuldigung für die Verspätung.|2
+besondere|besondre|Besondere enthält ein e nach d.|Das ist eine besondere Chance.|2
+zusammen|zusamen|Zusammen hat zwei m.|Wir lernen zusammen.|1
+kommen|komen|Kommen hat zwei m.|Kannst du morgen kommen?|1
+willkommen|wilkommen|Willkommen hat zwei l.|Herzlich willkommen!|1
+Wetter|Weter|Wetter hat zwei t.|Heute ist das Wetter schön.|1
+Kaffee|Kafe|Kaffee hat zwei f und zwei e.|Ich trinke Kaffee.|1
+Sommer|Somer|Sommer hat zwei m.|Der Sommer ist warm.|1
+Buchstabe|Buchstabea|Buchstabe endet auf e.|Dieser Buchstabe ist falsch.|1`,
+pt:`você|voce|Você leva acento circunflexo.|Você está bem?|1
+também|tambem|Também leva acento agudo.|Eu também quero ir.|1
+português|portugues|Português leva acento circunflexo.|Eu estudo português.|1
+ônibus|onibus|Ônibus leva acento circunflexo.|O ônibus chegou cedo.|1
+fácil|facil|Fácil leva acento agudo.|Esta prova é fácil.|1
+difícil|dificil|Difícil leva acento agudo.|O exercício é difícil.|1
+música|musica|Música é proparoxítona.|Eu adoro música.|1
+médico|medico|Médico é proparoxítona.|O médico chegou.|1
+lâmpada|lampada|Lâmpada leva acento circunflexo.|Acendi a lâmpada.|1
+pássaro|passaro|Pássaro leva acento agudo.|O pássaro canta.|1
+número|numero|Número é proparoxítona.|Qual é o número da casa?|1
+língua|lingua|Língua leva acento agudo.|Aprender uma língua é divertido.|1
+máquina|maquina|Máquina é proparoxítona.|A máquina funciona bem.|1
+possível|possivel|Possível leva acento agudo.|É possível aprender.|1
+saúde|saude|Saúde leva acento para marcar o hiato.|Cuide da sua saúde.|2
+história|historia|História leva acento agudo.|Conte uma história.|1
+água|agua|Água leva acento agudo.|Beba bastante água.|1
+família|familia|Família leva acento agudo.|Minha família está aqui.|1
+útil|util|Útil leva acento agudo.|Isso é muito útil.|1
+árvore|arvore|Árvore é proparoxítona.|A árvore dá sombra.|1
+informação|informacao|Informação tem ç e ã.|Preciso de informação.|2
+atenção|atencao|Atenção tem ç e ã.|Preste atenção.|2
+coração|coracao|Coração tem ç e ã.|Escute seu coração.|2`,
+it:`perché|perche|Perché richiede l'accento acuto finale.|Dimmi perché sei qui.|1
+città|citta|Città richiede l'accento finale.|La città è molto bella.|1
+caffè|caffe|Caffè richiede l'accento grave finale.|Vorrei un caffè.|1
+così|cosi|Così richiede l'accento finale.|È meglio così.|1
+più|piu|Più si scrive con l'accento grave.|Non ne voglio più.|1
+già|gia|Già richiede l'accento finale.|Sono già arrivato.|1
+università|universita|Università richiede l'accento finale.|Studio all'università.|1
+felicità|felicita|Felicità richiede l'accento finale.|Ti auguro tanta felicità.|1
+qualità|qualita|Qualità richiede l'accento finale.|La qualità è importante.|1
+possibilità|possibilita|Possibilità richiede l'accento finale.|È una buona possibilità.|2
+lunedì|lunedi|Lunedì vuole l'accento.|Ci vediamo lunedì.|1
+martedì|martedi|Martedì vuole l'accento.|Parto martedì.|1
+mercoledì|mercoledi|Mercoledì vuole l'accento.|Torno mercoledì.|1
+giovedì|giovedi|Giovedì vuole l'accento.|L'esame è giovedì.|1
+venerdì|venerdi|Venerdì vuole l'accento.|Usciamo venerdì.|1
+verità|verita|Verità vuole l'accento finale.|Dimmi la verità.|1
+velocità|velocita|Velocità vuole l'accento finale.|Riduci la velocità.|1
+comunità|comunita|Comunità vuole l'accento finale.|Questa comunità cresce.|2
+libertà|liberta|Libertà vuole l'accento finale.|La libertà è preziosa.|1`,
+ja:`こんにちは|こんにちわ|あいさつの「こんにちは」は「は」で書きます。|元気にこんにちはと言いました。|1
+こんばんは|こんばんわ|あいさつの「こんばんは」は「は」で書きます。|笑顔でこんばんはと言いました。|1
+すみません|すいません|丁寧な表記は「すみません」です。|遅れてすみません。|1
+雰囲気|雰囲気い|「雰囲気」に送り仮名は付きません。|店の雰囲気がいいですね。|2
+シミュレーション|シュミレーション|simulationのカタカナ表記は「シミュレーション」です。|新しいシミュレーションを試した。|2
+コミュニケーション|コミニュケーション|communicationは「コミュニケーション」です。|コミュニケーションが大切です。|2
+エンターテインメント|エンターティメント|標準的な外来語表記は「エンターテインメント」です。|エンターテインメントの仕事が好きです。|3
+ベッド|ベット|寝具は「ベッド」と書きます。|新しいベッドを買った。|1
+バッグ|バック|かばんは「バッグ」と書きます。|大きなバッグを持っています。|1
+サンドイッチ|サンドウィッチ|この問題では一般的な「サンドイッチ」を使います。|昼食はサンドイッチです。|2
+インタビュー|インタービュー|interviewは「インタビュー」です。|選手にインタビューをした。|2
+フィルム|フイルム|現代の一般的な表記は小書きのィを使う「フィルム」です。|写真のフィルムを買った。|2`,
+zh:`已经|以经|表示事情完成时写“已经”。|我已经准备好了。|1
+因为|应为|表示原因时用“因为”。|因为下雨，我们待在家里。|1
+应该|因该|表示应当时写“应该”。|你应该早点睡觉。|1
+突然|突燃|表示出乎意料时写“突然”。|天气突然变冷了。|1
+发现|发显|察觉到某件事写“发现”。|我发现了一个问题。|1
+希望|希忘|表达愿望时写“希望”。|希望明天是晴天。|1
+继续|继读|接着做下去写“继续”。|请继续努力。|1
+决定|决顶|做出选择时写“决定”。|我决定今天出发。|1
+认真|认直|做事专注写“认真”。|他学习非常认真。|1
+欢迎|欢迊|表示迎接时写“欢迎”。|欢迎来到这里。|1
+重要|重耍|表示很有分量写“重要”。|这个问题很重要。|1
+漂亮|漂靓|表示好看时写“漂亮”。|这朵花很漂亮。|1
+明白|明自|理解了写“明白”。|我终于明白了。|1
+方便|方使|便于使用写“方便”。|这样做很方便。|1
+仔细|子细|认真细致写“仔细”。|请仔细阅读说明。|1`,
+id:`aktivitas|aktifitas|Bentuk baku menurut KBBI adalah aktivitas.|Aktivitas hari ini sangat padat.|2
+risiko|resiko|Bentuk baku adalah risiko.|Setiap pilihan punya risiko.|1
+praktik|praktek|Bentuk baku adalah praktik.|Kami mulai praktik hari ini.|1
+apotek|apotik|Bentuk baku adalah apotek.|Obat ini tersedia di apotek.|1
+nasihat|nasehat|Bentuk baku adalah nasihat.|Terima kasih atas nasihat itu.|1
+izin|ijin|Bentuk baku adalah izin.|Saya meminta izin pulang.|1
+jadwal|jadual|Bentuk baku adalah jadwal.|Cek jadwal kelas besok.|1
+analisis|analisa|Bentuk baku untuk nomina adalah analisis.|Laporan analisis sudah selesai.|2
+kualitas|kwalitas|Bentuk baku adalah kualitas.|Kualitas layanan meningkat.|1
+objek|obyek|Bentuk baku adalah objek.|Objek penelitian ini menarik.|2
+subjek|subyek|Bentuk baku adalah subjek.|Subjek penelitian telah datang.|2
+sistem|sistim|Bentuk baku adalah sistem.|Sistem baru berfungsi baik.|1
+sekadar|sekedar|Bentuk baku adalah sekadar.|Ini sekadar pengingat.|1
+antre|antri|Bentuk baku adalah antre.|Silakan antre dengan tertib.|1
+atlet|atlit|Bentuk baku adalah atlet.|Atlet itu berlatih setiap hari.|1
+miliar|milyar|Bentuk baku adalah miliar.|Nilainya satu miliar rupiah.|2`,
+tr:`herkes|herkez|Doğru yazım herkes şeklindedir.|Burada herkes çok mutlu.|1
+yalnız|yanlız|Doğru yazım yalnız şeklindedir.|Bugün evde yalnız kaldım.|1
+yanlış|yalnış|Doğru yazım yanlış şeklindedir.|Bu cevap yanlış olabilir.|1
+şoför|şöför|Doğru yazım şoför şeklindedir.|Otobüsün şoförü çok deneyimliydi.|1
+orijinal|orjinal|Doğru yazım orijinal şeklindedir.|Bu resim orijinal bir eser.|2
+sürpriz|süpriz|Doğru yazım sürpriz şeklindedir.|Sana küçük bir sürpriz hazırladım.|1
+kirpik|kiprik|Doğru yazım kirpik şeklindedir.|Gözüme bir kirpik kaçtı.|2
+makine|makina|Yaygın standart yazım makine şeklindedir.|Yeni bir makine aldık.|2
+maalesef|malesef|Doğru yazım maalesef şeklindedir.|Maalesef bugün gelemem.|1
+yalnızca|yanlızca|Doğru yazım yalnızca şeklindedir.|Yalnızca bir soru kaldı.|1
+hiçbir|hiç bir|Belgisiz sıfat hiçbir bitişik yazılır.|Hiçbir sorun yok.|2
+birçok|bir çok|Birçok sözcüğü bitişik yazılır.|Birçok insan buraya geldi.|2
+birkaç|bir kaç|Birkaç sözcüğü bitişik yazılır.|Birkaç dakika bekle.|1
+yarın|yarrın|Doğru yazım yarın şeklindedir.|Yarın tekrar görüşürüz.|1`,
+ru:`привет|превет|В слове «привет» пишется буква и.|Он сказал привет друзьям.|1
+спасибо|спосибо|Правильно пишется «спасибо».|Большое спасибо за помощь.|1
+пожалуйста|пожалуста|В слове «пожалуйста» есть й.|Скажите пожалуйста ещё раз.|1
+здравствуйте|здраствуйте|В слове «здравствуйте» сохраняется в после а.|Здравствуйте, как ваши дела?|2
+сегодня|севодня|Правильно пишется «сегодня».|Сегодня хорошая погода.|1
+завтра|завтро|Правильно пишется «завтра».|Завтра у нас встреча.|1
+интересный|интерестный|В слове «интересный» нет т после с.|Это очень интересный фильм.|2
+участвовать|учавствовать|В слове «участвовать» нет в после а.|Я хочу участвовать в конкурсе.|2
+чувствовать|чуствовать|В слове «чувствовать» сохраняется в.|Я могу чувствовать радость.|2
+профессия|професия|В слове «профессия» две буквы с.|Моя профессия мне нравится.|1
+искусство|искуство|В слове «искусство» две буквы с.|Искусство объединяет людей.|2
+аккуратно|акуратно|Аккуратно пишется с двумя к.|Пиши аккуратно в тетради.|2
+количество|колличество|В слове «количество» одна л.|Количество задач выросло.|2
+территория|територия|В слове «территория» две р.|Это большая территория.|2
+аппетит|апетит|В слове «аппетит» две п.|У меня хороший аппетит.|2`,
+ar:`مدرسة|مدرسه|تُكتب التاء المربوطة في نهاية كلمة مدرسة.|هذه مدرسة جديدة.|1
+جميلة|جميله|الكلمة المؤنثة تُكتب بالتاء المربوطة.|هذه حديقة جميلة.|1
+كبيرة|كبيره|الصفة المؤنثة تنتهي بتاء مربوطة.|هذه مدينة كبيرة.|1
+صغيرة|صغيره|الصفة المؤنثة تنتهي بتاء مربوطة.|هذه غرفة صغيرة.|1
+سيارة|سياره|تُكتب التاء المربوطة في آخر سيارة.|اشتريت سيارة جديدة.|1
+شجرة|شجره|كلمة شجرة تنتهي بتاء مربوطة.|في الحديقة شجرة عالية.|1
+نافذة|نافذه|كلمة نافذة تنتهي بتاء مربوطة.|فتحت نافذة الغرفة.|1
+مكتبة|مكتبه|تُكتب مكتبة بالتاء المربوطة.|ذهبت إلى مكتبة المدينة.|1
+جامعة|جامعه|الاسم المؤنث جامعة ينتهي بتاء مربوطة.|هذه جامعة معروفة.|1
+مدينة|مدينه|تُكتب كلمة مدينة بالتاء المربوطة.|زرت مدينة جميلة.|1
+رسالة|رساله|تُكتب رسالة بالتاء المربوطة.|كتبت رسالة إلى صديقي.|1
+حقيبة|حقيبه|تُكتب حقيبة بالتاء المربوطة.|اشتريت حقيبة جديدة.|1
+سريعة|سريعه|الصفة المؤنثة تنتهي بتاء مربوطة.|هذه سيارة سريعة.|1
+طاولة|طاوله|تُكتب طاولة بالتاء المربوطة.|الكتاب فوق طاولة صغيرة.|1
+ساعة|ساعه|تُكتب ساعة بالتاء المربوطة.|اشتريت ساعة جديدة.|1`
+};
+
+const BANKS = Object.fromEntries(Object.entries(RAW_BANKS).map(([lang,raw])=>[lang,raw.split('\n').filter(Boolean).map((line,i)=>{
+  const [c,w,r,s,d='2']=line.split('|');return {id:`${lang}-${String(i+1).padStart(3,'0')}`,c,w,r,s,d:+d,lang,source:'base'};
+})]));
+
+(()=>{'use strict';
+const $=sel=>document.querySelector(sel);
+const KEY={pref:'td.pref',sr:'td.sr',st:'td.st',gen:'td.gen',reports:'td.reports'};
+const safeGet=(key,fallback)=>{try{let value=JSON.parse(localStorage.getItem(key));return value && typeof value==='object'?value:fallback;}catch{return fallback;}};
+const save=(key,obj)=>{try{localStorage.setItem(key,JSON.stringify(obj));return true;}catch{return false;}};
+const ESC=x=>String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const pickDate=(d=new Date())=>[d.getFullYear(),String(d.getMonth()+1).padStart(2,'0'),String(d.getDate()).padStart(2,'0')].join('-');
+const dateAdd=(days)=>{let d=new Date();d.setHours(12,0,0,0);d.setDate(d.getDate()+days);return pickDate(d);};
+const hash=s=>{let h=2166136261;for(let c of s){h^=c.codePointAt(0);h=Math.imul(h,16777619);}return h>>>0;};
+const rngFrom=s=>{let t=hash(s);return ()=>{t+=0x6D2B79F5;let a=t;a=Math.imul(a^a>>>15,a|1);a^=a+Math.imul(a^a>>>7,a|61);return ((a^a>>>14)>>>0)/4294967296;};};
+const shuffle=(items,rng=Math.random)=>{const a=[...items];for(let i=a.length-1;i>0;i--){let j=Math.floor(rng()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;};
+const splitByPair=(s,from,to)=>{let idx=s.toLocaleLowerCase().indexOf(from.toLocaleLowerCase());if(idx<0)return null;let second=s.toLocaleLowerCase().indexOf(from.toLocaleLowerCase(),idx+from.length);if(second>=0)return null;return {text:s.slice(0,idx)+to+s.slice(idx+from.length),left:s.slice(0,idx),right:s.slice(idx+from.length)};};
+const includesOnce=(s,c)=>!!splitByPair(s,c,c);
+const difficultyWeight=(grade,selected)=>({1:[6,2,1],2:[1,4,2],3:[1,2,5]}[selected]||[1,4,2])[Math.min(3,Math.max(1,grade))-1];
+const EL={app:$('#app'),modal:$('#modal-root'),toast:$('#toast')};
+const MESSAGES={
+ ko:{tag:'글자 속 숨은 단서를 찾아라',start:'수사 시작',investigation:'종합 수사',word:'단어 수사',sentence:'문장 수사',scene:'실전 상황',dictation:'받아쓰기',speed:'45초 속사',daily:'오늘의 사건',review:'복습함',classroom:'수업 코드',other:'다른 언어',new:'문항 가져오기',easy:'쉬움',normal:'보통',hard:'어려움',mastered:'익힌 표현',due:'오늘 복습',best:'최고 기록',problem:'사건',score:'점수',hearts:'기회',tap:'오타다!',pass:'맞는 표기',noTypo:'오타 없음',pick:'바른 표기를 선택하세요',find:'틀린 부분을 찾아 탭하세요',fill:'빈칸에 들어갈 표기를 고르세요',fix:'올바른 교정문을 고르세요',listen:'음성을 듣고 고르세요',listenBtn:'다시 듣기',quick:'표기가 올바른가요?',right:'맞는 표기',wrong:'오타',correct:'정답입니다',incorrect:'오답입니다',miss:'놓쳤어요',next:'알겠어요 →',home:'사무실로',again:'다시 수사',share:'결과 공유',issue:'문항 신고',empty:'오늘 복습할 사건이 없습니다.',caseDone:'수사 완료',accuracy:'정확도',rightCount:'정답',wrongCount:'오답',memo:'복습 수첩',reviewHint:'틀린 문제는 복습함에 자동 보관됩니다.',welcome:'하루 3분, 오타 하나도 놓치지 마세요.',dailyNote:'날짜와 언어에 따라 모두에게 같은 사건',classNote:'같은 코드로 같은 10문제를 수사합니다.',lang:'언어',level:'난이도',night:'다크 모드',exit:'나가기',import:'Claude 문항 가져오기',importHint:'별도 API 키 없이 JSON 문제를 붙여 넣으면 로컬에 저장합니다.',getPrompt:'생성 프롬프트 복사',importRun:'문항 저장',join:'참여하기',make:'수업 코드 만들기',copied:'복사했어요',tip:'화면의 버튼을 누르거나 1·2·3 키로 답하세요.',intro:'오타 탐정',remaining:'남은 시간',tapOnly:'틀린 카드면 오타다! 정상이면 맞는 표기',minutes:'분 수사',generate:'문제 풀 확장',customLang:'추가할 언어 이름',add:'언어 추가',cancel:'닫기',code:'수업 코드 입력',classGenerated:'수업 코드 발급 완료',today:'오늘',blocked:'지원되는 기기 음성이 없어요',disabled:'가능한 문항이 없어요',noData:'이 언어의 문제가 없습니다. 먼저 JSON을 가져오세요.',source:'문항 팩',reportOk:'이 문제를 기기에 신고 기록으로 남겼어요.',finish:'수사를 마쳤습니다.',shareTip:'정답 격자를 친구들과 비교해 보세요.',rules:'규칙을 확인하세요',notSupported:'외부 API를 쓰는 자동 생성은 정적 배포에서 제공되지 않습니다.',study:'기록은 이 브라우저에만 저장됩니다.',insufficient:'출제 가능한 문제가 충분하지 않습니다.',kbd:'키보드: 1·2·3 / 스페이스',dailyDone:'오늘의 사건에 다시 도전할 수 있어요.'},
+ en:{tag:'Follow the trail of missing letters',start:'Start investigation',investigation:'Full investigation',word:'Word case',sentence:'Sentence case',scene:'Real-life case',dictation:'Dictation',speed:'45-second rush',daily:'Case of the day',review:'Review files',classroom:'Class code',other:'Other language',new:'Import questions',easy:'Easy',normal:'Normal',hard:'Hard',mastered:'Mastered',due:'Due today',best:'Best',problem:'Case',score:'Score',hearts:'Lives',tap:'TYPO!',pass:'Looks correct',noTypo:'No typo',pick:'Choose the correct spelling',find:'Tap the misspelled word',fill:'Fill in the missing word',fix:'Select the correction',listen:'Listen and choose',listenBtn:'Play audio',quick:'Is this spelled correctly?',right:'Correct',wrong:'Typo',correct:'Correct!',incorrect:'Incorrect',miss:'Missed it',next:'Got it →',home:'Back to office',again:'Play again',share:'Share results',issue:'Report question',empty:'No reviews due today.',caseDone:'Case closed',accuracy:'Accuracy',rightCount:'Correct',wrongCount:'Wrong',memo:'Review notebook',reviewHint:'Missed items automatically enter your review files.',welcome:'Three minutes a day to catch your typos.',dailyNote:'The same daily case for everyone using this language',classNote:'The same code always creates the same 10 questions.',lang:'Language',level:'Difficulty',night:'Dark mode',exit:'Exit',import:'Import Claude questions',importHint:'Paste JSON questions to save them locally. No API key needed.',getPrompt:'Copy generation prompt',importRun:'Save questions',join:'Join',make:'Create class code',copied:'Copied',tip:'Tap an answer, or use keys 1·2·3.',intro:'Typo Detective',remaining:'Time left',tapOnly:'Tap TYPO for an error, or Looks correct otherwise',minutes:'minute game',generate:'Grow your question bank',customLang:'Language name',add:'Add language',cancel:'Close',code:'Enter class code',classGenerated:'Class code ready',today:'Today',blocked:'No compatible speech voice on this device',disabled:'No eligible questions',noData:'This language has no questions. Import JSON to begin.',source:'Question pack',reportOk:'Question report saved on this device.',finish:'Your investigation is complete.',shareTip:'Compare your result grid with friends.',rules:'Review the rule',notSupported:'Automatic API generation is unavailable in static hosting.',study:'Progress is saved only in this browser.',insufficient:'Not enough eligible questions.',kbd:'Keyboard: 1·2·3 / Space',dailyDone:'You can replay today’s case.'}
+};
+// Simple localized strings for the main game controls; remaining supporting copy falls back to English.
+const SHORT={
+ es:{start:'Empezar',investigation:'Investigación',word:'Palabras',sentence:'Oraciones',scene:'Situaciones',dictation:'Dictado',speed:'45 segundos',daily:'Caso del día',review:'Repasar',easy:'Fácil',normal:'Normal',hard:'Difícil',pick:'Elige la escritura correcta',find:'Toca el error',fill:'Completa la palabra',correct:'¡Correcto!',incorrect:'Incorrecto',noTypo:'Sin errores',score:'Puntos',hearts:'Vidas',home:'Inicio',again:'Otra vez',next:'Entendido →',share:'Compartir',start:'Empezar'},
+ fr:{start:'Commencer',investigation:'Enquête complète',word:'Mots',sentence:'Phrases',scene:'Situations',dictation:'Dictée',speed:'45 secondes',daily:'Affaire du jour',review:'Révisions',easy:'Facile',normal:'Normal',hard:'Difficile',pick:'Choisissez la bonne orthographe',find:'Touchez la faute',fill:'Complétez le mot',correct:'Bravo !',incorrect:'Incorrect',noTypo:'Aucune faute',score:'Score',hearts:'Vies',home:'Accueil',again:'Rejouer',next:'Compris →'},
+ de:{start:'Ermitteln',investigation:'Alle Fälle',word:'Wörter',sentence:'Sätze',scene:'Alltag',dictation:'Diktat',speed:'45 Sekunden',daily:'Fall des Tages',review:'Wiederholen',easy:'Leicht',normal:'Mittel',hard:'Schwer',pick:'Wähle die richtige Schreibweise',find:'Tippe auf den Fehler',fill:'Fülle die Lücke',correct:'Richtig!',incorrect:'Falsch',noTypo:'Kein Fehler',score:'Punkte',hearts:'Leben',home:'Start',again:'Nochmal',next:'Verstanden →'},
+ pt:{start:'Começar',investigation:'Investigação',word:'Palavras',sentence:'Frases',scene:'Situações',dictation:'Ditado',speed:'45 segundos',daily:'Caso do dia',review:'Revisão',easy:'Fácil',normal:'Normal',hard:'Difícil',pick:'Escolha a grafia correta',find:'Toque no erro',fill:'Complete a lacuna',correct:'Correto!',incorrect:'Incorreto',noTypo:'Sem erros',home:'Início',again:'Jogar novamente',next:'Entendi →'},
+ it:{start:'Inizia',investigation:'Indagine',word:'Parole',sentence:'Frasi',scene:'Situazioni',dictation:'Dettato',speed:'45 secondi',daily:'Caso del giorno',review:'Ripasso',easy:'Facile',normal:'Normale',hard:'Difficile',pick:'Scegli la grafia corretta',find:'Tocca l’errore',fill:'Completa la parola',correct:'Corretto!',incorrect:'Sbagliato',noTypo:'Nessun errore',home:'Home',again:'Riprova',next:'Capito →'},
+ ja:{start:'捜査開始',investigation:'総合捜査',word:'単語',sentence:'文章',scene:'実践',dictation:'聞き取り',speed:'45秒チャレンジ',daily:'今日の事件',review:'復習',easy:'かんたん',normal:'ふつう',hard:'むずかしい',pick:'正しい表記を選ぼう',find:'誤字をタップしよう',fill:'空欄を埋めよう',correct:'正解！',incorrect:'不正解',noTypo:'誤字なし',home:'ホーム',again:'もう一度',next:'わかった →'},
+ zh:{start:'开始调查',investigation:'综合调查',word:'词语',sentence:'句子',scene:'真实场景',dictation:'听写',speed:'45秒挑战',daily:'今日案件',review:'复习',easy:'简单',normal:'普通',hard:'困难',pick:'选择正确写法',find:'点击错字',fill:'选择正确的字',correct:'答对了！',incorrect:'答错了',noTypo:'没有错字',home:'首页',again:'再试一次',next:'明白 →'},
+ id:{start:'Mulai',investigation:'Semua kasus',word:'Kata',sentence:'Kalimat',scene:'Situasi',dictation:'Dikte',speed:'45 detik',daily:'Kasus hari ini',review:'Ulasan',easy:'Mudah',normal:'Sedang',hard:'Sulit',pick:'Pilih ejaan yang benar',find:'Ketuk kata yang salah',correct:'Benar!',incorrect:'Salah',noTypo:'Tidak ada salah',home:'Beranda',again:'Main lagi',next:'Mengerti →'},
+ tr:{start:'Başla',investigation:'Tüm vakalar',word:'Kelimeler',sentence:'Cümleler',scene:'Günlük yaşam',dictation:'Dikte',speed:'45 saniye',daily:'Günün vakası',review:'Tekrar',easy:'Kolay',normal:'Orta',hard:'Zor',pick:'Doğru yazımı seç',find:'Yanlış yazımı bul',correct:'Doğru!',incorrect:'Yanlış',noTypo:'Hata yok',home:'Ana sayfa',again:'Tekrar oyna',next:'Anladım →'},
+ ru:{start:'Начать',investigation:'Все дела',word:'Слова',sentence:'Предложения',scene:'Ситуации',dictation:'Диктант',speed:'45 секунд',daily:'Дело дня',review:'Повторение',easy:'Легко',normal:'Средне',hard:'Сложно',pick:'Выберите верное написание',find:'Найдите ошибку',correct:'Верно!',incorrect:'Ошибка',noTypo:'Нет ошибок',home:'Главная',again:'Ещё раз',next:'Понятно →'},
+ ar:{start:'ابدأ التحقيق',investigation:'تحقيق شامل',word:'كلمات',sentence:'جمل',scene:'مواقف',dictation:'إملاء',speed:'45 ثانية',daily:'قضية اليوم',review:'مراجعة',easy:'سهل',normal:'عادي',hard:'صعب',pick:'اختر الكتابة الصحيحة',find:'اضغط على الخطأ',correct:'صحيح!',incorrect:'خطأ',noTypo:'لا خطأ',home:'الرئيسية',again:'العب مجدداً',next:'فهمت ←'}
+};
+// Translations for fast-action and results UI in the 11 additional languages.
+const CORE_LOCALE={
+ es:{intro:'Detective de erratas',welcome:'Tres minutos al día para encontrar errores.',tapOnly:'Pulsa ERROR si hay una errata, o Correcto si no la hay',tap:'¡ERROR!',pass:'Correcto',quick:'¿Está bien escrito?',right:'Correcto',wrong:'Error',problem:'Caso',score:'Puntos',hearts:'Vidas',fix:'Elige la corrección',listen:'Escucha y elige',next:'Entendido →',caseDone:'Caso resuelto',accuracy:'Precisión',rightCount:'Aciertos',wrongCount:'Errores',memo:'Cuaderno de repaso',due:'Repaso de hoy',best:'Récord',mastered:'Aprendidas',lang:'Idioma',level:'Dificultad',classroom:'Código de clase',import:'Importar preguntas',issue:'Avisar de un error',reportOk:'Aviso guardado en este dispositivo.',exit:'Salir',remaining:'Tiempo',study:'El progreso se guarda solo en este navegador.'},
+ fr:{intro:'Détective des fautes',welcome:'Trois minutes par jour pour repérer les fautes.',tapOnly:'Appuyez sur FAUTE si le mot est mal écrit',tap:'FAUTE !',pass:'Correct',quick:'Est-ce bien écrit ?',right:'Correct',wrong:'Faute',problem:'Affaire',score:'Score',hearts:'Vies',fix:'Choisissez la correction',listen:'Écoutez et choisissez',next:'Compris →',caseDone:'Affaire classée',accuracy:'Précision',rightCount:'Bonnes',wrongCount:'Erreurs',memo:'Carnet de révision',due:'À réviser',best:'Record',mastered:'Acquis',lang:'Langue',level:'Difficulté',classroom:'Code de classe',import:'Importer des questions',issue:'Signaler une question',exit:'Quitter',study:'La progression est enregistrée sur ce navigateur.'},
+ de:{intro:'Tippfehler-Detektiv',welcome:'Drei Minuten täglich gegen Tippfehler.',tapOnly:'Bei Fehler auf FEHLER tippen, sonst auf Richtig',tap:'FEHLER!',pass:'Richtig',quick:'Ist die Schreibweise richtig?',right:'Richtig',wrong:'Fehler',problem:'Fall',score:'Punkte',hearts:'Leben',fix:'Wähle die Korrektur',listen:'Hören und auswählen',next:'Verstanden →',caseDone:'Fall gelöst',accuracy:'Genauigkeit',rightCount:'Richtig',wrongCount:'Falsch',memo:'Wiederholungsheft',due:'Heute fällig',best:'Rekord',mastered:'Gelernt',lang:'Sprache',level:'Schwierigkeit',classroom:'Klassencode',import:'Fragen importieren',issue:'Frage melden',exit:'Beenden',study:'Fortschritte werden nur hier gespeichert.'},
+ pt:{intro:'Detetive de erros',welcome:'Três minutos por dia para corrigir erros.',tapOnly:'Toque ERRO se estiver errado; caso contrário, Correto',tap:'ERRO!',pass:'Correto',quick:'A grafia está correta?',right:'Correto',wrong:'Erro',problem:'Caso',score:'Pontos',hearts:'Vidas',fix:'Escolha a correção',listen:'Ouça e escolha',next:'Entendi →',caseDone:'Caso encerrado',accuracy:'Precisão',rightCount:'Certas',wrongCount:'Erradas',memo:'Caderno de revisão',due:'Revisar hoje',best:'Recorde',mastered:'Aprendidas',lang:'Idioma',level:'Dificuldade',classroom:'Código da turma',import:'Importar questões',issue:'Denunciar questão',exit:'Sair',study:'O progresso fica apenas neste navegador.'},
+ it:{intro:'Detective degli errori',welcome:'Tre minuti al giorno per correggere gli errori.',tapOnly:'Tocca ERRORE se è sbagliato, altrimenti Corretto',tap:'ERRORE!',pass:'Corretto',quick:'La grafia è corretta?',right:'Corretto',wrong:'Errore',problem:'Caso',score:'Punti',hearts:'Vite',fix:'Scegli la correzione',listen:'Ascolta e scegli',caseDone:'Caso risolto',accuracy:'Precisione',rightCount:'Corrette',wrongCount:'Errate',memo:'Quaderno di ripasso',due:'Da ripassare',best:'Record',mastered:'Imparate',lang:'Lingua',level:'Difficoltà',classroom:'Codice classe',import:'Importa domande',issue:'Segnala domanda',exit:'Esci',study:'I progressi restano in questo browser.'},
+ ja:{intro:'誤字探偵',welcome:'一日3分、誤字を見逃さない。',tapOnly:'誤字なら「誤字！」、正しければ「正しい」をタップ',tap:'誤字！',pass:'正しい',quick:'正しい表記ですか？',right:'正しい',wrong:'誤字',problem:'事件',score:'得点',hearts:'残り',fix:'正しい修正を選ぼう',listen:'音声を聞いて選ぼう',caseDone:'捜査完了',accuracy:'正答率',rightCount:'正解',wrongCount:'不正解',memo:'復習ノート',due:'今日の復習',best:'最高記録',mastered:'習得',lang:'言語',level:'難易度',classroom:'授業コード',import:'問題を取り込む',issue:'問題を報告',exit:'終了',study:'記録はこのブラウザに保存されます。'},
+ zh:{intro:'错字侦探',welcome:'每天三分钟，找出隐藏的错字。',tapOnly:'有错字点“错字”，否则点“正确”',tap:'错字！',pass:'正确',quick:'这个写法正确吗？',right:'正确',wrong:'错字',problem:'案件',score:'得分',hearts:'生命',fix:'选择正确的修改',listen:'听音并选择',caseDone:'案件解决',accuracy:'正确率',rightCount:'正确',wrongCount:'错误',memo:'复习笔记',due:'今日复习',best:'最佳纪录',mastered:'已掌握',lang:'语言',level:'难度',classroom:'课堂代码',import:'导入题目',issue:'举报题目',exit:'退出',study:'进度仅保存在本浏览器。'},
+ id:{intro:'Detektif Ejaan',welcome:'Tiga menit sehari untuk menemukan salah eja.',tapOnly:'Ketuk SALAH jika ada kesalahan, atau Benar',tap:'SALAH!',pass:'Benar',quick:'Apakah ejaannya benar?',right:'Benar',wrong:'Salah',problem:'Kasus',score:'Skor',hearts:'Nyawa',fix:'Pilih perbaikan',listen:'Dengarkan dan pilih',caseDone:'Kasus selesai',accuracy:'Akurasi',rightCount:'Benar',wrongCount:'Salah',memo:'Buku ulasan',due:'Ulas hari ini',best:'Rekor',mastered:'Dikuasai',lang:'Bahasa',level:'Tingkat',classroom:'Kode kelas',import:'Impor soal',issue:'Laporkan soal',exit:'Keluar',study:'Kemajuan disimpan di peramban ini.'},
+ tr:{intro:'Yazım Dedektifi',welcome:'Günde üç dakikada yazım hatalarını yakala.',tapOnly:'Yanlışsa HATA, doğruysa Doğru seç',tap:'HATA!',pass:'Doğru',quick:'Yazımı doğru mu?',right:'Doğru',wrong:'Hata',problem:'Vaka',score:'Puan',hearts:'Hak',fix:'Doğru düzeltmeyi seç',listen:'Dinle ve seç',caseDone:'Vaka çözüldü',accuracy:'Doğruluk',rightCount:'Doğru',wrongCount:'Yanlış',memo:'Tekrar defteri',due:'Bugünkü tekrar',best:'Rekor',mastered:'Öğrenilen',lang:'Dil',level:'Zorluk',classroom:'Sınıf kodu',import:'Soruları aktar',issue:'Soruyu bildir',exit:'Çıkış',study:'İlerleme yalnızca bu tarayıcıda saklanır.'},
+ ru:{intro:'Детектив опечаток',welcome:'Три минуты в день: находите ошибки.',tapOnly:'Если ошибка — ОШИБКА, иначе Верно',tap:'ОШИБКА!',pass:'Верно',quick:'Написано правильно?',right:'Верно',wrong:'Ошибка',problem:'Дело',score:'Очки',hearts:'Жизни',fix:'Выберите исправление',listen:'Слушайте и выбирайте',caseDone:'Дело закрыто',accuracy:'Точность',rightCount:'Верно',wrongCount:'Ошибки',memo:'Тетрадь повторения',due:'Повторить сегодня',best:'Рекорд',mastered:'Выучено',lang:'Язык',level:'Сложность',classroom:'Код класса',import:'Импорт заданий',issue:'Сообщить об ошибке',exit:'Выйти',study:'Прогресс хранится только в браузере.'},
+ ar:{intro:'محقق الأخطاء الإملائية',welcome:'ثلاث دقائق يومياً لاكتشاف الأخطاء الإملائية.',tapOnly:'اضغط «خطأ» إذا كان الإملاء خاطئاً وإلا اضغط «صحيح»',tap:'خطأ!',pass:'صحيح',quick:'هل الكتابة صحيحة؟',right:'صحيح',wrong:'خطأ',problem:'قضية',score:'النقاط',hearts:'المحاولات',fix:'اختر التصحيح',listen:'استمع واختر',caseDone:'أُغلقت القضية',accuracy:'الدقة',rightCount:'صحيح',wrongCount:'خطأ',memo:'دفتر المراجعة',due:'مراجعة اليوم',best:'أفضل نتيجة',mastered:'تم إتقانها',lang:'اللغة',level:'الصعوبة',classroom:'رمز الفصل',import:'استيراد الأسئلة',issue:'الإبلاغ عن سؤال',exit:'خروج',study:'تُحفظ النتائج في هذا المتصفح فقط.',next:'فهمت ←',start:'ابدأ التحقيق',share:'مشاركة النتيجة'}
+};
+for(const [lang,strings] of Object.entries(SHORT))MESSAGES[lang]={...MESSAGES.en,...strings};
+for(const [lang,strings] of Object.entries(CORE_LOCALE))MESSAGES[lang]={...MESSAGES[lang],...strings};
+const deviceLang=(navigator.language||'ko').toLowerCase().split('-')[0];
+const pref=safeGet(KEY.pref,{lang:LANGUAGE_META.some(x=>x.id===deviceLang)?deviceLang:'ko',difficulty:2,theme:'auto',custom:[]});
+if(!Array.isArray(pref.custom))pref.custom=[];
+const SR=safeGet(KEY.sr,{}), ST=safeGet(KEY.st,{}), GEN=safeGet(KEY.gen,{}), REPORTS=safeGet(KEY.reports,{});
+let view='home',game=null,overlay=null,modal=null,mineTimer=null,speedTimer=null,autoNext=null,toastTimer=null,voiceList=[];
+const getMeta=(lang=pref.lang)=>LANGUAGE_META.find(x=>x.id===lang)||pref.custom.find(x=>x.id===lang)||{id:lang,name:lang,code:'XX',locale:lang,flag:'🌐'};
+const t=(key)=>MESSAGES[pref.lang]?.[key]??MESSAGES.en[key]??key;
+const listAll=(lang=pref.lang,baseOnly=false)=>[...(BANKS[lang]||[]),...(baseOnly?[]:(GEN[lang]||[]))].filter(q=>(REPORTS[lang]?.[q.id]||0)<2);
+const dueItems=(lang=pref.lang)=>Object.entries(SR[lang]||{}).filter(([id,s])=>s&&s.due<=pickDate()).map(([id])=>listAll(lang).find(q=>q.id===id)).filter(Boolean);
+const stats=(lang=pref.lang)=>ST[lang]||(ST[lang]={counts:{},best:0,speedBest:0,sessions:[],dailyDates:[]});
+const numMastered=(lang=pref.lang)=>Object.values(stats(lang).counts||{}).filter(n=>n>=2).length;
+const isRtl=()=>getMeta().rtl;
+const applySettings=()=>{document.documentElement.lang=getMeta().locale||'en';document.documentElement.dir=isRtl()?'rtl':'ltr';document.documentElement.dataset.theme=pref.theme;save(KEY.pref,pref);};
+const toast=(msg)=>{EL.toast.textContent=msg;EL.toast.hidden=false;clearTimeout(toastTimer);toastTimer=setTimeout(()=>{EL.toast.hidden=true;},2300);};
+const icon=(name)=>({search:'⌕',bolt:'ϟ',memo:'▤',globe:'◈',clock:'◷',audio:'♫',class:'▦',review:'↻',daily:'✧',scene:'▧',word:'Aa',sentence:'≡'}[name]||'◆');
+const MODES=[['mixed','investigation','search'],['word','word','word'],['sentence','sentence','sentence'],['scene','scene','scene'],['dictation','dictation','audio'],['speed','speed','bolt'],['daily','daily','daily'],['review','review','review']];
+const supportsVoice=()=>{const meta=getMeta();return 'speechSynthesis' in window && voiceList.some(v=>v.lang.toLowerCase().startsWith((meta.locale||'').split('-')[0].toLowerCase()));};
+const canMode=mode=>{if(mode==='review')return dueItems().length>0;if(mode==='dictation')return supportsVoice()&&listAll().length>0;return listAll().length>0;};
+const makeHeader=(isGame=false)=>`<header class="site-head"><button class="brand" data-action="home" aria-label="${ESC(t('home'))}"><span class="brand-icon">▤</span><span class="brand-wordmark">TYPO<span>DETECTIVE</span></span></button><div class="head-actions">${isGame?`<span class="case-tag">FILE / ${ESC(getMeta().code||'XX')}</span>`:`<button class="head-chip" data-action="languages">${ESC(getMeta().flag||'🌐')} ${ESC(getMeta().name)} <span>⌄</span></button>`}<button class="icon-button" data-action="theme" aria-label="${ESC(t('night'))}" title="${ESC(t('night'))}">${pref.theme==='dark'?'☀':'☾'}</button></div></header>`;
+function render(){applySettings();if(view==='home')renderHome();else if(view==='play')renderPlay();else renderResults();renderModal();}
+function renderHome(){
+ const total=listAll().length,reviewCount=dueItems().length,st=stats();
+ EL.app.innerHTML=`<div class="shell">${makeHeader()}<main class="home-layout"><section class="intro-column"><div class="top-caption"><span class="dot"></span> ${ESC(t('tag'))} <span class="caption-line"></span> № 001—999</div><div class="hero-mark" aria-hidden="true">✳</div><h1 class="hero-title">${pref.lang==='ko'?'오타를<br><em>잡아라.</em>':'TYPO<br><em>DETECTIVE.</em>'}</h1><p class="hero-copy">${ESC(t('welcome'))}</p><div class="casebook"><div class="casebook-head"><span>◈ CASEBOOK / ${ESC(getMeta().code)}</span><span>${ESC(t('today'))} · ${pickDate()}</span></div><div class="casebook-body"><div class="casebook-main">${ESC(t('daily'))}</div><p>${ESC(t('dailyNote'))}</p><button class="primary-cta" data-action="start" data-mode="daily" ${!canMode('daily')?'disabled':''}>${ESC(t('start'))} <span>↗</span></button></div><div class="casebook-foot"><span>10 ${ESC(t('problem'))}</span><span>♢ ♢ ♢</span></div></div><p class="local-note">◎ ${ESC(t('study'))}</p></section><section class="menu-column"><div class="section-head"><div><p class="eyebrow">INVESTIGATION BOARD</p><h2>${ESC(t('intro'))}</h2></div><span class="number-badge">${total} FILES</span></div><div class="difficulty" aria-label="${ESC(t('level'))}"><span>${ESC(t('level'))}</span><div class="difficulty-tabs">${[1,2,3].map((d)=>`<button data-action="difficulty" data-level="${d}" class="${pref.difficulty===d?'selected':''}" aria-pressed="${pref.difficulty===d}">${ESC(t(['','easy','normal','hard'][d]))}</button>`).join('')}</div></div><div class="stats-row"><div class="stat-cell"><div class="stat-number">${numMastered()}<small> / ${total}</small></div><div class="stat-label">◎ ${ESC(t('mastered'))}</div></div><div class="stat-cell"><div class="stat-number">${reviewCount}<small> ${reviewCount?'●':''}</small></div><div class="stat-label">↻ ${ESC(t('due'))}</div></div><div class="stat-cell"><div class="stat-number">${st.best||0}</div><div class="stat-label">✳ ${ESC(t('best'))}</div></div></div><div class="modes-grid">${MODES.map(([mode,label,ic],i)=>`<button class="mode-tile ${mode==='mixed'?'mode-featured':''}" data-action="start" data-mode="${mode}" ${!canMode(mode)?'disabled':''} title="${!canMode(mode)?ESC(mode==='dictation'?t('blocked'):mode==='review'?t('empty'):t('disabled')):''}"><span class="mode-icon">${icon(ic)}</span><span class="mode-name">${ESC(t(label))}</span><span class="mode-arrow">↗</span>${mode==='review'&&reviewCount?`<b class="tile-count">${reviewCount}</b>`:''}${mode==='daily'?'<small>DAILY</small>':''}</button>`).join('')}</div><div class="secondary-actions"><button class="link-action" data-action="join">⌗ ${ESC(t('classroom'))} <span>↗</span></button><button class="link-action" data-action="import">＋ ${ESC(t('import'))} <span>↗</span></button></div><footer class="mini-foot">© BBB · TYPO DETECTIVE <span>EDITION 01 / 2026</span></footer></section></main></div>`;
+}
+function pickWeighted(pool,rng,rank,lang,universal=false){let arr=[...pool],result=[];while(arr.length){let weights=arr.map(q=>(universal?1:difficultyWeight(q.d,rank))*(universal?1:1/(1+.8*(stats(lang).counts?.[q.id]||0))));let sum=weights.reduce((a,b)=>a+b,0),v=rng()*sum;let pos=weights.findIndex(w=>(v-=w)<=0);if(pos<0)pos=0;result.push(arr.splice(pos,1)[0]);}return result;}
+function getPatterns(mode,lang){if(mode==='word')return ['mine','pair','gap','fix'];if(mode==='sentence')return ['find','cloze'];if(mode==='scene')return ['scene'];if(mode==='dictation')return ['listen'];if(mode==='speed')return ['speed'];if(mode==='daily'||mode==='class'||mode==='mixed'||mode==='review')return ['mine','pair','gap','fix','find','cloze','scene',...(mode==='mixed'?['listen']:[])];return ['pair'];}
+function eligibility(q,p,lang){if(p==='listen')return supportsVoice();if(p==='fix')return ['en','es','fr','de','pt','it','id','tr','ru'].includes(lang);if(p==='find'||p==='scene'||p==='cloze')return includesOnce(p==='scene'?(q.x||q.s):q.s,q.c);if(p==='gap'){let [ac,aw]=diffPieces(q.c,q.w);return !!ac&&!!aw&&[...ac,...aw].length<=8;}if(p==='mine')return !isAmbiguous(q);return true;}
+// Both are legitimate dictionary words in some contexts; avoid isolated right/wrong cards for these.
+const AMBIGUOUS=new Set(['es:más','es:está','es:público','fr:où','de:schön','it:però','it:farò','it:darò','it:andrò','it:sarò','tr:bugün','pt:país']);
+function isAmbiguous(q){return AMBIGUOUS.has(`${q.lang}:${q.c}`);}
+function diffPieces(c,w){let a=Array.from(c),b=Array.from(w),start=0;while(start<a.length&&start<b.length&&a[start]===b[start])start++;let eA=a.length,eB=b.length;while(eA>start&&eB>start&&a[eA-1]===b[eB-1]){eA--;eB--;}return [a.slice(start,eA).join(''),b.slice(start,eB).join(''),a.slice(0,start).join(''),a.slice(eA).join('')];}
+function createDeck(mode,{classCode=null}={}){
+ let lang=pref.lang,rank=pref.difficulty,limit=mode==='daily'||mode==='class'?10:12;
+ if(mode==='class'){const [code,lvl]=classCode.split('-');lang=(LANGUAGE_META.find(x=>x.code===code)||{}).id||lang;rank=+lvl;}
+ const fixed=mode==='daily'||mode==='class',seed=mode==='daily'?`today:${pickDate()}:${lang}:v1`:`class:${classCode}:v1`,rng=fixed?rngFrom(seed):Math.random;
+ const pool=mode==='review'?dueItems(lang):listAll(lang,fixed);
+ if(!pool.length)return null;
+ let list=pickWeighted(pool,rng,rank,lang,fixed),patterns=getPatterns(mode,lang);
+ let count=mode==='review'?Math.min(12,list.length):limit;
+ let deck=[];for(let i=0;i<count;i++){
+  let q=list[i%list.length],allowed=patterns.filter(p=>eligibility(q,p,lang));if(!allowed.length)allowed=['pair'];
+  // Shuffle is seeded for daily/class to ensure identical variant sequences across devices.
+  let pat=allowed[Math.floor(rng()*allowed.length)];
+  deck.push({q,pat,seed:Math.floor(rng()*4294967295),index:i});
+ }
+ return {deck,lang,rank,seed,rng};
+}
+function createSpeedItem(){const bank=listAll(game.lang);if(!bank.length)return null;const q=bank[Math.floor(Math.random()*bank.length)];return {q,pat:'speed',seed:Math.floor(Math.random()*4294967295)};}
+function startGame(mode,{classCode=null}={}){
+ clearTimers();let setup=createDeck(mode,{classCode});if(!setup){toast(t('noData'));return;}
+ const ms=mode==='speed'?45000:null;
+ game={mode,deck:setup.deck,index:0,current:null,lang:setup.lang,rank:setup.rank,score:0,correct:0,wrong:0,streak:0,lives:3,history:[],missed:[],classCode,started:Date.now(),speedEnd:ms?Date.now()+ms:null,locked:false,serial:0,mineDeadline:0,activePattern:null};
+ if(mode==='speed'){game.current=createSpeedItem();speedTimer=setInterval(tick,65);}else game.current=game.deck[0];
+ view='play';overlay=null;render();
+}
+function clearTimers(){clearInterval(mineTimer);clearInterval(speedTimer);clearTimeout(autoNext);mineTimer=speedTimer=autoNext=null;}
+function setupPattern(){
+ if(!game?.current)return null;
+ let item=game.current,q=item.q,pat=item.pat,random=rngFrom(`${q.id}:${item.seed}`),meta=getMeta(game.lang);
+ if(!eligibility(q,pat,game.lang))pat='pair';
+ const standard={label:t('pick'),heading:q.c,opts:shuffle([q.c,q.w],random),correct:q.c,kind:'choices'};
+ if(pat==='pair')return {...standard,pat,heading:'?',label:t('pick')};
+ if(pat==='mine'||pat==='speed'){
+  let chosen=random()<.5?q.c:q.w;
+  return {kind:'card',pat,label:pat==='mine'?t('tapOnly'):t('quick'),heading:chosen,opts:pat==='mine'?['tap','pass']:['wrong','right'],correct:chosen===q.w?(pat==='mine'?'tap':'wrong'):(pat==='mine'?'pass':'right'),isTypo:chosen===q.w};
+ }
+ if(pat==='gap'){
+  const [correctPiece,wrongPiece,prefix,suffix]=diffPieces(q.c,q.w);
+  return {kind:'choices',pat,label:t('fill'),heading:`${prefix}____${suffix}`,opts:shuffle([correctPiece,wrongPiece],random),correct:correctPiece,gap:true};
+ }
+ if(pat==='fix'){
+  let allValid=new Set(listAll(game.lang).map(x=>x.c.toLocaleLowerCase()));
+  let extras=[];for(let attempt=0;attempt<60&&extras.length<2;attempt++){
+   let chars=Array.from(q.c),idx=Math.floor(random()*chars.length);if(!chars.length)break;
+   let candidate;
+   if(attempt%4===0&&idx<chars.length-1){[chars[idx],chars[idx+1]]=[chars[idx+1],chars[idx]];candidate=chars.join('');}
+   else if(attempt%4===1){chars.splice(idx,0,chars[idx]);candidate=chars.join('');}
+   else if(attempt%4===2){chars.splice(idx,1);candidate=chars.join('');}
+   else{chars[idx]=Array.from(q.w)[Math.min(idx,Array.from(q.w).length-1)]||chars[idx];candidate=chars.join('');}
+   if(candidate&&candidate!==q.c&&candidate!==q.w&&!allValid.has(candidate.toLocaleLowerCase())&&!extras.includes(candidate))extras.push(candidate);
+  }
+  if(extras.length<2)return {...standard,pat:'pair',heading:'?'};
+  return {kind:'choices',pat,label:t('fix'),heading:q.w,opts:shuffle([q.c,...extras],random),correct:q.c};
+ }
+ if(pat==='cloze'){
+  let replaced=splitByPair(q.s,q.c,'▰▰▰');if(!replaced)return {...standard,pat:'pair',heading:'?'};
+  return {kind:'choices',pat,label:t('fill'),heading:replaced.text,opts:shuffle([q.c,q.w],random),correct:q.c};
+ }
+ if(pat==='listen')return {kind:'choices',pat,label:t('listen'),heading:'♫',opts:shuffle([q.c,q.w],random),correct:q.c};
+ if(pat==='find'||pat==='scene'){
+  const context=(pat==='scene'?(q.x||q.s):q.s),clean=random()<.22;
+  let replaced=splitByPair(context,q.c,clean?q.c:q.w);if(!replaced)return {...standard,pat:'pair',heading:'?'};
+  let tokenPart=str=>{
+   if(game.lang==='ja'||game.lang==='zh')return Array.from(str).reduce((acc,ch,i)=>{if(i%2===0)acc.push(ch);else acc[acc.length-1]+=ch;return acc;},[]).map(text=>({text,answer:false}));
+   return (str.match(/\s+|[^\s]+/gu)||[]).map(text=>({text,answer:false}));
+  };
+  let tokens=[...tokenPart(replaced.left),{text:clean?q.c:q.w,answer:!clean},...tokenPart(replaced.right)];
+  return {kind:'tokens',pat,label:t('find'),tokens,correct:clean?-1:tokens.findIndex(x=>x.answer),clean,scene:pat==='scene'};
+ }
+ return {...standard,pat:'pair',heading:'?'};
+}
+function renderPlay(){if(!game)return; if(!game.activePattern)game.activePattern=setupPattern();let p=game.activePattern,g=game;
+ const hearts=g.mode==='speed'?`<span class="time-count" id="speed-count">45.0s</span>`:Array.from({length:3},(_,i)=>`<span class="heart ${i<g.lives?'full':'empty'}">${i<g.lives?'♥':'♡'}</span>`).join('');
+ const currentCount=g.mode==='speed'?g.history.length+1:g.index+1,totalCount=g.mode==='speed'?'∞':g.deck.length;
+ let choices='';
+ if(p.kind==='tokens'){
+  choices=`<div class="sentence-paper ${p.scene?'scene-paper':''}">${p.scene?`<div class="scene-top"><span>✉ ${ESC(t('scene'))}</span><span>● ● ●</span></div>`:''}<div class="sentence-content ${isRtl()?'rtl':''}">${p.tokens.map((tok,i)=>/^\s+$/.test(tok.text)?ESC(tok.text):`<button class="token" data-choice="token:${i}" aria-label="${ESC(tok.text)}">${ESC(tok.text)}</button>`).join('')}</div></div><button class="none-choice" data-choice="token:-1">${ESC(t('noTypo'))} <span>↗</span></button>`;
+ }else{
+  let shown=`<div class="word-content ${p.pat==='gap'?'word-gap':''} ${isRtl()?'rtl':''}" ${p.pat==='listen'?'aria-label="Listen to the spoken word"':''}>${ESC(p.heading)}</div>`;
+  if(p.pat==='listen')shown=`<button class="audio-play" data-action="speak" aria-label="${ESC(t('listenBtn'))}"><span>♫</span><small>${ESC(t('listenBtn'))}</small></button>`;
+  choices=`<div class="case-word">${shown}</div><div class="choice-list ${p.pat==='mine'||p.pat==='speed'?'binary':''}">${p.opts.map((o,i)=>`<button class="answer-choice ${o==='tap'||o==='wrong'?'red-choice':''}" data-choice="${i}"><span class="choice-index">${i+1}</span><span>${ESC(o==='tap'?t('tap'):o==='pass'?t('pass'):o==='wrong'?t('wrong'):o==='right'?t('right'):o)}</span><span class="choice-arrow">↗</span></button>`).join('')}</div>`;
+ }
+ const title=p.pat==='speed'?t('speed'):p.pat==='mine'?t('word'):p.pat==='pair'?t('word'):p.pat==='gap'?t('word'):p.pat==='fix'?t('word'):p.pat==='find'?t('sentence'):p.pat==='cloze'?t('sentence'):p.pat==='scene'?t('scene'):t('dictation');
+ EL.app.innerHTML=`<div class="shell playing">${makeHeader(true)}<main class="game-layout"><div class="play-top"><button class="back-link" data-action="home">← ${ESC(t('exit'))}</button><span>INVESTIGATION / ${ESC(title).toUpperCase()}</span><span>${ESC(t('score'))} <strong>${g.score}</strong></span></div><div class="game-meta"><div><p class="eyebrow">CASE NO. ${String(currentCount).padStart(3,'0')} / ${totalCount}</p><h1>${ESC(p.label)}</h1></div><div class="hearts" aria-label="${ESC(t('hearts'))}">${hearts}</div></div><div class="progress-track"><div class="progress-fill" style="width:${g.mode==='speed'?0:Math.max(0,(g.index/g.deck.length)*100)}%"></div></div><div class="paper-wrap"><div class="paper-pin">●</div><div class="paper-card"><div class="paper-label">EVIDENCE ${String(currentCount).padStart(3,'0')} <span>✳</span></div>${choices}<div class="paper-foot"><span>CONFIDENTIAL · ${ESC(getMeta(g.lang).code)}</span><span>◈ BBB</span></div></div></div>${p.pat==='mine'?`<div class="mine-countdown"><div class="mine-bar" id="mine-bar"></div></div>`:''}<p class="game-hint">${ESC(t('kbd'))}</p></main></div><div class="overlay-slot" id="overlay-slot" aria-live="polite"></div>`;
+ if(p.pat==='listen')speak();if(p.pat==='mine')scheduleMine();if(g.mode==='speed')updateSpeedUI();
+ if(overlay)renderFeedback();
+}
+function scheduleMine(){clearInterval(mineTimer);if(!game||overlay)return;let sec={1:3.6,2:2.8,3:2.1}[game.rank]||2.8;game.mineDeadline=Date.now()+sec*1000;const duration=sec*1000;
+ mineTimer=setInterval(()=>{if(!game||game.locked){clearInterval(mineTimer);return;}let rem=Math.max(0,game.mineDeadline-Date.now());let bar=$('#mine-bar');if(bar)bar.style.width=`${(rem/duration)*100}%`;if(rem<=0){clearInterval(mineTimer);answer('timeout');}},38);
+}
+function tick(){if(!game||game.mode!=='speed')return;if(Date.now()>=game.speedEnd){endGame();return;}updateSpeedUI();}
+function updateSpeedUI(){let el=$('#speed-count');if(el&&game?.speedEnd)el.textContent=`${Math.max(0,(game.speedEnd-Date.now())/1000).toFixed(1)}s`;}
+function speak(){if(!game?.current||!('speechSynthesis' in window))return;try{speechSynthesis.cancel();let utterance=new SpeechSynthesisUtterance(game.current.q.c);utterance.lang=getMeta(game.lang).locale;utterance.rate=.76;const match=voiceList.find(v=>v.lang.toLowerCase().startsWith(utterance.lang.split('-')[0].toLowerCase()));if(match)utterance.voice=match;speechSynthesis.speak(utterance);}catch{toast(t('blocked'));}}
+function recordAnswer(q,correct){let lang=game.lang,st=stats(lang);st.counts=st.counts||{};if(correct)st.counts[q.id]=(st.counts[q.id]||0)+1;
+ if(!SR[lang])SR[lang]={};let existing=SR[lang][q.id];if(!correct)SR[lang][q.id]={stage:0,due:pickDate()};else if(existing){let next=existing.stage+1;if(next>=4)delete SR[lang][q.id];else SR[lang][q.id]={stage:next,due:dateAdd([0,2,4,8][next])};}
+ save(KEY.st,ST);save(KEY.sr,SR);
+}
+function answer(chosen){
+ if(!game||view!=='play'||game.locked||overlay)return;
+ const g=game,p=g.activePattern;if(!p)return;
+ let correct=false,missed=false;
+ if(chosen==='timeout'){if(p.pat!=='mine')return;chosen=String(p.opts.indexOf('pass'));missed=p.isTypo;}
+ if(p.kind==='tokens'){let index=Number(String(chosen).split(':')[1]);correct=index===p.correct;}
+ else {const index=Number(chosen);const choice=Number.isInteger(index)&&index>=0&&index<p.opts.length?p.opts[index]:null;correct=choice===p.correct;}
+ g.locked=true;clearInterval(mineTimer);if(!correct){g.wrong++;g.lives--;g.streak=0;g.missed.push(g.current.q);}else{g.correct++;g.streak++;g.score+=100+Math.min(80,g.streak*10);}
+ recordAnswer(g.current.q,correct);
+ g.history.push({id:g.current.q.id,correct,pat:g.current.pat});
+ overlay={correct,missed,q:g.current.q};renderFeedback();
+ if(g.mode==='speed'){autoNext=setTimeout(nextQuestion,correct?300:650);}
+ else if(correct){autoNext=setTimeout(nextQuestion,1500);}
+}
+function renderFeedback(){const target=$('#overlay-slot');if(!target||!overlay||!game)return;let {correct,missed,q}=overlay;
+ target.innerHTML=`<div class="feedback-scrim"><section class="feedback-card ${correct?'feedback-good':'feedback-bad'}" role="status" aria-label="${ESC(correct?t('correct'):t('incorrect'))}"><div class="stamp">${correct?'✓':'✕'}<span>${ESC(missed?t('miss'):correct?t('correct'):t('incorrect'))}</span></div><p class="eyebrow">CASE FILE / ${ESC(q.id)}</p><div class="verdict-word"><mark>${ESC(q.c)}</mark>${!correct?` <span class="wrong-spelling">✕ ${ESC(q.w)}</span>`:''}</div><div class="rule-box"><span>✳ ${ESC(t('rules'))}</span><p>${ESC(q.r||'—')}</p></div><div class="feedback-actions">${!correct||game.mode==='speed'?`<button class="primary-cta" data-action="next">${ESC(t('next'))} <span>↗</span></button>`:`<div class="auto-message">▰▰▰ →</div>`}<button class="quiet-link" data-action="report">⚑ ${ESC(t('issue'))}</button></div></section></div>`;
+}
+function nextQuestion(){clearTimeout(autoNext);if(!game||view!=='play')return;overlay=null;game.locked=false;game.activePattern=null;game.serial++;
+ if(game.mode==='speed'){if(Date.now()>=game.speedEnd){endGame();return;}game.current=createSpeedItem();if(!game.current){endGame();return;}}
+ else{game.index++;if(game.index>=game.deck.length||game.lives<=0){endGame();return;}game.current=game.deck[game.index];}
+ renderPlay();
+}
+function endGame(){if(!game||view!=='play')return;clearTimers();try{speechSynthesis.cancel();}catch{}
+ const st=stats(game.lang);st.best=Math.max(st.best||0,game.score);
+ if(game.mode==='speed')st.speedBest=Math.max(st.speedBest||0,game.correct);
+ if(game.mode==='daily'&&game.history.length===game.deck.length){st.dailyDates=Array.from(new Set([...(st.dailyDates||[]),pickDate()])).slice(-90);}
+ st.sessions=[...(st.sessions||[]),{at:Date.now(),mode:game.mode,correct:game.correct,wrong:game.wrong,score:game.score}].slice(-100);
+ save(KEY.st,ST);view='results';overlay=null;render();
+}
+function renderResults(){const g=game;if(!g){view='home';return renderHome();}const total=g.history.length,percent=total?Math.round(g.correct/total*100):0;const st=stats(g.lang);
+ EL.app.innerHTML=`<div class="shell results-page">${makeHeader()}<main class="result-layout"><div class="result-file"><div class="result-label">CLOSED FILE / ${ESC(g.mode.toUpperCase())}</div><div class="result-seal">✓</div><p class="eyebrow">${ESC(t('finish'))}</p><h1>${ESC(t('caseDone'))}<span>.</span></h1><div class="big-score">${g.score}<small> PTS</small></div><div class="result-triplet"><div><strong>${percent}%</strong><span>${ESC(t('accuracy'))}</span></div><div><strong>${g.correct}</strong><span>${ESC(t('rightCount'))}</span></div><div><strong>${g.wrong}</strong><span>${ESC(t('wrongCount'))}</span></div></div><div class="result-grid" aria-label="${ESC(t('shareTip'))}">${g.history.map(x=>`<span title="${ESC(x.id)}" class="${x.correct?'green-square':'red-square'}">${x.correct?'■':'■'}</span>`).join('')}</div><p class="result-hint">${ESC(t('shareTip'))}</p><div class="result-actions"><button class="primary-cta" data-action="replay">${ESC(t('again'))} <span>↗</span></button><button class="outline-cta" data-action="share">${ESC(t('share'))} ↗</button><button class="outline-cta" data-action="class-create">⌗ ${ESC(t('make'))}</button><button class="plain-cta" data-action="home">← ${ESC(t('home'))}</button></div></div><aside class="result-review"><div class="review-head"><p class="eyebrow">POST-CASE REPORT</p><h2>${ESC(t('memo'))}</h2><span>${g.missed.length} FILES</span></div><p class="review-subtitle">${ESC(t('reviewHint'))}</p>${g.missed.length?g.missed.map(q=>`<div class="review-line"><div class="review-correct">${ESC(q.c)}<small>✕ ${ESC(q.w)}</small></div><p>${ESC(q.r)}</p></div>`).join(''):`<div class="review-empty">✳<p>${ESC(t('correct'))}</p></div>`}<div class="mini-record"><span>${ESC(t('best'))}</span><strong>${g.mode==='speed'?st.speedBest+' ✓':st.best+' PTS'}</strong></div></aside></main></div>`;
+}
+function shareText(){let g=game,meta=getMeta(g.lang),grid=g.history.map(x=>x.correct?'🟩':'🟥').join('');let score=g.mode==='speed'?g.correct+' correct':g.score+' pts';return `🔍 ${t('intro')} / ${meta.name}\n${g.mode==='daily'?pickDate()+' DAILY\n':''}${g.classCode?'CLASS '+g.classCode+'\n':''}${score} · ${g.correct}/${g.history.length}\n${grid}\n${location.protocol==='file:'?'':location.origin+location.pathname}`.trim();}
+async function share(){const value=shareText();if(navigator.share){try{await navigator.share({text:value,title:t('intro')});return;}catch{}}await copyText(value);}
+async function copyText(s){try{await navigator.clipboard.writeText(s);toast(t('copied'));}catch{let input=document.createElement('textarea');input.value=s;document.body.appendChild(input);input.select();document.execCommand('copy');input.remove();toast(t('copied'));}}
+function createClassCode(){const meta=getMeta(game?.lang||pref.lang);if(!LANGUAGE_META.some(x=>x.id===meta.id)){toast(t('disabled'));return;}const randomNum=(crypto?.getRandomValues?crypto.getRandomValues(new Uint32Array(1))[0]:Math.floor(Math.random()*1e8))%10000;let code=`${meta.code}-${game?.rank||pref.difficulty}-${String(randomNum).padStart(4,'0')}`;modal={type:'created',code};renderModal();}
+function validClassCode(s){const match=s.trim().toUpperCase().match(/^([A-Z]{2})-([123])-(\d{4})$/);return match&&LANGUAGE_META.some(x=>x.code===match[1])?match[0]:null;}
+function renderModal(){if(!modal){EL.modal.innerHTML='';return;}let content='',meta=getMeta();
+ if(modal.type==='languages'){content=`<p class="eyebrow">LANGUAGE SELECT / 013</p><h2>${ESC(t('lang'))}</h2><div class="lang-list">${[...LANGUAGE_META,...pref.custom].map(l=>`<button class="lang-item ${l.id===pref.lang?'active':''}" data-action="set-lang" data-lang="${ESC(l.id)}"><span>${ESC(l.flag)}</span> ${ESC(l.name)} <span>${l.id===pref.lang?'✓':''}</span></button>`).join('')}</div><div class="modal-bottom"><label for="custom-lang">${ESC(t('customLang'))}</label><div class="row-input"><input id="custom-lang" maxlength="50" placeholder="Swahili" autocomplete="off"><button class="primary-mini" data-action="add-lang">＋ ${ESC(t('add'))}</button></div></div>`;}
+ else if(modal.type==='join'){content=`<p class="eyebrow">CLASSROOM / JOIN</p><h2>${ESC(t('classroom'))}</h2><p class="modal-description">${ESC(t('classNote'))}</p><label for="class-code">${ESC(t('code'))}</label><input class="code-input" id="class-code" placeholder="KO-2-4821" maxlength="12" autocomplete="off" value="${ESC(modal.code||'')}"><p class="inline-error" id="class-error"></p><button class="primary-cta modal-wide" data-action="join-run">${ESC(t('join'))} ↗</button>`;}
+ else if(modal.type==='created'){let link=location.protocol==='file:'?'':location.origin+location.pathname+'?class='+encodeURIComponent(modal.code);content=`<p class="eyebrow">CLASSROOM / SHARE</p><h2>${ESC(t('classGenerated'))}</h2><p class="modal-description">${ESC(t('classNote'))}</p><div class="generated-code">${ESC(modal.code)}</div><button class="primary-cta modal-wide" data-action="copy-class">${ESC(t('share'))} ↗</button>${link?`<p class="copy-link">${ESC(link)}</p>`:''}`;}
+ else if(modal.type==='import'){
+  const existing=listAll().slice(0,120).map(x=>x.c);
+  content=`<p class="eyebrow">QUESTION LAB / JSON</p><h2>${ESC(t('import'))}</h2><p class="modal-description">${ESC(t('importHint'))}</p><div class="import-controls"><button class="outline-cta" data-action="copy-prompt">${ESC(t('getPrompt'))}</button><span>${ESC(getMeta().name)} · ${ESC(String((GEN[pref.lang]||[]).length))}/600</span></div><textarea id="import-json" rows="9" spellcheck="false" placeholder='[{"c":"correct","w":"wrnog","r":"Explanation","s":"This is correct.","d":2}]'></textarea><p class="inline-error" id="import-error"></p><button class="primary-cta modal-wide" data-action="import-run">${ESC(t('importRun'))} ↗</button><p class="micro-note">${ESC(t('notSupported'))}</p>`;
+ }
+ EL.modal.innerHTML=`<div class="modal-screen" role="presentation"><div class="modal-panel" role="dialog" aria-modal="true" aria-label="${ESC(t('intro'))}"><button class="modal-close" data-action="close-modal" aria-label="${ESC(t('cancel'))}">✕</button>${content}</div></div>`;
+}
+function importQuestions(){let el=$('#import-json');if(!el)return;let raw;try{raw=JSON.parse(el.value);}catch{$('#import-error').textContent='Invalid JSON';return;}
+ if(!Array.isArray(raw))raw=raw?.items||raw?.questions;
+ if(!Array.isArray(raw)){$('#import-error').textContent='Expected JSON array';return;}
+ const lang=pref.lang,bank=GEN[lang]||(GEN[lang]=[]);let seen=new Set([...listAll(lang)].map(x=>`${x.c.toLocaleLowerCase()}\u0000${x.w.toLocaleLowerCase()}`)),ok=0;
+ for(let q of raw){if(!q||typeof q.c!=='string'||typeof q.w!=='string'||typeof q.r!=='string')continue;let c=q.c.trim(),w=q.w.trim(),r=q.r.trim();if(!c||!w||!r||[...c].length>48||[...w].length>48||c===w||!['1','2','3'].includes(String(q.d??2)))continue;
+ let key=`${c.toLocaleLowerCase()}\u0000${w.toLocaleLowerCase()}`;if(seen.has(key)||bank.length>=600)continue;
+ let s=typeof q.s==='string'&&includesOnce(q.s,c)?q.s.trim():'';let x=typeof q.x==='string'&&includesOnce(q.x,c)?q.x.trim():'';
+ bank.push({id:`${lang}-g-${hash(key).toString(36)}`,lang,c,w,r,s,x,d:+(q.d??2),source:'generated'});seen.add(key);ok++;
+ }
+ save(KEY.gen,GEN);modal=null;render();toast(`${ok} ${pref.lang==='ko'?'문항 저장됨':'questions saved'}`);
+}
+function createPrompt(){const avoid=listAll().slice(0,120).map(x=>`${x.c} / ${x.w}`).join('\n');return `Create 12 high-quality spelling quiz pairs for language ${getMeta().name}. Explain each rule in ${getMeta().name}. Return ONLY a JSON array of objects with fields c (correct spelling), w (plausible commonly observed NON-standard misspelling), r (one-sentence explanation), s (one natural sentence containing c exactly once), x (optional natural chat/email/notice containing c exactly once), d (integer 1-3). Do not include any pair where w is valid in any context or both variants are accepted. No duplicates. Exclude these existing pairs:\n${avoid}`;}
+function reportQuestion(){if(!overlay)return;let q=overlay.q;REPORTS[game.lang]=REPORTS[game.lang]||{};REPORTS[game.lang][q.id]=(REPORTS[game.lang][q.id]||0)+1;save(KEY.reports,REPORTS);toast(t('reportOk'));}
+function addCustom(){let text=$('#custom-lang')?.value.trim();if(!text)return;let id='custom:'+text.toLocaleLowerCase().replace(/[^\p{L}\p{N}]+/gu,'-').slice(0,40);if(!pref.custom.some(x=>x.id===id))pref.custom.push({id,name:text,code:'XX',locale:text.slice(0,2).toLowerCase(),flag:'🌐'});pref.lang=id;modal=null;render();}
+function clickAction(action,dataset){if(action==='home'){clearTimers();try{speechSynthesis.cancel();}catch{}game=null;overlay=null;modal=null;view='home';render();return;}
+ if(action==='theme'){pref.theme=pref.theme==='dark'?'light':pref.theme==='light'?'auto':'dark';render();return;}
+ if(action==='difficulty'){pref.difficulty=+dataset.level;render();return;}
+ if(action==='start'){startGame(dataset.mode);return;}
+ if(action==='languages'){modal={type:'languages'};renderModal();return;}
+ if(action==='close-modal'){modal=null;renderModal();return;}
+ if(action==='set-lang'){pref.lang=dataset.lang;modal=null;render();return;}
+ if(action==='add-lang'){addCustom();return;}
+ if(action==='import'){modal={type:'import'};renderModal();return;}
+ if(action==='copy-prompt'){copyText(createPrompt());return;}
+ if(action==='import-run'){importQuestions();return;}
+ if(action==='join'){modal={type:'join'};renderModal();return;}
+ if(action==='join-run'){let code=validClassCode($('#class-code')?.value||'');if(!code){$('#class-error').textContent='Use format KO-2-4821 / EN-1-0000';return;}pref.lang=LANGUAGE_META.find(x=>x.code===code.slice(0,2)).id;pref.difficulty=+code[3];modal=null;startGame('class',{classCode:code});return;}
+ if(action==='class-create'){createClassCode();return;}
+ if(action==='copy-class'){let code=modal?.code||'',url=location.protocol==='file:'?code:location.origin+location.pathname+'?class='+encodeURIComponent(code);copyText(url);return;}
+ if(action==='speak'){speak();return;}
+ if(action==='next'){nextQuestion();return;}
+ if(action==='report'){reportQuestion();return;}
+ if(action==='replay'){let mode=game.mode,code=game.classCode;startGame(mode,{classCode:code});return;}
+ if(action==='share'){share();return;}
+}
+document.addEventListener('click',e=>{const c=e.target.closest('[data-choice]');if(c){answer(c.dataset.choice);return;}const a=e.target.closest('[data-action]');if(a){clickAction(a.dataset.action,a.dataset);return;}if(e.target.classList.contains('modal-screen')){modal=null;renderModal();}});
+document.addEventListener('keydown',e=>{
+ if(e.key==='Escape'&&modal){modal=null;renderModal();return;}
+ if(modal){if(e.key==='Enter'&&modal.type==='join'){e.preventDefault();clickAction('join-run',{});}return;}
+ if(view!=='play')return;
+ if(overlay){if(e.key==='Enter'||e.key===' '){e.preventDefault();nextQuestion();}return;}
+ let p=game?.activePattern;if(!p)return;
+ if(['1','2','3'].includes(e.key)){e.preventDefault();let index=Number(e.key)-1;if(p.kind==='tokens')return; if(index<p.opts.length)answer(String(index));}
+ if(e.key===' '&&p.pat==='mine'){e.preventDefault();answer(String(p.opts.indexOf('pass')));}
+});
+window.addEventListener('visibilitychange',()=>{if(document.hidden&&game?.mode==='speed'&&view==='play')tick();});
+if('speechSynthesis' in window){const update=()=>{voiceList=speechSynthesis.getVoices()||[];if(view==='home')renderHome();};voiceList=speechSynthesis.getVoices()||[];speechSynthesis.addEventListener?.('voiceschanged',update);}
+const maybeCode=new URLSearchParams(location.search).get('class');if(maybeCode&&validClassCode(maybeCode))modal={type:'join',code:maybeCode};
+render();
+// Intentionally expose only a small read-only testing surface; no external dependencies.
+Object.defineProperty(window,'TypoDetective',{value:Object.freeze({version:'1.0.0',languages:LANGUAGE_META.map(x=>x.id),getQuestionCounts:()=>Object.fromEntries(Object.entries(BANKS).map(([key,v])=>[key,v.length])),getView:()=>view,getStats:()=>JSON.parse(JSON.stringify(ST)),getReview:()=>JSON.parse(JSON.stringify(SR))})});
+})();
+</script>
+</body></html>
